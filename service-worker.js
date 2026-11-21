@@ -17,8 +17,9 @@ import { preflight } from "./lib/preflight.js";
 import { clearCached, ensureConfig, isBlocked } from "./lib/remote-config.js";
 import { t } from "./lib/i18n.js";
 
+import { openControlPage } from "./lib/control-page.js";
+
 const OFFSCREEN_URL = "offscreen.html";
-const PANEL_URL = "sidepanel.html";
 
 /**
  * The glyph each direction puts in front of the translating tab's title.
@@ -29,23 +30,6 @@ const PANEL_URL = "sidepanel.html";
  * with; `tests/tab-marker.test.js` keeps the two in step.
  */
 const TAB_MARKS = { tab: "💬", mic: "🔴" };
-
-/**
- * The panel belongs to the tab it was opened on, not to the window.
- *
- * Chrome's default is the other one: a side panel with a `default_path` is
- * offered on every tab and, once opened, stays open across tab switches — so
- * the controls for a translation of *this* tab follow the user onto their mail
- * and their calendar. Disabling the global default and enabling the panel per
- * tab in the click handler below turns it into what it is: a thing attached to
- * a page. The toolbar icon still summons it anywhere, which is what keeps Stop
- * reachable from a tab that was never translating.
- *
- * Run at module scope, so it is re-applied on every wake of this worker rather
- * than trusted to survive in whatever Chrome persists. It is idempotent, and a
- * per-tab enable set by an earlier click wins over it.
- */
-chrome.sidePanel.setOptions({ enabled: false }).catch(() => {});
 
 /**
  * Open Options once, the first time this extension is installed.
@@ -64,27 +48,9 @@ chrome.runtime.onInstalled.addListener(({ reason }) => {
   if (reason === "install") chrome.runtime.openOptionsPage();
 });
 
-// The action click is what grants `activeTab` on the current tab, and
-// `tabCapture` is gated on exactly that grant. Opening the side panel has to
-// happen inside the click handler too — `sidePanel.open()` requires a user
-// gesture and a message from the panel is not one.
+// The toolbar click grants activeTab to the source page before opening controls.
 chrome.action.onClicked.addListener((tab) => {
-  // Nothing may be awaited before `open()`. A service worker's user gesture is
-  // not the page's transient activation — it lasts for the synchronous run of
-  // this listener and no longer — so the first `await` here spends it and the
-  // click stops opening anything at all. That is exactly what an awaited
-  // `setOptions` in front of it did.
-  //
-  // The enable still has to come first, because with the global default off
-  // this tab has no panel to open yet. So it is issued and not awaited: both
-  // calls leave this worker in the order they are written and the browser
-  // handles them in that order, which is enough for `open` to find a panel.
-  chrome.sidePanel
-    .setOptions({ tabId: tab.id, path: PANEL_URL, enabled: true })
-    .catch((err) => console.warn("Could not enable the side panel here:", err));
-  chrome.sidePanel.open({ tabId: tab.id }).catch((err) => {
-    console.warn("Could not open the side panel:", err);
-  });
+  if (tab.url?.startsWith(chrome.runtime.getURL("sidepanel.html"))) return;
   onIconClick(tab.id).catch((err) => console.warn("Icon click:", err));
 });
 
@@ -93,6 +59,7 @@ async function onIconClick(tabId) {
   // needs a target tab, and by then the active tab may well be a different one
   // — the user clicks through to the panel, or switches away while it loads.
   await chrome.storage.session.set({ invokedTabId: tabId });
+  await openControlPage(tabId);
   await remarkTab(tabId);
   await adoptCaptionTab(tabId);
 }
@@ -248,8 +215,16 @@ async function getState() {
  * activeTab check with a clear message if it was never clicked.
  */
 async function targetTab(preferredId = null) {
+  // An explicitly selected source must never fall back to another tab if closed.
+  if (preferredId != null) {
+    try {
+      return await chrome.tabs.get(preferredId);
+    } catch {
+      throw new Error(t("errNoTab"));
+    }
+  }
   const { invokedTabId } = await chrome.storage.session.get("invokedTabId");
-  for (const id of [preferredId, invokedTabId]) {
+  for (const id of [invokedTabId]) {
     if (id == null) continue;
     try {
       return await chrome.tabs.get(id);

@@ -1,5 +1,5 @@
 /**
- * Side panel: controls and the running transcript.
+ * Standalone control page and the running transcript.
  *
  * It holds no audio and no socket, so closing it does not stop a capture — it
  * reads the current state from the service worker on open and then follows the
@@ -66,10 +66,8 @@ const openLines = new Map();
  * panel. When they differ, this panel is a bystander: the run is somebody
  * else's page, and all it may do is show it and stop it.
  *
- * Asked for once, on the way in. The panel is scoped to its tab — Chrome
- * destroys this document when the user switches away and builds a fresh one on
- * the way back — so the active tab at init is always this panel's own, and a
- * tab id does not change under a navigation.
+ * Read from the control page URL once. Switching browser tabs never changes
+ * the source this page controls.
  */
 let myTabId = null;
 let runTabId = null;
@@ -126,8 +124,11 @@ async function init() {
   // element until this fills it, so anything that paints before it is blank.
   localize();
   settings = await loadSettings();
-  const myTab = (await chrome.tabs.query({ active: true, currentWindow: true }))[0];
-  myTabId = myTab?.id ?? null;
+  const sourceId = new URL(location.href).searchParams.get("tabId");
+  // Keep the source identity even if it has closed: Start must report that
+  // failure instead of capturing whichever tab happens to be active now.
+  myTabId = sourceId !== null && /^\d+$/.test(sourceId) ? Number(sourceId) : null;
+  const myTab = myTabId === null ? null : await chrome.tabs.get(myTabId).catch(() => null);
   myTabUrl = myTab?.url || "";
   await populateLanguages();
   bind();
@@ -692,6 +693,7 @@ async function onToggle() {
       runTabId = null;
       runTabTitle = "";
     } else {
+      if (myTabId === null) throw new Error(t("errNoTab"));
       // Cleared before the run, not after it. `start()` reports the subtitle
       // status from inside itself — a page that refuses injection is known
       // before it returns — so clearing on the way out raced that message and
