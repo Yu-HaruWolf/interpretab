@@ -11,13 +11,18 @@
  * minting a tab-capture stream id, and creating the offscreen document.
  */
 
-import { callMicOn, loadSettings, requireApiKey } from "./lib/settings.js";
+import { callMicOn, loadSettings, requireApiKey, saveSettings } from "./lib/settings.js";
 import { ensureGlossary } from "./lib/glossary.js";
 import { preflight } from "./lib/preflight.js";
 import { clearCached, ensureConfig, isBlocked } from "./lib/remote-config.js";
 import { t } from "./lib/i18n.js";
 
 import { openControlPage } from "./lib/control-page.js";
+import {
+  filterExternalPatch,
+  isExternalOriginAllowed,
+  publicExternalSettings,
+} from "./lib/external-control.js";
 
 const OFFSCREEN_URL = "offscreen.html";
 
@@ -99,7 +104,103 @@ async function adoptCaptionTab(tabId) {
   await chrome.storage.session.set({ captionTabId: tabId });
 }
 
+const externalPorts = new Set();
+
+function broadcastExternal(msg) {
+  for (const port of externalPorts) {
+    try {
+      port.postMessage(msg);
+    } catch {
+      externalPorts.delete(port);
+    }
+  }
+}
+
+chrome.runtime.onConnectExternal.addListener(async (port) => {
+  const settings = await loadSettings();
+  if (!isExternalOriginAllowed(port.sender?.origin, settings)) {
+    port.disconnect();
+    return;
+  }
+  externalPorts.add(port);
+  port.onDisconnect.addListener(() => externalPorts.delete(port));
+  try {
+    const state = await getState();
+    port.postMessage({
+      target: "ui",
+      type: "snapshot",
+      ...state,
+      settings: publicExternalSettings(settings),
+    });
+  } catch {
+    externalPorts.delete(port);
+  }
+});
+
+chrome.runtime.onMessageExternal.addListener((msg, sender, sendResponse) => {
+  handleExternal(msg, sender)
+    .then((result) => sendResponse({ ok: true, ...result }))
+    .catch((err) => sendResponse({ ok: false, error: String(err?.message || err) }));
+  return true;
+});
+
+async function handleExternal(msg, sender) {
+  const settings = await loadSettings();
+  if (!isExternalOriginAllowed(sender?.origin, settings)) {
+    throw new Error("Origin not allowed");
+  }
+  switch (msg?.type) {
+    case "start":
+      return start(msg.tabId ?? null);
+    case "stop":
+      return stop();
+    case "restart":
+      await stop();
+      return start(msg.tabId ?? null);
+    case "getState":
+      return { ...(await getState()), settings: publicExternalSettings(settings) };
+    case "getMicDevices": {
+      await ensureOffscreen();
+      const res = await toOffscreen({ type: "micDevices" });
+      if (!res?.ok) throw new Error(res?.error || "Could not list microphone devices");
+      return { devices: res.devices || [] };
+    }
+    case "live": {
+      const { cleanPatch } = filterExternalPatch(msg.patch);
+      if (Object.keys(cleanPatch).length) {
+        await saveSettings(cleanPatch);
+        if (await hasOffscreen()) await toOffscreen({ type: "live", patch: cleanPatch });
+      }
+      return { settings: publicExternalSettings(await loadSettings()) };
+    }
+    case "updateSettings": {
+      const { cleanPatch, needsRestart } = filterExternalPatch(msg.patch);
+      if (Object.keys(cleanPatch).length) {
+        await saveSettings(cleanPatch);
+      }
+      const { running, runTabId } = await chrome.storage.session.get(["running", "runTabId"]);
+      const restarted = !!(running && needsRestart && msg.restart !== false);
+      if (restarted) {
+        await stop();
+        await start(runTabId ?? null);
+      } else if (running && Object.keys(cleanPatch).length && (await hasOffscreen())) {
+        await toOffscreen({ type: "live", patch: cleanPatch });
+      }
+      return {
+        restarted,
+        settings: publicExternalSettings(await loadSettings()),
+      };
+    }
+    default:
+      throw new Error(t("errUnknownMessage", [String(msg?.type || "")]));
+  }
+}
+
 chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
+  if (msg?.target === "ui") {
+    broadcastExternal(msg);
+    return false;
+  }
   if (msg?.target !== "sw") return false;
   handle(msg, sender)
     .then((result) => sendResponse({ ok: true, ...result }))

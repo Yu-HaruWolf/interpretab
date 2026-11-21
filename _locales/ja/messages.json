@@ -1,17 +1,31 @@
 {
-  "extName": { "message": "Interpretab" },
+  "extName": {
+    "message": "Interpretab"
+  },
   "extDescription": {
     "message": "ブラウザから出る音声やマイク音声を、あなたの言語でリアルタイムに読み上げ・字幕表示。"
   },
-
-  "panelTitle": { "message": "Interpretab" },
-  "statusIdle": { "message": "待機中" },
-  "statusConnecting": { "message": "接続中…" },
-  "statusConnected": { "message": "接続済み" },
-  "statusReconnecting": { "message": "再接続中…" },
-  "statusStopped": { "message": "停止しました" },
-  "statusError": { "message": "エラー" },
-
+  "panelTitle": {
+    "message": "Interpretab"
+  },
+  "statusIdle": {
+    "message": "待機中"
+  },
+  "statusConnecting": {
+    "message": "接続中…"
+  },
+  "statusConnected": {
+    "message": "接続済み"
+  },
+  "statusReconnecting": {
+    "message": "再接続中…"
+  },
+  "statusStopped": {
+    "message": "停止しました"
+  },
+  "statusError": {
+    "message": "エラー"
+  },
   "panelStepKey": {
     "message": "Interpretab の利用には<b>Gemini API キー</b>が必要です。<a1>Google AI Studio</a1> で無料で取得して、<a2>オプション</a2>に貼り付けてください。"
   },
@@ -27,47 +41,99 @@
   "panelRunningElsewhere": {
     "message": "Interpretab は別のタブで動作中です。同時に動かせるタブは 1 つだけなので、そのタブのパネルで操作してください。Stop はどのタブでも使えます。"
   },
-
-  "panelTabDirection": { "message": "<b>タブ音声翻訳</b> — ブラウザから出る音声を、好きな言語に翻訳" },
-  "panelInto": { "message": "翻訳先" },
-  "panelTabTargetTitle": { "message": "聞きたい言語" },
-  "panelSourceDetected": { "message": "— 元の言語の種類は自動判定します" },
-  "panelDuckLevel": { "message": "元音声の音量" },
-  "panelPageSubtitles": { "message": "字幕を表示" },
-
-  "panelMicDirection": { "message": "<b>マイク音声翻訳</b> — マイクで拾った話し声を、好きな言語に翻訳" },
-  "panelMicModeTitle": { "message": "翻訳モード" },
-  "panelMicModeSimul": { "message": "Simultaneous — 話しながら同時に" },
-  "panelMicModeConversation": { "message": "Two-way conversation — 2 言語間の会話" },
-  "panelMicSourceTitle": { "message": "あなたが話す言語" },
+  "panelTabDirection": {
+    "message": "<b>タブ音声翻訳</b> — ブラウザから出る音声を、好きな言語に翻訳"
+  },
+  "panelInto": {
+    "message": "翻訳先"
+  },
+  "panelTabTargetTitle": {
+    "message": "聞きたい言語"
+  },
+  "panelSourceDetected": {
+    "message": "— 元の言語の種類は自動判定します"
+  },
+  "panelDuckLevel": {
+    "message": "元音声の音量"
+  },
+  "panelPageSubtitles": {
+    "message": "字幕を表示"
+  },
+  "panelMicDirection": {
+    "message": "<b>マイク音声翻訳</b> — マイクで拾った話し声を、好きな言語に翻訳"
+  },
+  "panelMicModeTitle": {
+    "message": "翻訳モード"
+  },
+  "panelMicModeSimul": {
+    "message": "Simultaneous — 話しながら同時に"
+  },
+  "panelMicModeConversation": {
+    "message": "Two-way conversation — 2 言語間の会話"
+  },
+  "panelMicSourceTitle": {
+    "message": "あなたが話す言語"
+  },
   "panelMicNoteMuted": {
     "message": "マイク音声翻訳は<b>ミュート</b>されています。スピーカーから聞くにはミュート解除ボタンを押してください。"
   },
   "panelMicNoteConversation": {
     "message": "マイクを複数人で使うモードです。設定した 2 つの言語のうち聞こえたほうを、もう一方の言語で<b>スピーカー</b>から声に出して読み上げます。"
   },
-  "panelPrepPhones": { "message": "まずヘッドホンをつないでください。こちらは話している最中から訳し始めるので、しゃべっている間にマイクを切ることができません。スピーカーのままだと自分の声を拾い、それも訳し始めてしまいます。" },
-  "panelPrepTheirs": { "message": "<b>タブ音声翻訳</b>をオンにして、翻訳先を<b>自分の言語</b>にします。相手の話を訳すのがこちら側です。" },
-  "panelPrepYours": { "message": "<b>マイク音声翻訳</b>をオンにして、翻訳先を<b>相手の言語</b>にします。上にある 2 枚のカードのうち、下のほうです。" },
-
-  "panelMicToCall": { "message": "この Meet 通話に翻訳音声を流す" },
-  "panelMicToCallNote": { "message": "オンの間、その声はこのパソコンからは出ず、通話にだけ送られます。字幕もオフになります。" },
-  "panelStepLinksLead": { "message": "使い方: " },
-  "panelStepLinksPrep": { "message": "<a1>通話の前にすること</a1>" },
-  "panelStepLinksAnd": { "message": "と " },
-  "panelStepLinksMeet": { "message": "<a1>Meet でやること</a1>" },
-
-  "panelMeetJoin": { "message": "このタブで会議に参加します。" },
-  "panelMeetStart": { "message": "<b>Start</b> を押します。翻訳マイクは実行を開始したときに Meet へ渡されるので、それまでは一覧に出てきません。" },
-  "panelMeetPick": { "message": "Meet の<b>設定 → 音声</b>を開き、マイクに <b>Interpretab (translated)</b> を選びます。ついでに <b>Studio Sound</b> はオフにしてください。Bluetooth のヘッドホンなら、Meet の再生先もそれになっているか確かめます。" },
-  "panelMeetTalk": { "message": "話しかけます。3 秒ほど遅れて相手に訳が届きます。下にはあなたの声も小さく混ざっているので、通話では通訳とあなたの声の両方が聞こえます。" },
-  "panelMeetNext": { "message": "次へ" },
-  "panelClose": { "message": "閉じる" },
-
-  "panelStart": { "message": "Start" },
-  "panelStop": { "message": "Stop" },
-  "panelOptions": { "message": "オプション" },
-
+  "panelPrepPhones": {
+    "message": "まずヘッドホンをつないでください。こちらは話している最中から訳し始めるので、しゃべっている間にマイクを切ることができません。スピーカーのままだと自分の声を拾い、それも訳し始めてしまいます。"
+  },
+  "panelPrepTheirs": {
+    "message": "<b>タブ音声翻訳</b>をオンにして、翻訳先を<b>自分の言語</b>にします。相手の話を訳すのがこちら側です。"
+  },
+  "panelPrepYours": {
+    "message": "<b>マイク音声翻訳</b>をオンにして、翻訳先を<b>相手の言語</b>にします。上にある 2 枚のカードのうち、下のほうです。"
+  },
+  "panelMicToCall": {
+    "message": "この Meet 通話に翻訳音声を流す"
+  },
+  "panelMicToCallNote": {
+    "message": "オンの間、その声はこのパソコンからは出ず、通話にだけ送られます。字幕もオフになります。"
+  },
+  "panelStepLinksLead": {
+    "message": "使い方: "
+  },
+  "panelStepLinksPrep": {
+    "message": "<a1>通話の前にすること</a1>"
+  },
+  "panelStepLinksAnd": {
+    "message": "と "
+  },
+  "panelStepLinksMeet": {
+    "message": "<a1>Meet でやること</a1>"
+  },
+  "panelMeetJoin": {
+    "message": "このタブで会議に参加します。"
+  },
+  "panelMeetStart": {
+    "message": "<b>Start</b> を押します。翻訳マイクは実行を開始したときに Meet へ渡されるので、それまでは一覧に出てきません。"
+  },
+  "panelMeetPick": {
+    "message": "Meet の<b>設定 → 音声</b>を開き、マイクに <b>Interpretab (translated)</b> を選びます。ついでに <b>Studio Sound</b> はオフにしてください。Bluetooth のヘッドホンなら、Meet の再生先もそれになっているか確かめます。"
+  },
+  "panelMeetTalk": {
+    "message": "話しかけます。3 秒ほど遅れて相手に訳が届きます。下にはあなたの声も小さく混ざっているので、通話では通訳とあなたの声の両方が聞こえます。"
+  },
+  "panelMeetNext": {
+    "message": "次へ"
+  },
+  "panelClose": {
+    "message": "閉じる"
+  },
+  "panelStart": {
+    "message": "Start"
+  },
+  "panelStop": {
+    "message": "Stop"
+  },
+  "panelOptions": {
+    "message": "オプション"
+  },
   "panelCostNote": {
     "message": "Gemini API キーが有料設定の場合、タブ音声翻訳とマイク音声翻訳を同時に使うと発生する費用もおよそ 2 倍になります。"
   },
@@ -94,35 +160,72 @@
     "message": "{1} 分",
     "description": "A duration of a minute or more, rounded. {1} is a whole number of minutes."
   },
-
-  "panelMuteMic": { "message": "マイクをミュート" },
-  "panelUnmuteMic": { "message": "マイクのミュートを解除" },
-  "panelMuteSound": { "message": "翻訳音声をミュート" },
-  "panelUnmuteSound": { "message": "翻訳音声のミュートを解除" },
-  "panelMuteOffElsewhere": { "message": "別のタブで動作中です。" },
-  "panelMuteOffMic": { "message": "マイクがオフです。" },
-  "panelMuteOffSound": { "message": "翻訳機能が選択されていません。" },
-
-  "panelLangPopular": { "message": "よく使う言語" },
-  "panelLangAll": { "message": "すべての言語" },
-  "panelDirTab": { "message": "タブ" },
-  "panelDirMic": { "message": "マイク" },
-  "panelHeard": { "message": "聞き取り（{1}）" },
-  "panelTranslated": { "message": "翻訳（{1}）" },
-  "panelCaptionsUnavailable": { "message": "このページには字幕を表示できません。" },
-  "panelCaptionsStopped": { "message": "このページへの字幕表示が止まりました。" },
-
-  "updateRequiredTitle": { "message": "このバージョンの Interpretab では翻訳できなくなりました。更新すると続けられます。" },
+  "panelMuteMic": {
+    "message": "マイクをミュート"
+  },
+  "panelUnmuteMic": {
+    "message": "マイクのミュートを解除"
+  },
+  "panelMuteSound": {
+    "message": "翻訳音声をミュート"
+  },
+  "panelUnmuteSound": {
+    "message": "翻訳音声のミュートを解除"
+  },
+  "panelMuteOffElsewhere": {
+    "message": "別のタブで動作中です。"
+  },
+  "panelMuteOffMic": {
+    "message": "マイクがオフです。"
+  },
+  "panelMuteOffSound": {
+    "message": "翻訳機能が選択されていません。"
+  },
+  "panelLangPopular": {
+    "message": "よく使う言語"
+  },
+  "panelLangAll": {
+    "message": "すべての言語"
+  },
+  "panelDirTab": {
+    "message": "タブ"
+  },
+  "panelDirMic": {
+    "message": "マイク"
+  },
+  "panelHeard": {
+    "message": "聞き取り（{1}）"
+  },
+  "panelTranslated": {
+    "message": "翻訳（{1}）"
+  },
+  "panelCaptionsUnavailable": {
+    "message": "このページには字幕を表示できません。"
+  },
+  "panelCaptionsStopped": {
+    "message": "このページへの字幕表示が止まりました。"
+  },
+  "updateRequiredTitle": {
+    "message": "このバージョンの Interpretab では翻訳できなくなりました。更新すると続けられます。"
+  },
   "updateRequiredSteps": {
     "message": "Chrome は通常、数時間以内に拡張機能を自動で更新します。すぐに更新するには、<code>chrome://extensions</code> を開き、<b>デベロッパー モード</b> をオンにして <b>更新</b> をクリックしてください。"
   },
-  "updateRequiredMore": { "message": "何が起きたのか" },
-  "updateRequiredShort": { "message": "翻訳を再開するには Interpretab の更新が必要です。" },
-
-  "optTitle": { "message": "Interpretab — オプション" },
-  "optHeading": { "message": "Interpretab のオプション" },
-
-  "optStartHeading": { "message": "5 分ではじめる" },
+  "updateRequiredMore": {
+    "message": "何が起きたのか"
+  },
+  "updateRequiredShort": {
+    "message": "翻訳を再開するには Interpretab の更新が必要です。"
+  },
+  "optTitle": {
+    "message": "Interpretab — オプション"
+  },
+  "optHeading": {
+    "message": "Interpretab のオプション"
+  },
+  "optStartHeading": {
+    "message": "5 分ではじめる"
+  },
   "optStartStep1": {
     "message": "翻訳するのは Google の Gemini で、Gemini には自分専用の API キーが必要です。取得は無料です。<a1>Google AI Studio</a1> を開き、Google アカウントでログインします。"
   },
@@ -150,154 +253,315 @@
   "optStartStep9": {
     "message": "操作ページで言語を選び、<b>Start</b> を押します。動画を再生すると、その言語で声が返ってきます。訳された声が聞こえないときは、動画そのものの言語とは別の言語を選んでみてください。"
   },
-  "optStartCreateApiKey": { "message": "API キーを作成" },
-  "optStartCreateKey": { "message": "キーを作成" },
-  "optStartCreateProject": { "message": "プロジェクトを作成" },
-  "optStartCopyKey": { "message": "鍵をコピー" },
-
-  "optSetupHeading": { "message": "最初に設定する項目" },
-  "optRestHeading": { "message": "必要に応じて設定する項目" },
+  "optStartCreateApiKey": {
+    "message": "API キーを作成"
+  },
+  "optStartCreateKey": {
+    "message": "キーを作成"
+  },
+  "optStartCreateProject": {
+    "message": "プロジェクトを作成"
+  },
+  "optStartCopyKey": {
+    "message": "鍵をコピー"
+  },
+  "optSetupHeading": {
+    "message": "最初に設定する項目"
+  },
+  "optRestHeading": {
+    "message": "必要に応じて設定する項目"
+  },
   "optRestNote": {
     "message": "デフォルト値のままで動作します。必要に応じて設定を変更します。"
   },
-  "optMicTranslationHeading": { "message": "マイク音声翻訳のオプション" },
+  "optMicTranslationHeading": {
+    "message": "マイク音声翻訳のオプション"
+  },
   "optMicTranslationNote": {
     "message": "<b>マイク音声翻訳</b>に関する設定です。次に Start を押したときから反映されます。"
   },
-
-  "optKeyHeading": { "message": "Gemini API キー" },
+  "optKeyHeading": {
+    "message": "Gemini API キー"
+  },
   "optKeyNote": {
     "message": "Interpretab の利用には Gemini API キーが必要です。キーは <a1>Google AI Studio</a1> で無料で作成できます。キーの取り扱い方法や、無料プランと有料プランの違いについては<a2>ユーザーガイド</a2>を参照してください。"
   },
-  "optKeyPlaceholder": { "message": "キーをここに貼り付け" },
-  "optShow": { "message": "表示" },
-  "optHide": { "message": "隠す" },
-  "optKeyNone": { "message": "Gemini API キーが未設定です。Interpretab の利用にはキーが必要です。" },
-  "optKeyStray": { "message": "保存しましたが、キーの書式ではありません。別のものを貼り付けていませんか？" },
-  "optKeyShort": { "message": "保存しましたが、短すぎるようです。キーの一部が欠けていませんか？" },
-  "optKeySaved": { "message": "キーをこのブラウザに保存しました。" },
-
-  "optPlanHeading": { "message": "Gemini API のプラン" },
+  "optKeyPlaceholder": {
+    "message": "キーをここに貼り付け"
+  },
+  "optShow": {
+    "message": "表示"
+  },
+  "optHide": {
+    "message": "隠す"
+  },
+  "optKeyNone": {
+    "message": "Gemini API キーが未設定です。Interpretab の利用にはキーが必要です。"
+  },
+  "optKeyStray": {
+    "message": "保存しましたが、キーの書式ではありません。別のものを貼り付けていませんか？"
+  },
+  "optKeyShort": {
+    "message": "保存しましたが、短すぎるようです。キーの一部が欠けていませんか？"
+  },
+  "optKeySaved": {
+    "message": "キーをこのブラウザに保存しました。"
+  },
+  "optPlanHeading": {
+    "message": "Gemini API のプラン"
+  },
   "optPlanNote": {
     "message": "そのキーが無料か有料かを設定してください。<b>Free</b> を選択すると操作ページに利用時間が表示されます。<b>Paid</b> では、利用時間と費用のおおよその目安が表示されます。"
   },
-  "optPlanFree": { "message": "Free — 無料で利用できます" },
-  "optPlanPaid": { "message": "Paid — 利用料金が課金されます" },
-
-  "optVoiceHeading": { "message": "読み上げ音声の種類" },
+  "optPlanFree": {
+    "message": "Free — 無料で利用できます"
+  },
+  "optPlanPaid": {
+    "message": "Paid — 利用料金が課金されます"
+  },
+  "optVoiceHeading": {
+    "message": "読み上げ音声の種類"
+  },
   "optVoiceNote": {
     "message": "翻訳を読み上げる声の種類を設定できます。"
   },
-  "optVoiceOption": { "message": "{1} — {2}" },
-  "voiceBright": { "message": "明るい" },
-  "voiceUpbeat": { "message": "陽気" },
-  "voiceInformative": { "message": "説明的" },
-  "voiceFirm": { "message": "しっかりした" },
-  "voiceExcitable": { "message": "元気" },
-  "voiceYouthful": { "message": "若々しい" },
-  "voiceBreezy": { "message": "軽やか" },
-  "voiceEasygoing": { "message": "おだやか" },
-  "voiceBreathy": { "message": "息づかいのある" },
-  "voiceClear": { "message": "明瞭" },
-  "voiceSmooth": { "message": "なめらか" },
-  "voiceGravelly": { "message": "しゃがれた" },
-  "voiceSoft": { "message": "やわらかい" },
-  "voiceEven": { "message": "淡々とした" },
-  "voiceMature": { "message": "落ち着いた" },
-  "voiceForward": { "message": "前に出る" },
-  "voiceFriendly": { "message": "親しみやすい" },
-  "voiceCasual": { "message": "くだけた" },
-  "voiceGentle": { "message": "やさしい" },
-  "voiceLively": { "message": "生き生きした" },
-  "voiceKnowledgeable": { "message": "知的" },
-  "voiceWarm": { "message": "あたたかい" },
-
-  "optSizeHeading": { "message": "字幕の大きさ" },
+  "optVoiceOption": {
+    "message": "{1} — {2}"
+  },
+  "voiceBright": {
+    "message": "明るい"
+  },
+  "voiceUpbeat": {
+    "message": "陽気"
+  },
+  "voiceInformative": {
+    "message": "説明的"
+  },
+  "voiceFirm": {
+    "message": "しっかりした"
+  },
+  "voiceExcitable": {
+    "message": "元気"
+  },
+  "voiceYouthful": {
+    "message": "若々しい"
+  },
+  "voiceBreezy": {
+    "message": "軽やか"
+  },
+  "voiceEasygoing": {
+    "message": "おだやか"
+  },
+  "voiceBreathy": {
+    "message": "息づかいのある"
+  },
+  "voiceClear": {
+    "message": "明瞭"
+  },
+  "voiceSmooth": {
+    "message": "なめらか"
+  },
+  "voiceGravelly": {
+    "message": "しゃがれた"
+  },
+  "voiceSoft": {
+    "message": "やわらかい"
+  },
+  "voiceEven": {
+    "message": "淡々とした"
+  },
+  "voiceMature": {
+    "message": "落ち着いた"
+  },
+  "voiceForward": {
+    "message": "前に出る"
+  },
+  "voiceFriendly": {
+    "message": "親しみやすい"
+  },
+  "voiceCasual": {
+    "message": "くだけた"
+  },
+  "voiceGentle": {
+    "message": "やさしい"
+  },
+  "voiceLively": {
+    "message": "生き生きした"
+  },
+  "voiceKnowledgeable": {
+    "message": "知的"
+  },
+  "voiceWarm": {
+    "message": "あたたかい"
+  },
+  "optSizeHeading": {
+    "message": "字幕の大きさ"
+  },
   "optSizeNote": {
     "message": "字幕表示の大きさです。"
   },
-  "optSizePx": { "message": "{1} px" },
-  "optSizePreview": { "message": "素早い茶色の狐 — The quick brown fox" },
-
-  "optMicHeading": { "message": "マイクの使用許可" },
+  "optSizePx": {
+    "message": "{1} px"
+  },
+  "optSizePreview": {
+    "message": "素早い茶色の狐 — The quick brown fox"
+  },
+  "optMicHeading": {
+    "message": "マイクの使用許可"
+  },
   "optMicNote": {
     "message": "自分の声を翻訳する場合に、初回のみ必要です。ここでマイクを許可すると、Interpretab 全体に適用されます。"
   },
-  "optMicGrant": { "message": "マイクを許可する" },
-  "optMicGranted": { "message": "許可されています。" },
-  "optMicNotGranted": { "message": "まだ許可されていません。" },
-  "optMicBlocked": { "message": "Chrome がマイクをブロックしています。Chrome のマイクの設定を開き、Interpretab をブロック中のリストから外してから、ここで再度設定してください。" },
-  "optMicDenied": { "message": "Chrome がマイクを許可しませんでした（{1}）。" },
-
-  "optInputHeading": { "message": "音声入力" },
+  "optMicGrant": {
+    "message": "マイクを許可する"
+  },
+  "optMicGranted": {
+    "message": "許可されています。"
+  },
+  "optMicNotGranted": {
+    "message": "まだ許可されていません。"
+  },
+  "optMicBlocked": {
+    "message": "Chrome がマイクをブロックしています。Chrome のマイクの設定を開き、Interpretab をブロック中のリストから外してから、ここで再度設定してください。"
+  },
+  "optMicDenied": {
+    "message": "Chrome がマイクを許可しませんでした（{1}）。"
+  },
+  "optInputHeading": {
+    "message": "音声入力"
+  },
   "optInputNote": {
     "message": "<b>マイク音声翻訳</b>で使用する音声入力を設定します。"
   },
-  "optInputSystem": { "message": "システムのデフォルト音声入力" },
-  "optInputAnonymous": { "message": "音声入力 {1}…" },
-  "optInputNone": { "message": "音声入力が見つかりません。" },
+  "optInputSystem": {
+    "message": "システムのデフォルト音声入力"
+  },
+  "optInputAnonymous": {
+    "message": "音声入力 {1}…"
+  },
+  "optInputNone": {
+    "message": "音声入力が見つかりません。"
+  },
   "optInputMissing": {
     "message": "指定された音声入力は接続されていないため、システムのデフォルトの音声入力を使います。"
   },
-  "optInputSaved": { "message": "保存しました。次回 Start を押したときから反映されます。" },
-  "optInputCleared": { "message": "保存しました。システムのデフォルトの音声入力を使います。" },
-
-  "optOutputHeading": { "message": "音声出力" },
+  "optInputSaved": {
+    "message": "保存しました。次回 Start を押したときから反映されます。"
+  },
+  "optInputCleared": {
+    "message": "保存しました。システムのデフォルトの音声入力を使います。"
+  },
+  "optOutputHeading": {
+    "message": "音声出力"
+  },
   "optOutputNote": {
     "message": "<b>マイク音声翻訳</b>の音声をどこに出力するか設定します（タブ音声翻訳はつねにデフォルトの音声出力に出力されます）。"
   },
-  "optOutputSystem": { "message": "システムのデフォルト — いま使っているスピーカー" },
-  "optOutputAnonymous": { "message": "出力 {1}…" },
-  "optOutputNone": { "message": "出力デバイスが見つかりません。" },
+  "optOutputSystem": {
+    "message": "システムのデフォルト — いま使っているスピーカー"
+  },
+  "optOutputAnonymous": {
+    "message": "出力 {1}…"
+  },
+  "optOutputNone": {
+    "message": "出力デバイスが見つかりません。"
+  },
   "optOutputMissing": {
     "message": "指定された音声出力は接続されていないため、デフォルトの音声出力から出力します。"
   },
   "optOutputSaved": {
     "message": "保存しました。次に Start を押したときから反映されます。"
   },
-  "optOutputCleared": { "message": "保存しました。翻訳音声はデフォルトの音声出力から出力されます。" },
-
-  "optDeviceListFailed": { "message": "音声デバイスを確認できませんでした（{1}）。" },
+  "optOutputCleared": {
+    "message": "保存しました。翻訳音声はデフォルトの音声出力から出力されます。"
+  },
+  "optDeviceListFailed": {
+    "message": "音声デバイスを確認できませんでした（{1}）。"
+  },
   "optDeviceNamesHidden": {
     "message": "デバイス名を表示するには、上でマイクの利用を許可してください。"
   },
-  "optDeviceSavedMissing": { "message": "保存済みのデバイス — いまは接続されていません" },
-
-  "optConfigHeading": { "message": "モデルの更新確認" },
-  "optConfigLabel": { "message": "新しいモデル名と料金を確認する" },
+  "optDeviceSavedMissing": {
+    "message": "保存済みのデバイス — いまは接続されていません"
+  },
+  "optConfigHeading": {
+    "message": "モデルの更新確認"
+  },
+  "optConfigLabel": {
+    "message": "新しいモデル名と料金を確認する"
+  },
   "optConfigNote": {
     "message": "Google が Gemini Live のモデルを終了するまでの予告期間は数週間で、Chrome ウェブストアの審査期間より短いことがあります。そのため Interpretab は 1 日に数回、自身のサイトにある小さな<a1>設定ファイル</a1>を読みます。中身はモデル名、料金、このバージョンがまだ動くかどうかの 3 つだけです。リクエストには何も含めません。API キーも、利用状況も、あなたに関する情報も送りません。オフにすると Interpretab の通信先は Google だけになり、モデル一覧はビルド時のまま固定されます。更新のお知らせも届かなくなります。"
   },
-
-  "optModelHeading": { "message": "使用するモデル" },
-  "optModelNote": { "message": "セッションは常に、Interpretab が動作を確認したモデルで始まります。Google は現行モデルを終了する数か月前に次のモデルを公開するので、ここで先取りできます。ただしこの拡張機能でまだ一度も翻訳を通していないモデルなので、品質が落ちることも、接続できないこともあります。モードごとに選ぶのは、2 つのモードが別々のモデルで動くからです。次に Start を押したときから反映されます。" },
-  "optModelSimul": { "message": "タブ音声と、マイクの同時通訳モード" },
-  "optModelConversation": { "message": "2 言語間の会話" },
-  "optModelAuto": { "message": "推奨 — {1}" },
-  "optModelNew": { "message": "{1} — 新着" },
-  "optModelRetiring": { "message": "{1} — {2} まで" },
-  "optModelSaved": { "message": "保存しました。次に Start を押したときから反映されます。" },
-  "optModelReverted": { "message": "{1} は候補から外れたため、そのモードは推奨モデルで動きます。" },
-
-  "optGlossaryHeading": { "message": "用語集" },
+  "optModelHeading": {
+    "message": "使用するモデル"
+  },
+  "optModelNote": {
+    "message": "セッションは常に、Interpretab が動作を確認したモデルで始まります。Google は現行モデルを終了する数か月前に次のモデルを公開するので、ここで先取りできます。ただしこの拡張機能でまだ一度も翻訳を通していないモデルなので、品質が落ちることも、接続できないこともあります。モードごとに選ぶのは、2 つのモードが別々のモデルで動くからです。次に Start を押したときから反映されます。"
+  },
+  "optModelSimul": {
+    "message": "タブ音声と、マイクの同時通訳モード"
+  },
+  "optModelConversation": {
+    "message": "2 言語間の会話"
+  },
+  "optModelAuto": {
+    "message": "推奨 — {1}"
+  },
+  "optModelNew": {
+    "message": "{1} — 新着"
+  },
+  "optModelRetiring": {
+    "message": "{1} — {2} まで"
+  },
+  "optModelSaved": {
+    "message": "保存しました。次に Start を押したときから反映されます。"
+  },
+  "optModelReverted": {
+    "message": "{1} は候補から外れたため、そのモードは推奨モデルで動きます。"
+  },
+  "optGlossaryHeading": {
+    "message": "用語集"
+  },
   "optGlossaryNote": {
     "message": "読み方や表記を決めておきたい名前や用語 — 製品名、人名、専門用語など — の一覧です。用語ごとに <code>source,pronunciation,transcript</code> の CSV 形式で書きます。2 列目は用語の読み方、3 列目（省略可能）には字幕での表記を書きます。どのモードで使えるか、どう書くかは<a1>ユーザーガイド</a1>を参照してください。"
   },
-  "optGlossaryReplace": { "message": "置き換える" },
-  "optGlossaryReset": { "message": "初期値に戻す" },
-  "optGlossaryPickFile": { "message": "先に .csv ファイルを選んでください。" },
-  "optGlossaryNotCsv": { "message": "拡張子が .csv のファイルを指定してください。" },
-  "optGlossaryTooBig": { "message": "ファイルが大きすぎます。上限は {1} バイトです。" },
+  "optGlossaryReplace": {
+    "message": "置き換える"
+  },
+  "optGlossaryReset": {
+    "message": "初期値に戻す"
+  },
+  "optGlossaryPickFile": {
+    "message": "先に .csv ファイルを選んでください。"
+  },
+  "optGlossaryNotCsv": {
+    "message": "拡張子が .csv のファイルを指定してください。"
+  },
+  "optGlossaryTooBig": {
+    "message": "ファイルが大きすぎます。上限は {1} バイトです。"
+  },
   "optGlossaryReplaced": {
     "message": "{1} 件で置き換えました。次回 Start から反映されます。"
   },
-  "optGlossaryWasReset": { "message": "初期値の {1} 件に戻しました。" },
-  "optGlossaryLoadFailed": { "message": "ファイルを読み込めませんでした: {1}" },
-  "optGlossaryEmpty": { "message": "用語集は空です。" },
-  "optGlossaryColSource": { "message": "対象" },
-  "optGlossaryColPronunciation": { "message": "読み" },
-  "optGlossaryColTranscript": { "message": "表記" },
-
+  "optGlossaryWasReset": {
+    "message": "初期値の {1} 件に戻しました。"
+  },
+  "optGlossaryLoadFailed": {
+    "message": "ファイルを読み込めませんでした: {1}"
+  },
+  "optGlossaryEmpty": {
+    "message": "用語集は空です。"
+  },
+  "optGlossaryColSource": {
+    "message": "対象"
+  },
+  "optGlossaryColPronunciation": {
+    "message": "読み"
+  },
+  "optGlossaryColTranscript": {
+    "message": "表記"
+  },
   "errNoKey": {
     "message": "Gemini API キーがまだ設定されていません。オプションを開き、aistudio.google.com/apikey で取得したキーを貼り付けてください。"
   },
@@ -322,25 +586,33 @@
   "errAlreadyRunningElsewhere": {
     "message": "Interpretab はすでに別のタブで動作中です。同時に動かせるタブは 1 つだけなので、先に Stop を押してください（Stop はどのタブからでも使えます）。"
   },
-  "errNoDirection": { "message": "先にタブ音声翻訳かマイク音声翻訳をオンにしてください。" },
-  "errNoTab": { "message": "音声を聞くタブがありません。" },
+  "errNoDirection": {
+    "message": "先にタブ音声翻訳かマイク音声翻訳をオンにしてください。"
+  },
+  "errNoTab": {
+    "message": "音声を聞くタブがありません。"
+  },
   "errClickIcon": {
     "message": "翻訳したいタブで Interpretab のツールバーアイコンをクリックしてから、もう一度 Start を押してください。（{1}）"
   },
-  "errNoStreamId": { "message": "Chrome からこのタブの音声を受け取れませんでした。もう一度 Start を押してください。" },
-  "errUnknownMessage": { "message": "Interpretab の内部で問題が起きました（{1}）。" },
+  "errNoStreamId": {
+    "message": "Chrome からこのタブの音声を受け取れませんでした。もう一度 Start を押してください。"
+  },
+  "errUnknownMessage": {
+    "message": "Interpretab の内部で問題が起きました（{1}）。"
+  },
   "errMicRefused": {
     "message": "Interpretab はマイクを使う許可を得られませんでした。オプションページを開いて一度マイクを許可してから、やり直してください。"
   },
-
   "captionsChromePage": {
     "message": "Chrome 自身のページには字幕を表示できません。通常の Web ページを開き、そこでツールバーアイコンをクリックしてください。"
   },
-  "captionsClickIcon": { "message": "そのページでツールバーアイコンをクリックしてください。" },
+  "captionsClickIcon": {
+    "message": "そのページでツールバーアイコンをクリックしてください。"
+  },
   "captionsOpenSite": {
     "message": "通常の Web ページを開き、そこでツールバーアイコンをクリックしてください。"
   },
-
   "micNoSoundNamed": {
     "message": "Start を押してから、マイクに音が届いていません。使用している音声入力が「{1}」でない場合は、オプションの音声入力で正しいものを選び、もう一度 Start を押してください。"
   },
@@ -353,32 +625,67 @@
   "outputDeviceMissing": {
     "message": "オプションで指定した音声出力が使えないため（{1}）、翻訳音声はシステムのデフォルトの音声出力から出ています。"
   },
-  "callShimFailed": { "message": "このページに音声入力を設定できませんでした（{1}）。Meet のタブを再読み込みして、もう一度 Start を押してください。" },
-
-  "closeReasonGiven": { "message": "Gemini が接続を閉じました: {1}" },
+  "callShimFailed": {
+    "message": "このページに音声入力を設定できませんでした（{1}）。Meet のタブを再読み込みして、もう一度 Start を押してください。"
+  },
+  "closeReasonGiven": {
+    "message": "Gemini が接続を閉じました: {1}"
+  },
   "closeReasonOpaqueHint": {
     "message": "Gemini に接続できませんでした。{1}"
   },
   "closeReasonOpaque": {
     "message": "Gemini に接続できませんでした。正しいキーが設定されているか、キーの利用が上限に達していないか確認してください。"
   },
-  "closeReasonCode": { "message": "Gemini が接続を閉じました（コード {1}）。" },
-  "closeBeforeReady": { "message": "セッションは接続前に終了しました。" },
+  "closeReasonCode": {
+    "message": "Gemini が接続を閉じました（コード {1}）。"
+  },
+  "closeBeforeReady": {
+    "message": "セッションは接続前に終了しました。"
+  },
   "hintKeyAccepted": {
     "message": "キー自体は直前まで使えていたので、Gemini 側かネットワーク側の問題です。"
   },
   "loopGaveUp": {
     "message": "{1} {2} 回続けて失敗したので、Interpretab は再試行をやめました。オプションページで正しいキーが設定されているか確認し、また Google AI Studio で残りの使用量を確認してください。もう一度試すには Start を押してください。"
   },
-  "loopDropping": { "message": "Gemini への接続が繰り返し失敗しています。" },
-
+  "loopDropping": {
+    "message": "Gemini への接続が繰り返し失敗しています。"
+  },
   "glossaryBadLine": {
     "message": "{1} 行目は「単語、読み方、（必要なら）表記」の形式にしてください。"
   },
-  "glossaryMissingField": { "message": "{1} 行目に単語か読み方がありません。" },
-  "glossaryTooMany": { "message": "エントリが多すぎます（最大 {1} 件）。" },
-  "optObsHeading": {"message": "OBS字幕出力"},
-  "optObsLabel": {"message": "翻訳字幕をOBSへ送信する"},
-  "optObsNote": {"message": "npm run obs でローカル中継を起動し、OBSのブラウザソースに <code>127.0.0.1:8765</code> を追加してください。送信するのは翻訳文のみです。音声はこのブラウザで再生します。"},
-  "optObsError": {"message": "OBS出力を設定できませんでした。ローカルネットワークの権限を確認して再度お試しください。"}
+  "glossaryMissingField": {
+    "message": "{1} 行目に単語か読み方がありません。"
+  },
+  "glossaryTooMany": {
+    "message": "エントリが多すぎます（最大 {1} 件）。"
+  },
+  "optObsHeading": {
+    "message": "OBS字幕出力"
+  },
+  "optObsLabel": {
+    "message": "翻訳字幕をOBSへ送信する"
+  },
+  "optObsNote": {
+    "message": "npm run obs でローカル中継を起動し、OBSのブラウザソースに <code>127.0.0.1:8765</code> を追加してください。送信するのは翻訳文のみです。音声はこのブラウザで再生します。"
+  },
+  "optObsError": {
+    "message": "OBS出力を設定できませんでした。ローカルネットワークの権限を確認して再度お試しください。"
+  },
+  "optExternalHeading": {
+    "message": "ローカル Web アプリからの制御"
+  },
+  "optExternalNote": {
+    "message": "<code>localhost</code> または <code>127.0.0.1</code> 上の Web アプリから翻訳の開始・停止・設定変更やリアルタイム字幕の取得を行えるようにします。ポートが空欄の場合はローカルの全ポートを許可します。"
+  },
+  "optExternalLabel": {
+    "message": "ローカル Web アプリからの制御を許可する"
+  },
+  "optExternalPortsLabel": {
+    "message": "許可するポート番号（カンマ区切り）:"
+  },
+  "optExternalIdLabel": {
+    "message": "拡張機能 ID:"
+  }
 }

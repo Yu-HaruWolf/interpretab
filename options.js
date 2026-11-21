@@ -50,6 +50,9 @@ async function init() {
   el("apiTier").value = settings.apiTier;
   el("configUpdates").checked = settings.configUpdates !== false;
   el("obsEnabled").checked = !!settings.obsEnabled;
+  el("externalControlEnabled").checked = !!settings.externalControlEnabled;
+  el("externalControlPorts").value = settings.externalControlPorts || "";
+  el("externalExtensionId").textContent = chrome.runtime.id;
   loadVoices();
   loadCaptionSize();
   bind();
@@ -118,6 +121,17 @@ function bind() {
     } finally {
       el("obsEnabled").disabled = false;
     }
+  });
+  el("externalControlEnabled").addEventListener("change", async () => {
+    const enabled = el("externalControlEnabled").checked;
+    await saveSettings({ externalControlEnabled: enabled });
+    settings.externalControlEnabled = enabled;
+  });
+  el("externalControlPorts").addEventListener("change", async () => {
+    const ports = el("externalControlPorts").value.trim();
+    el("externalControlPorts").value = ports;
+    await saveSettings({ externalControlPorts: ports });
+    settings.externalControlPorts = ports;
   });
   // `change` rather than `input`: saving on every keystroke would write a
   // trail of truncated keys through storage on the way to the real one.

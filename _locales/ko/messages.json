@@ -1,17 +1,31 @@
 {
-  "extName": { "message": "Interpretab" },
+  "extName": {
+    "message": "Interpretab"
+  },
   "extDescription": {
     "message": "어떤 탭이든 내 언어로 듣습니다. 실시간 음성과 자막으로."
   },
-
-  "panelTitle": { "message": "Interpretab" },
-  "statusIdle": { "message": "대기 중" },
-  "statusConnecting": { "message": "연결 중…" },
-  "statusConnected": { "message": "연결됨" },
-  "statusReconnecting": { "message": "다시 연결 중…" },
-  "statusStopped": { "message": "중지됨" },
-  "statusError": { "message": "오류" },
-
+  "panelTitle": {
+    "message": "Interpretab"
+  },
+  "statusIdle": {
+    "message": "대기 중"
+  },
+  "statusConnecting": {
+    "message": "연결 중…"
+  },
+  "statusConnected": {
+    "message": "연결됨"
+  },
+  "statusReconnecting": {
+    "message": "다시 연결 중…"
+  },
+  "statusStopped": {
+    "message": "중지됨"
+  },
+  "statusError": {
+    "message": "오류"
+  },
   "panelStepKey": {
     "message": "Interpretab이 번역하려면 <b>본인의 Gemini 키</b>가 필요합니다. <a1>Google AI Studio</a1>에서 무료로 받아 <a2>옵션</a2>에 붙여 넣으세요."
   },
@@ -27,47 +41,99 @@
   "panelRunningElsewhere": {
     "message": "Interpretab이 다른 탭에서 실행 중입니다. 한 번에 한 탭에서만 동작하며, 조작은 그 탭에서 합니다 — Stop은 여기서도 됩니다."
   },
-
-  "panelTabDirection": { "message": "<b>탭 오디오</b> — 이 탭을 내 언어로" },
-  "panelInto": { "message": "번역할 언어" },
-  "panelTabTargetTitle": { "message": "듣고 싶은 언어" },
-  "panelSourceDetected": { "message": "— 원래 언어는 자동으로 알아냅니다" },
-  "panelDuckLevel": { "message": "원래 소리를 남겨 둘 크기" },
-  "panelPageSubtitles": { "message": "페이지에 자막 표시" },
-
-  "panelMicDirection": { "message": "<b>마이크</b> — 그 자리에서 하는 말을 소리 내어 번역" },
-  "panelMicModeTitle": { "message": "마이크 음성을 어떻게 번역할지" },
-  "panelMicModeSimul": { "message": "Simultaneous — 말하는 동안 바로" },
-  "panelMicModeConversation": { "message": "Two-way conversation — 두 언어의 대화" },
-  "panelMicSourceTitle": { "message": "내가 말하는 언어" },
+  "panelTabDirection": {
+    "message": "<b>탭 오디오</b> — 이 탭을 내 언어로"
+  },
+  "panelInto": {
+    "message": "번역할 언어"
+  },
+  "panelTabTargetTitle": {
+    "message": "듣고 싶은 언어"
+  },
+  "panelSourceDetected": {
+    "message": "— 원래 언어는 자동으로 알아냅니다"
+  },
+  "panelDuckLevel": {
+    "message": "원래 소리를 남겨 둘 크기"
+  },
+  "panelPageSubtitles": {
+    "message": "페이지에 자막 표시"
+  },
+  "panelMicDirection": {
+    "message": "<b>마이크</b> — 그 자리에서 하는 말을 소리 내어 번역"
+  },
+  "panelMicModeTitle": {
+    "message": "마이크 음성을 어떻게 번역할지"
+  },
+  "panelMicModeSimul": {
+    "message": "Simultaneous — 말하는 동안 바로"
+  },
+  "panelMicModeConversation": {
+    "message": "Two-way conversation — 두 언어의 대화"
+  },
+  "panelMicSourceTitle": {
+    "message": "내가 말하는 언어"
+  },
   "panelMicNoteMuted": {
     "message": "번역된 음성이 <b>음소거</b>되어 있습니다. 스피커로 들으려면 음소거 해제 버튼을 누르세요."
   },
   "panelMicNoteConversation": {
     "message": "마이크 하나를 두 사람이 함께 쓰는 모드입니다. 정해 둔 두 언어 중 들린 쪽을 다른 언어로 <b>스피커</b>에서 소리 내어 말합니다. 그것이 이 모드의 목적이지만, 마이크가 그 소리를 듣지 않도록 스피커에서 떨어뜨려 두세요."
   },
-  "panelPrepPhones": { "message": "먼저 헤드폰을 꽂으세요. 이쪽은 말하는 도중부터 번역을 시작하기 때문에, 번역이 나오는 동안 마이크를 꺼 둘 수 없습니다. 스피커로 들으면 자기 목소리를 다시 주워서 그것까지 번역하기 시작합니다." },
-  "panelPrepTheirs": { "message": "<b>탭 오디오</b>를 켜고 번역할 언어를 <b>내 언어</b>로 맞춥니다. 상대가 하는 말을 옮기는 쪽입니다." },
-  "panelPrepYours": { "message": "<b>마이크</b>를 켜고 번역할 언어를 <b>상대의 언어</b>로 맞춥니다. 위에 있는 카드 두 장 중 두 번째입니다." },
-
-  "panelMicToCall": { "message": "이 Meet 통화로 통역 음성 보내기" },
-  "panelMicToCallNote": { "message": "켜져 있는 동안 그 목소리는 이 컴퓨터가 아니라 통화로만 나가고, 자막도 꺼집니다." },
-  "panelStepLinksLead": { "message": "사용 방법: " },
-  "panelStepLinksPrep": { "message": "<a1>통화 전에 할 일</a1>" },
-  "panelStepLinksAnd": { "message": "과 " },
-  "panelStepLinksMeet": { "message": "<a1>Meet에서 할 일</a1>" },
-
-  "panelMeetJoin": { "message": "이 탭에서 회의에 참여하세요." },
-  "panelMeetStart": { "message": "<b>Start</b>를 누르세요. 번역 마이크는 실행이 시작될 때 Meet에 넘어가므로, 그전에는 목록에 없습니다." },
-  "panelMeetPick": { "message": "Meet에서 <b>설정 → 오디오</b>를 열고 마이크로 <b>Interpretab (translated)</b>를 고르세요. 온 김에 <b>Studio Sound</b>는 꺼 두세요. 블루투스 헤드폰이라면 Meet도 그쪽으로 소리를 내보내는지 확인하세요." },
-  "panelMeetTalk": { "message": "말해 보세요. 3초쯤 뒤에 상대에게 번역이 들립니다. 당신 목소리도 아래에 작게 섞여 있어서, 통화에서는 통역과 함께 당신 목소리도 들립니다." },
-  "panelMeetNext": { "message": "다음" },
-  "panelClose": { "message": "닫기" },
-
-  "panelStart": { "message": "Start" },
-  "panelStop": { "message": "Stop" },
-  "panelOptions": { "message": "옵션" },
-
+  "panelPrepPhones": {
+    "message": "먼저 헤드폰을 꽂으세요. 이쪽은 말하는 도중부터 번역을 시작하기 때문에, 번역이 나오는 동안 마이크를 꺼 둘 수 없습니다. 스피커로 들으면 자기 목소리를 다시 주워서 그것까지 번역하기 시작합니다."
+  },
+  "panelPrepTheirs": {
+    "message": "<b>탭 오디오</b>를 켜고 번역할 언어를 <b>내 언어</b>로 맞춥니다. 상대가 하는 말을 옮기는 쪽입니다."
+  },
+  "panelPrepYours": {
+    "message": "<b>마이크</b>를 켜고 번역할 언어를 <b>상대의 언어</b>로 맞춥니다. 위에 있는 카드 두 장 중 두 번째입니다."
+  },
+  "panelMicToCall": {
+    "message": "이 Meet 통화로 통역 음성 보내기"
+  },
+  "panelMicToCallNote": {
+    "message": "켜져 있는 동안 그 목소리는 이 컴퓨터가 아니라 통화로만 나가고, 자막도 꺼집니다."
+  },
+  "panelStepLinksLead": {
+    "message": "사용 방법: "
+  },
+  "panelStepLinksPrep": {
+    "message": "<a1>통화 전에 할 일</a1>"
+  },
+  "panelStepLinksAnd": {
+    "message": "과 "
+  },
+  "panelStepLinksMeet": {
+    "message": "<a1>Meet에서 할 일</a1>"
+  },
+  "panelMeetJoin": {
+    "message": "이 탭에서 회의에 참여하세요."
+  },
+  "panelMeetStart": {
+    "message": "<b>Start</b>를 누르세요. 번역 마이크는 실행이 시작될 때 Meet에 넘어가므로, 그전에는 목록에 없습니다."
+  },
+  "panelMeetPick": {
+    "message": "Meet에서 <b>설정 → 오디오</b>를 열고 마이크로 <b>Interpretab (translated)</b>를 고르세요. 온 김에 <b>Studio Sound</b>는 꺼 두세요. 블루투스 헤드폰이라면 Meet도 그쪽으로 소리를 내보내는지 확인하세요."
+  },
+  "panelMeetTalk": {
+    "message": "말해 보세요. 3초쯤 뒤에 상대에게 번역이 들립니다. 당신 목소리도 아래에 작게 섞여 있어서, 통화에서는 통역과 함께 당신 목소리도 들립니다."
+  },
+  "panelMeetNext": {
+    "message": "다음"
+  },
+  "panelClose": {
+    "message": "닫기"
+  },
+  "panelStart": {
+    "message": "Start"
+  },
+  "panelStop": {
+    "message": "Stop"
+  },
+  "panelOptions": {
+    "message": "옵션"
+  },
   "panelCostNote": {
     "message": "둘을 함께 켜면 번역도 두 개가 동시에 돌아가므로, Google 요금도 약 두 배가 됩니다."
   },
@@ -86,41 +152,84 @@
   "panelUsageTipFree": {
     "message": "이 키는 옵션 페이지에서 Free로 설정되어 있고, 무료 요금제에서는 Google이 요금을 청구하지 않으므로 보여 줄 금액이 없습니다. 키가 속한 Google 계정에 결제 수단이 등록되어 있다면 옵션에서 Paid로 바꾸세요. 이 줄에 예상 비용이 나옵니다."
   },
-  "durationSeconds": { "message": "{1}초" },
-  "durationMinutes": { "message": "{1}분" },
-
-  "panelMuteMic": { "message": "마이크 음소거" },
-  "panelUnmuteMic": { "message": "마이크 음소거 해제" },
-  "panelMuteSound": { "message": "통역 음성 음소거" },
-  "panelUnmuteSound": { "message": "통역 음성 음소거 해제" },
-  "panelMuteOffElsewhere": { "message": "다른 탭에서 실행 중입니다." },
-  "panelMuteOffMic": { "message": "마이크가 꺼져 있습니다." },
-  "panelMuteOffSound": { "message": "아직 아무것도 켜지 않았습니다." },
-
-  "panelLangPopular": { "message": "자주 쓰는 언어" },
-  "panelLangAll": { "message": "모든 언어" },
-  "panelDirTab": { "message": "탭" },
-  "panelDirMic": { "message": "마이크" },
-  "panelHeard": { "message": "들은 말 ({1})" },
-  "panelTranslated": { "message": "번역 ({1})" },
-  "panelCaptionsUnavailable": { "message": "이 페이지에는 자막을 표시할 수 없습니다." },
-  "panelCaptionsStopped": { "message": "자막이 이 페이지에 더 이상 도달하지 않습니다." },
-
-  "updateRequiredTitle": { "message": "이 버전의 Interpretab으로는 더 이상 번역할 수 없습니다. 업데이트하면 계속 쓸 수 있습니다." },
+  "durationSeconds": {
+    "message": "{1}초"
+  },
+  "durationMinutes": {
+    "message": "{1}분"
+  },
+  "panelMuteMic": {
+    "message": "마이크 음소거"
+  },
+  "panelUnmuteMic": {
+    "message": "마이크 음소거 해제"
+  },
+  "panelMuteSound": {
+    "message": "통역 음성 음소거"
+  },
+  "panelUnmuteSound": {
+    "message": "통역 음성 음소거 해제"
+  },
+  "panelMuteOffElsewhere": {
+    "message": "다른 탭에서 실행 중입니다."
+  },
+  "panelMuteOffMic": {
+    "message": "마이크가 꺼져 있습니다."
+  },
+  "panelMuteOffSound": {
+    "message": "아직 아무것도 켜지 않았습니다."
+  },
+  "panelLangPopular": {
+    "message": "자주 쓰는 언어"
+  },
+  "panelLangAll": {
+    "message": "모든 언어"
+  },
+  "panelDirTab": {
+    "message": "탭"
+  },
+  "panelDirMic": {
+    "message": "마이크"
+  },
+  "panelHeard": {
+    "message": "들은 말 ({1})"
+  },
+  "panelTranslated": {
+    "message": "번역 ({1})"
+  },
+  "panelCaptionsUnavailable": {
+    "message": "이 페이지에는 자막을 표시할 수 없습니다."
+  },
+  "panelCaptionsStopped": {
+    "message": "자막이 이 페이지에 더 이상 도달하지 않습니다."
+  },
+  "updateRequiredTitle": {
+    "message": "이 버전의 Interpretab으로는 더 이상 번역할 수 없습니다. 업데이트하면 계속 쓸 수 있습니다."
+  },
   "updateRequiredSteps": {
     "message": "크롬은 보통 몇 시간 안에 확장 프로그램을 알아서 업데이트합니다. 지금 하려면 <code>chrome://extensions</code>를 열고 <b>개발자 모드</b>를 켠 다음 <b>업데이트</b>를 클릭하세요."
   },
-  "updateRequiredMore": { "message": "무슨 일이 있었나요?" },
-  "updateRequiredShort": { "message": "다시 번역하려면 Interpretab을 업데이트해야 합니다." },
-
-  "optTitle": { "message": "Interpretab — 옵션" },
-  "optHeading": { "message": "Interpretab 옵션" },
-
-  "optStartHeading": { "message": "5분 만에 시작하기" },
+  "updateRequiredMore": {
+    "message": "무슨 일이 있었나요?"
+  },
+  "updateRequiredShort": {
+    "message": "다시 번역하려면 Interpretab을 업데이트해야 합니다."
+  },
+  "optTitle": {
+    "message": "Interpretab — 옵션"
+  },
+  "optHeading": {
+    "message": "Interpretab 옵션"
+  },
+  "optStartHeading": {
+    "message": "5분 만에 시작하기"
+  },
   "optStartStep1": {
     "message": "번역은 Google의 Gemini가 하고, Gemini에는 본인 명의의 API 키가 필요합니다. 발급은 무료입니다. <a1>Google AI Studio</a1>를 열고 Google 계정으로 로그인합니다."
   },
-  "optStartStep2": { "message": "이 페이지에는 가지고 있는 키가 나열됩니다. 새 계정이라면 아직 하나도 없습니다. <b>API 키 만들기</b>를 누릅니다." },
+  "optStartStep2": {
+    "message": "이 페이지에는 가지고 있는 키가 나열됩니다. 새 계정이라면 아직 하나도 없습니다. <b>API 키 만들기</b>를 누릅니다."
+  },
   "optStartStep3": {
     "message": "키에는 이름과, 키가 속할 Google Cloud 프로젝트가 필요합니다. 이름에는 <b>Interpretab</b>을 입력합니다. 그 아래에는, API를 한 번도 쓴 적 없는 계정이라면 고를 것이 없습니다. <b>No Cloud Projects Available</b>이라고 나옵니다."
   },
@@ -142,13 +251,24 @@
   "optStartStep9": {
     "message": "제어 페이지에서 언어를 고르고 <b>Start</b>를 누릅니다. 영상을 재생하면 그 언어로 목소리가 돌아옵니다. 번역된 목소리가 들리지 않으면, 영상에서 원래 쓰는 언어가 아닌 다른 언어를 골라 보세요."
   },
-  "optStartCreateApiKey": { "message": "API 키 만들기" },
-  "optStartCreateKey": { "message": "키 만들기" },
-  "optStartCreateProject": { "message": "프로젝트 만들기" },
-  "optStartCopyKey": { "message": "키 복사" },
-
-  "optSetupHeading": { "message": "시작하기 전에" },
-  "optRestHeading": { "message": "그 밖의 설정" },
+  "optStartCreateApiKey": {
+    "message": "API 키 만들기"
+  },
+  "optStartCreateKey": {
+    "message": "키 만들기"
+  },
+  "optStartCreateProject": {
+    "message": "프로젝트 만들기"
+  },
+  "optStartCopyKey": {
+    "message": "키 복사"
+  },
+  "optSetupHeading": {
+    "message": "시작하기 전에"
+  },
+  "optRestHeading": {
+    "message": "그 밖의 설정"
+  },
   "optRestNote": {
     "message": "모두 그대로 동작하는 값입니다. 맞지 않는 것이 있을 때 바꾸러 오세요."
   },
@@ -158,136 +278,294 @@
   "optMicTranslationNote": {
     "message": "<b>마이크</b> 번역에 관한 설정입니다. 다음에 Start를 누를 때부터 반영됩니다."
   },
-
-  "optKeyHeading": { "message": "Gemini API 키" },
+  "optKeyHeading": {
+    "message": "Gemini API 키"
+  },
   "optKeyNote": {
     "message": "Interpretab에는 자체 서버가 없습니다. 음성은 이 브라우저에서 Google로 곧장 가고, 그때 본인의 키를 씁니다. 무료 키는 <a1>Google AI Studio</a1>에서 받을 수 있습니다. 키를 다루는 방법과 무료·유료 요금제의 차이는 <a2>사용 안내서</a2>에 있습니다."
   },
-  "optKeyPlaceholder": { "message": "여기에 키를 붙여 넣으세요" },
-  "optShow": { "message": "표시" },
-  "optHide": { "message": "숨기기" },
-  "optKeyNone": { "message": "아직 키가 없습니다. 키 없이는 Interpretab을 시작할 수 없습니다." },
-  "optKeyStray": { "message": "저장했지만 키로 보이지 않습니다. 다른 것을 붙여 넣지 않았나요?" },
-  "optKeyShort": { "message": "저장했지만 너무 짧아 보입니다 — 키의 일부가 빠지지 않았나요?" },
-  "optKeySaved": { "message": "키를 이 브라우저에 저장했습니다." },
-
-  "optPlanHeading": { "message": "Gemini API 요금제" },
+  "optKeyPlaceholder": {
+    "message": "여기에 키를 붙여 넣으세요"
+  },
+  "optShow": {
+    "message": "표시"
+  },
+  "optHide": {
+    "message": "숨기기"
+  },
+  "optKeyNone": {
+    "message": "아직 키가 없습니다. 키 없이는 Interpretab을 시작할 수 없습니다."
+  },
+  "optKeyStray": {
+    "message": "저장했지만 키로 보이지 않습니다. 다른 것을 붙여 넣지 않았나요?"
+  },
+  "optKeyShort": {
+    "message": "저장했지만 너무 짧아 보입니다 — 키의 일부가 빠지지 않았나요?"
+  },
+  "optKeySaved": {
+    "message": "키를 이 브라우저에 저장했습니다."
+  },
+  "optPlanHeading": {
+    "message": "Gemini API 요금제"
+  },
   "optPlanNote": {
     "message": "이 키가 무료인지 유료인지는 Google이 알려 주지 않으니 여기서 알려 주세요. <b>Free</b>에서는 제어 페이지에 번역한 시간만 나오고, <b>Paid</b>에서는 그 비용의 추정치도 나옵니다."
   },
-  "optPlanFree": { "message": "Free — 이 키에는 Google이 요금을 청구하지 않습니다" },
-  "optPlanPaid": { "message": "Paid — 종량제, 내 계정에 청구됩니다" },
-
-  "optVoiceHeading": { "message": "음성" },
+  "optPlanFree": {
+    "message": "Free — 이 키에는 Google이 요금을 청구하지 않습니다"
+  },
+  "optPlanPaid": {
+    "message": "Paid — 종량제, 내 계정에 청구됩니다"
+  },
+  "optVoiceHeading": {
+    "message": "음성"
+  },
   "optVoiceNote": {
     "message": "번역을 읽어 주는 목소리입니다. 번역이 도는 중에는 바꿀 수 없으므로, 다음에 Start를 누를 때부터 새 목소리가 쓰입니다."
   },
-  "optVoiceOption": { "message": "{1} — {2}" },
-  "voiceBright": { "message": "밝음" },
-  "voiceUpbeat": { "message": "경쾌함" },
-  "voiceInformative": { "message": "차분한 설명조" },
-  "voiceFirm": { "message": "단단함" },
-  "voiceExcitable": { "message": "들뜸" },
-  "voiceYouthful": { "message": "앳됨" },
-  "voiceBreezy": { "message": "산뜻함" },
-  "voiceEasygoing": { "message": "느긋함" },
-  "voiceBreathy": { "message": "숨결 섞인" },
-  "voiceClear": { "message": "또렷함" },
-  "voiceSmooth": { "message": "매끄러움" },
-  "voiceGravelly": { "message": "거칠함" },
-  "voiceSoft": { "message": "부드러움" },
-  "voiceEven": { "message": "고른" },
-  "voiceMature": { "message": "중후함" },
-  "voiceForward": { "message": "적극적" },
-  "voiceFriendly": { "message": "친근함" },
-  "voiceCasual": { "message": "편안함" },
-  "voiceGentle": { "message": "온화함" },
-  "voiceLively": { "message": "활기참" },
-  "voiceKnowledgeable": { "message": "박식함" },
-  "voiceWarm": { "message": "따뜻함" },
-
-  "optSizeHeading": { "message": "자막 크기" },
+  "optVoiceOption": {
+    "message": "{1} — {2}"
+  },
+  "voiceBright": {
+    "message": "밝음"
+  },
+  "voiceUpbeat": {
+    "message": "경쾌함"
+  },
+  "voiceInformative": {
+    "message": "차분한 설명조"
+  },
+  "voiceFirm": {
+    "message": "단단함"
+  },
+  "voiceExcitable": {
+    "message": "들뜸"
+  },
+  "voiceYouthful": {
+    "message": "앳됨"
+  },
+  "voiceBreezy": {
+    "message": "산뜻함"
+  },
+  "voiceEasygoing": {
+    "message": "느긋함"
+  },
+  "voiceBreathy": {
+    "message": "숨결 섞인"
+  },
+  "voiceClear": {
+    "message": "또렷함"
+  },
+  "voiceSmooth": {
+    "message": "매끄러움"
+  },
+  "voiceGravelly": {
+    "message": "거칠함"
+  },
+  "voiceSoft": {
+    "message": "부드러움"
+  },
+  "voiceEven": {
+    "message": "고른"
+  },
+  "voiceMature": {
+    "message": "중후함"
+  },
+  "voiceForward": {
+    "message": "적극적"
+  },
+  "voiceFriendly": {
+    "message": "친근함"
+  },
+  "voiceCasual": {
+    "message": "편안함"
+  },
+  "voiceGentle": {
+    "message": "온화함"
+  },
+  "voiceLively": {
+    "message": "활기참"
+  },
+  "voiceKnowledgeable": {
+    "message": "박식함"
+  },
+  "voiceWarm": {
+    "message": "따뜻함"
+  },
+  "optSizeHeading": {
+    "message": "자막 크기"
+  },
   "optSizeNote": {
     "message": "페이지에 나오는 자막의 크기입니다."
   },
-  "optSizePx": { "message": "{1} px" },
-  "optSizePreview": { "message": "다람쥐 헌 쳇바퀴에 타고파 — The quick brown fox" },
-
-  "optMicHeading": { "message": "마이크 사용 권한" },
+  "optSizePx": {
+    "message": "{1} px"
+  },
+  "optSizePreview": {
+    "message": "다람쥐 헌 쳇바퀴에 타고파 — The quick brown fox"
+  },
+  "optMicHeading": {
+    "message": "마이크 사용 권한"
+  },
   "optMicNote": {
     "message": "내 목소리를 번역하려는 경우 처음 한 번만 필요합니다. 여기에서 허용한 마이크 권한은 Interpretab 전체에 적용됩니다."
   },
-  "optMicGrant": { "message": "마이크 허용" },
-  "optMicGranted": { "message": "허용되었습니다." },
-  "optMicNotGranted": { "message": "아직 허용하지 않았습니다." },
-  "optMicBlocked": { "message": "Chrome이 마이크를 막고 있습니다. Chrome의 마이크 설정을 열어 Interpretab을 차단 목록에서 빼고 다시 오세요." },
-  "optMicDenied": { "message": "Chrome이 마이크를 허용하지 않았습니다 ({1})." },
-
-  "optInputHeading": { "message": "오디오 입력" },
+  "optMicGrant": {
+    "message": "마이크 허용"
+  },
+  "optMicGranted": {
+    "message": "허용되었습니다."
+  },
+  "optMicNotGranted": {
+    "message": "아직 허용하지 않았습니다."
+  },
+  "optMicBlocked": {
+    "message": "Chrome이 마이크를 막고 있습니다. Chrome의 마이크 설정을 열어 Interpretab을 차단 목록에서 빼고 다시 오세요."
+  },
+  "optMicDenied": {
+    "message": "Chrome이 마이크를 허용하지 않았습니다 ({1})."
+  },
+  "optInputHeading": {
+    "message": "오디오 입력"
+  },
   "optInputNote": {
     "message": "<b>마이크</b> 번역이 어느 마이크를 들을지 정합니다. 시스템 기본값으로 두면 컴퓨터가 고르는데, 뽑아 둔 헤드셋이나 모니터처럼 말을 걸지 않는 기기가 골라지기도 합니다. 그래도 화면에는 아무 문제가 없어 보입니다. 패널은 초록색이 되고, 말을 해도 아무것도 번역되지 않습니다. 그럴 때 여기서 알맞은 마이크를 고르세요. 다음에 Start를 누를 때부터 적용됩니다."
   },
-  "optInputSystem": { "message": "시스템 기본값 — 컴퓨터가 지금 쓰고 있는 마이크" },
-  "optInputAnonymous": { "message": "마이크 {1}…" },
-  "optInputNone": { "message": "보이는 마이크가 없습니다." },
-  "optInputMissing": { "message": "그 마이크가 연결되어 있지 않아 시스템 기본값을 사용합니다." },
-  "optInputSaved": { "message": "저장했습니다. 다음 Start부터 적용됩니다." },
-  "optInputCleared": { "message": "저장했습니다. 시스템 기본 마이크를 사용합니다." },
-
-  "optOutputHeading": { "message": "오디오 출력" },
+  "optInputSystem": {
+    "message": "시스템 기본값 — 컴퓨터가 지금 쓰고 있는 마이크"
+  },
+  "optInputAnonymous": {
+    "message": "마이크 {1}…"
+  },
+  "optInputNone": {
+    "message": "보이는 마이크가 없습니다."
+  },
+  "optInputMissing": {
+    "message": "그 마이크가 연결되어 있지 않아 시스템 기본값을 사용합니다."
+  },
+  "optInputSaved": {
+    "message": "저장했습니다. 다음 Start부터 적용됩니다."
+  },
+  "optInputCleared": {
+    "message": "저장했습니다. 시스템 기본 마이크를 사용합니다."
+  },
+  "optOutputHeading": {
+    "message": "오디오 출력"
+  },
   "optOutputNote": {
     "message": "<b>마이크</b> 번역 음성을 어디로 낼지 정합니다. 탭 오디오 번역은 늘 평소 쓰는 스피커로 나옵니다. 그쪽은 본인이 들을 소리이기 때문입니다. 다음에 Start를 누를 때부터 적용됩니다."
   },
-  "optOutputSystem": { "message": "시스템 기본값 — 지금 쓰고 있는 스피커" },
-  "optOutputAnonymous": { "message": "출력 {1}…" },
-  "optOutputNone": { "message": "보이는 출력 장치가 없습니다." },
-  "optOutputMissing": { "message": "그 장치가 연결되어 있지 않아 스피커를 대신 사용합니다." },
+  "optOutputSystem": {
+    "message": "시스템 기본값 — 지금 쓰고 있는 스피커"
+  },
+  "optOutputAnonymous": {
+    "message": "출력 {1}…"
+  },
+  "optOutputNone": {
+    "message": "보이는 출력 장치가 없습니다."
+  },
+  "optOutputMissing": {
+    "message": "그 장치가 연결되어 있지 않아 스피커를 대신 사용합니다."
+  },
   "optOutputSaved": {
     "message": "저장했습니다. 다음에 Start를 누를 때부터 적용됩니다. 이 음성을 들려줄 앱에서도 그 기기를 듣도록 설정해 주세요."
   },
-  "optOutputCleared": { "message": "저장했습니다. 통역 음성은 스피커로 나옵니다." },
-
-  "optDeviceListFailed": { "message": "오디오 기기를 확인하지 못했습니다 ({1})." },
-  "optDeviceNamesHidden": { "message": "기기 이름을 보려면 위에서 마이크를 허용하세요." },
-  "optDeviceSavedMissing": { "message": "저장된 장치 — 지금은 연결되어 있지 않음" },
-
-  "optConfigHeading": { "message": "모델 업데이트 확인" },
-  "optConfigLabel": { "message": "새 모델 이름과 요금 확인" },
+  "optOutputCleared": {
+    "message": "저장했습니다. 통역 음성은 스피커로 나옵니다."
+  },
+  "optDeviceListFailed": {
+    "message": "오디오 기기를 확인하지 못했습니다 ({1})."
+  },
+  "optDeviceNamesHidden": {
+    "message": "기기 이름을 보려면 위에서 마이크를 허용하세요."
+  },
+  "optDeviceSavedMissing": {
+    "message": "저장된 장치 — 지금은 연결되어 있지 않음"
+  },
+  "optConfigHeading": {
+    "message": "모델 업데이트 확인"
+  },
+  "optConfigLabel": {
+    "message": "새 모델 이름과 요금 확인"
+  },
   "optConfigNote": {
     "message": "Google이 Gemini Live 모델을 종료할 때 주는 예고 기간은 몇 주로, 크롬 웹 스토어 검토 기간보다 짧습니다. 그래서 Interpretab은 하루에 몇 번, 자체 사이트에 있는 작은 <a1>설정 파일</a1>을 읽습니다. 담긴 것은 모델 이름, 요금, 그리고 이 버전이 아직 동작하는지 세 가지뿐입니다. 요청에는 아무것도 실리지 않습니다. API 키도, 사용량도, 사용자에 관한 정보도 보내지 않습니다. 끄면 Interpretab은 Google 외에는 어디에도 연결하지 않고 빌드 당시의 모델 목록을 그대로 씁니다. 업데이트 안내도 받지 못합니다."
   },
-
-  "optModelHeading": { "message": "사용할 모델" },
-  "optModelNote": { "message": "모든 세션은 Interpretab이 검증한 모델로 시작합니다. Google은 기존 모델을 끄기 몇 달 전에 다음 모델을 공개하는데, 여기서 그것을 먼저 써 볼 수 있습니다. 아직 이 확장 프로그램에서 한 번도 번역을 통과시키지 않은 모델이라 품질이 떨어지거나 연결이 안 될 수도 있습니다. 두 모드가 서로 다른 모델로 동작하므로 모드별로 정합니다. 다음에 Start를 누를 때부터 적용됩니다." },
-  "optModelSimul": { "message": "탭 오디오와 마이크의 동시통역 모드" },
-  "optModelConversation": { "message": "두 언어의 대화" },
-  "optModelAuto": { "message": "권장 — {1}" },
-  "optModelNew": { "message": "{1} — 신규" },
-  "optModelRetiring": { "message": "{1} — {2}까지" },
-  "optModelSaved": { "message": "저장했습니다. 다음에 Start를 누를 때부터 적용됩니다." },
-  "optModelReverted": { "message": "{1}은(는) 더 이상 목록에 없어서 이 모드는 권장 모델로 동작합니다." },
-
-  "optGlossaryHeading": { "message": "용어집" },
+  "optModelHeading": {
+    "message": "사용할 모델"
+  },
+  "optModelNote": {
+    "message": "모든 세션은 Interpretab이 검증한 모델로 시작합니다. Google은 기존 모델을 끄기 몇 달 전에 다음 모델을 공개하는데, 여기서 그것을 먼저 써 볼 수 있습니다. 아직 이 확장 프로그램에서 한 번도 번역을 통과시키지 않은 모델이라 품질이 떨어지거나 연결이 안 될 수도 있습니다. 두 모드가 서로 다른 모델로 동작하므로 모드별로 정합니다. 다음에 Start를 누를 때부터 적용됩니다."
+  },
+  "optModelSimul": {
+    "message": "탭 오디오와 마이크의 동시통역 모드"
+  },
+  "optModelConversation": {
+    "message": "두 언어의 대화"
+  },
+  "optModelAuto": {
+    "message": "권장 — {1}"
+  },
+  "optModelNew": {
+    "message": "{1} — 신규"
+  },
+  "optModelRetiring": {
+    "message": "{1} — {2}까지"
+  },
+  "optModelSaved": {
+    "message": "저장했습니다. 다음에 Start를 누를 때부터 적용됩니다."
+  },
+  "optModelReverted": {
+    "message": "{1}은(는) 더 이상 목록에 없어서 이 모드는 권장 모델로 동작합니다."
+  },
+  "optGlossaryHeading": {
+    "message": "용어집"
+  },
   "optGlossaryNote": {
     "message": "이렇게 읽고 이렇게 쓰라고 정해 두고 싶은 이름과 용어 — 제품명, 사람 이름, 전문 용어 — 의 목록입니다. 한 줄에 하나씩 <code>source,pronunciation,transcript</code> 형식으로 적습니다. 둘째 칸은 어떻게 읽을지, 생략할 수 있는 셋째 칸은 자막에 어떻게 쓸지입니다. 어느 모드에서 쓰이는지와 작성 방법은 <a1>사용 안내서</a1>에 있습니다."
   },
-  "optGlossaryReplace": { "message": "교체" },
-  "optGlossaryReset": { "message": "기본값으로 되돌리기" },
-  "optGlossaryPickFile": { "message": "먼저 .csv 파일을 선택하세요." },
-  "optGlossaryNotCsv": { "message": "파일 확장자는 .csv여야 합니다." },
-  "optGlossaryTooBig": { "message": "파일이 너무 큽니다. 한도는 {1}바이트입니다." },
-  "optGlossaryReplaced": { "message": "{1}개 항목으로 교체했습니다. 다음 Start부터 적용됩니다." },
-  "optGlossaryWasReset": { "message": "기본 항목 {1}개로 되돌렸습니다." },
-  "optGlossaryLoadFailed": { "message": "파일을 읽지 못했습니다: {1}" },
-  "optGlossaryEmpty": { "message": "용어집 항목이 없습니다." },
-  "optGlossaryColSource": { "message": "원어" },
-  "optGlossaryColPronunciation": { "message": "발음" },
-  "optGlossaryColTranscript": { "message": "자막 표기" },
-
+  "optGlossaryReplace": {
+    "message": "교체"
+  },
+  "optGlossaryReset": {
+    "message": "기본값으로 되돌리기"
+  },
+  "optGlossaryPickFile": {
+    "message": "먼저 .csv 파일을 선택하세요."
+  },
+  "optGlossaryNotCsv": {
+    "message": "파일 확장자는 .csv여야 합니다."
+  },
+  "optGlossaryTooBig": {
+    "message": "파일이 너무 큽니다. 한도는 {1}바이트입니다."
+  },
+  "optGlossaryReplaced": {
+    "message": "{1}개 항목으로 교체했습니다. 다음 Start부터 적용됩니다."
+  },
+  "optGlossaryWasReset": {
+    "message": "기본 항목 {1}개로 되돌렸습니다."
+  },
+  "optGlossaryLoadFailed": {
+    "message": "파일을 읽지 못했습니다: {1}"
+  },
+  "optGlossaryEmpty": {
+    "message": "용어집 항목이 없습니다."
+  },
+  "optGlossaryColSource": {
+    "message": "원어"
+  },
+  "optGlossaryColPronunciation": {
+    "message": "발음"
+  },
+  "optGlossaryColTranscript": {
+    "message": "자막 표기"
+  },
   "errNoKey": {
     "message": "아직 Gemini API 키가 없습니다. 옵션을 열고 aistudio.google.com/apikey에서 받은 키를 붙여 넣으세요."
   },
-  "errPreflightNoKey": { "message": "Gemini API 키가 없습니다. 옵션에서 추가하세요." },
+  "errPreflightNoKey": {
+    "message": "Gemini API 키가 없습니다. 옵션에서 추가하세요."
+  },
   "errKeyRejected": {
     "message": "Gemini가 그 API 키를 거부했습니다. 옵션 페이지에서 확인하거나 aistudio.google.com/apikey에서 새로 만드세요."
   },
@@ -306,23 +584,33 @@
   "errAlreadyRunningElsewhere": {
     "message": "Interpretab이 이미 다른 탭에서 실행 중이고, 한 번에 한 탭에서만 동작합니다. 먼저 Stop을 누르세요 — Stop 버튼은 어느 탭에서나 동작합니다."
   },
-  "errNoDirection": { "message": "먼저 탭 오디오나 마이크를 켜세요." },
-  "errNoTab": { "message": "소리를 들을 탭이 없습니다." },
+  "errNoDirection": {
+    "message": "먼저 탭 오디오나 마이크를 켜세요."
+  },
+  "errNoTab": {
+    "message": "소리를 들을 탭이 없습니다."
+  },
   "errClickIcon": {
     "message": "번역하려는 탭에서 툴바의 Interpretab 아이콘을 클릭한 다음 Start를 다시 누르세요. ({1})"
   },
-  "errNoStreamId": { "message": "Chrome이 이 탭의 소리를 넘겨주지 않았습니다. Start를 다시 누르세요." },
-  "errUnknownMessage": { "message": "Interpretab 안에서 문제가 생겼습니다 ({1})." },
+  "errNoStreamId": {
+    "message": "Chrome이 이 탭의 소리를 넘겨주지 않았습니다. Start를 다시 누르세요."
+  },
+  "errUnknownMessage": {
+    "message": "Interpretab 안에서 문제가 생겼습니다 ({1})."
+  },
   "errMicRefused": {
     "message": "Interpretab이 마이크를 쓸 허용을 받지 못했습니다. 옵션 페이지를 열어 마이크를 한 번 허용하고 다시 시도하세요."
   },
-
   "captionsChromePage": {
     "message": "Chrome 자체 페이지에는 자막을 넣을 수 없습니다. 웹사이트를 열고 그 페이지에서 툴바 아이콘을 클릭하세요."
   },
-  "captionsClickIcon": { "message": "그 페이지에서 툴바 아이콘을 클릭하세요." },
-  "captionsOpenSite": { "message": "웹사이트를 열고 그 페이지에서 툴바 아이콘을 클릭하세요." },
-
+  "captionsClickIcon": {
+    "message": "그 페이지에서 툴바 아이콘을 클릭하세요."
+  },
+  "captionsOpenSite": {
+    "message": "웹사이트를 열고 그 페이지에서 툴바 아이콘을 클릭하세요."
+  },
   "micNoSoundNamed": {
     "message": "Start를 누른 뒤로 마이크에 아무 소리도 오지 않았습니다. “{1}”을(를) 듣고 있습니다. 말하고 있는 쪽이 그것이 아니라면, 옵션의 오디오 입력에서 알맞은 것을 고르고 Start를 다시 누르세요."
   },
@@ -335,30 +623,67 @@
   "outputDeviceMissing": {
     "message": "옵션에서 선택한 오디오 출력을 사용할 수 없어 ({1}) 통역 음성이 스피커로 나오고 있습니다. 옵션에서 다른 장치를 고르세요."
   },
-  "callShimFailed": { "message": "이 페이지에 통역 마이크를 넘기지 못했습니다 ({1}). 이대로는 통화에 소리가 가지 않습니다. Meet 탭을 새로 고치고 Start를 다시 누르세요." },
-
-  "closeReasonGiven": { "message": "Gemini가 연결을 끊었습니다: {1}" },
+  "callShimFailed": {
+    "message": "이 페이지에 통역 마이크를 넘기지 못했습니다 ({1}). 이대로는 통화에 소리가 가지 않습니다. Meet 탭을 새로 고치고 Start를 다시 누르세요."
+  },
+  "closeReasonGiven": {
+    "message": "Gemini가 연결을 끊었습니다: {1}"
+  },
   "closeReasonOpaqueHint": {
     "message": "Gemini에 닿지 못했고, 브라우저는 그 이유를 듣지 못합니다. {1}"
   },
   "closeReasonOpaque": {
     "message": "Gemini에 닿지 못했고, 브라우저는 그 이유를 듣지 못합니다. 대개 키 문제입니다. 없거나, 거부되었거나, 한도를 넘었거나 — 한도는 무료 요금제가 먼저 닿습니다."
   },
-  "closeReasonCode": { "message": "Gemini가 연결을 끊었습니다 (코드 {1})." },
-  "closeBeforeReady": { "message": "세션이 준비되기 전에 닫혔습니다." },
+  "closeReasonCode": {
+    "message": "Gemini가 연결을 끊었습니다 (코드 {1})."
+  },
+  "closeBeforeReady": {
+    "message": "세션이 준비되기 전에 닫혔습니다."
+  },
   "hintKeyAccepted": {
     "message": "키 자체는 조금 전까지 잘 쓰였으니, 키가 아니라 Gemini나 네트워크 쪽 문제입니다."
   },
   "loopGaveUp": {
     "message": "{1} {2}번 잇달아 실패해서 Interpretab이 다시 시도하기를 그만두었습니다. 옵션 페이지에서 키를, Google AI Studio에서 남은 사용량을 확인하세요. 무료 요금제로 쓸 수 있는 양은 많지 않습니다. 다시 해 보려면 Start를 누르세요."
   },
-  "loopDropping": { "message": "Gemini와의 연결이 계속 끊깁니다." },
-
-  "glossaryBadLine": { "message": "{1}번째 줄은 “낱말, 읽는 법, (원한다면) 쓰는 법” 형식이어야 합니다." },
-  "glossaryMissingField": { "message": "{1}번째 줄에 낱말이나 읽는 법이 없습니다." },
-  "glossaryTooMany": { "message": "항목이 너무 많습니다 (최대 {1}개)." },
-  "optObsHeading": {"message": "OBS 자막 출력"},
-  "optObsLabel": {"message": "번역 자막을 OBS로 보내기"},
-  "optObsNote": {"message": "npm run obs로 로컬 중계를 시작한 후 OBS 브라우저 소스에 <code>127.0.0.1:8765</code>를 추가하세요. 번역문만 전송되며 음성은 이 브라우저에서 재생됩니다."},
-  "optObsError": {"message": "OBS 출력을 설정하지 못했습니다. 로컬 네트워크 권한을 확인하고 다시 시도하세요."}
+  "loopDropping": {
+    "message": "Gemini와의 연결이 계속 끊깁니다."
+  },
+  "glossaryBadLine": {
+    "message": "{1}번째 줄은 “낱말, 읽는 법, (원한다면) 쓰는 법” 형식이어야 합니다."
+  },
+  "glossaryMissingField": {
+    "message": "{1}번째 줄에 낱말이나 읽는 법이 없습니다."
+  },
+  "glossaryTooMany": {
+    "message": "항목이 너무 많습니다 (최대 {1}개)."
+  },
+  "optObsHeading": {
+    "message": "OBS 자막 출력"
+  },
+  "optObsLabel": {
+    "message": "번역 자막을 OBS로 보내기"
+  },
+  "optObsNote": {
+    "message": "npm run obs로 로컬 중계를 시작한 후 OBS 브라우저 소스에 <code>127.0.0.1:8765</code>를 추가하세요. 번역문만 전송되며 음성은 이 브라우저에서 재생됩니다."
+  },
+  "optObsError": {
+    "message": "OBS 출력을 설정하지 못했습니다. 로컬 네트워크 권한을 확인하고 다시 시도하세요."
+  },
+  "optExternalHeading": {
+    "message": "Local web app control"
+  },
+  "optExternalNote": {
+    "message": "Allow a local web app on <code>localhost</code> or <code>127.0.0.1</code> to control translation and receive live subtitles. Leave ports blank to allow any local port."
+  },
+  "optExternalLabel": {
+    "message": "Allow control from local web apps"
+  },
+  "optExternalPortsLabel": {
+    "message": "Allowed ports (comma-separated):"
+  },
+  "optExternalIdLabel": {
+    "message": "Extension ID:"
+  }
 }

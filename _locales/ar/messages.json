@@ -1,17 +1,31 @@
 {
-  "extName": { "message": "Interpretab" },
+  "extName": {
+    "message": "Interpretab"
+  },
   "extDescription": {
     "message": "استمع إلى أي علامة تبويب بلغتك، منطوقة ومصحوبة بترجمة نصية في الوقت الفعلي."
   },
-
-  "panelTitle": { "message": "Interpretab" },
-  "statusIdle": { "message": "في وضع الانتظار" },
-  "statusConnecting": { "message": "جارٍ الاتصال…" },
-  "statusConnected": { "message": "متصل" },
-  "statusReconnecting": { "message": "جارٍ إعادة الاتصال…" },
-  "statusStopped": { "message": "متوقف" },
-  "statusError": { "message": "خطأ" },
-
+  "panelTitle": {
+    "message": "Interpretab"
+  },
+  "statusIdle": {
+    "message": "في وضع الانتظار"
+  },
+  "statusConnecting": {
+    "message": "جارٍ الاتصال…"
+  },
+  "statusConnected": {
+    "message": "متصل"
+  },
+  "statusReconnecting": {
+    "message": "جارٍ إعادة الاتصال…"
+  },
+  "statusStopped": {
+    "message": "متوقف"
+  },
+  "statusError": {
+    "message": "خطأ"
+  },
   "panelStepKey": {
     "message": "يحتاج Interpretab إلى <b>مفتاح Gemini خاص بك</b> كي يترجم. احصل على واحد مجانًا من <a1>Google AI Studio</a1> ثم الصقه في <a2>الخيارات</a2>."
   },
@@ -27,47 +41,99 @@
   "panelRunningElsewhere": {
     "message": "‏Interpretab يعمل على علامة تبويب أخرى، وهو يعمل على علامة تبويب واحدة في كل مرة. عناصر التحكم موجودة في تلك العلامة — أما Stop فيعمل من هنا."
   },
-
-  "panelTabDirection": { "message": "<b>صوت علامة التبويب</b> — هذه العلامة، إلى لغتك" },
-  "panelInto": { "message": "إلى" },
-  "panelTabTargetTitle": { "message": "اللغة التي تريد سماعها بها" },
-  "panelSourceDetected": { "message": "— تُعرف اللغة الأصلية تلقائيًا" },
-  "panelDuckLevel": { "message": "مستوى ما يبقى من الصوت الأصلي" },
-  "panelPageSubtitles": { "message": "ترجمة نصية على الصفحة" },
-
-  "panelMicDirection": { "message": "<b>الميكروفون</b> — ما يُقال في الغرفة، مترجَمًا بصوت مسموع" },
-  "panelMicModeTitle": { "message": "كيف يُترجَم صوت الميكروفون" },
-  "panelMicModeSimul": { "message": "Simultaneous — أنت، أثناء حديثك" },
-  "panelMicModeConversation": { "message": "Two-way conversation — حوار بلغتين" },
-  "panelMicSourceTitle": { "message": "اللغة التي تتحدث بها" },
+  "panelTabDirection": {
+    "message": "<b>صوت علامة التبويب</b> — هذه العلامة، إلى لغتك"
+  },
+  "panelInto": {
+    "message": "إلى"
+  },
+  "panelTabTargetTitle": {
+    "message": "اللغة التي تريد سماعها بها"
+  },
+  "panelSourceDetected": {
+    "message": "— تُعرف اللغة الأصلية تلقائيًا"
+  },
+  "panelDuckLevel": {
+    "message": "مستوى ما يبقى من الصوت الأصلي"
+  },
+  "panelPageSubtitles": {
+    "message": "ترجمة نصية على الصفحة"
+  },
+  "panelMicDirection": {
+    "message": "<b>الميكروفون</b> — ما يُقال في الغرفة، مترجَمًا بصوت مسموع"
+  },
+  "panelMicModeTitle": {
+    "message": "كيف يُترجَم صوت الميكروفون"
+  },
+  "panelMicModeSimul": {
+    "message": "Simultaneous — أنت، أثناء حديثك"
+  },
+  "panelMicModeConversation": {
+    "message": "Two-way conversation — حوار بلغتين"
+  },
+  "panelMicSourceTitle": {
+    "message": "اللغة التي تتحدث بها"
+  },
   "panelMicNoteMuted": {
     "message": "الصوت المترجَم <b>مكتوم</b>. اضغط زر إلغاء الكتم لسماعه من السمّاعات."
   },
   "panelMicNoteConversation": {
     "message": "لشخصين يتشاركان ميكروفونًا واحدًا: يسمع إحدى لغتيكما فيتكلم بالأخرى، بصوت مسموع من <b>سمّاعاتك</b>، وهذا هو المقصود من هذا الوضع. أبعد الميكروفون عن السمّاعات وإلا سمع نفسه."
   },
-  "panelPrepPhones": { "message": "وصِّل سماعة رأس قبل أي شيء. هذا النصف يبدأ الترجمة وأنت ما زلت تتكلم، فلا يستطيع إغلاق الميكروفون وهو يتكلم: ومع سمّاعة خارجية يسمع صوته هو، فيبدأ بترجمته أيضًا." },
-  "panelPrepTheirs": { "message": "شغِّل <b>صوت علامة التبويب</b> واضبطه على <b>لغتك</b>. هذا هو النصف الذي يترجم ما يقوله الطرف الآخر." },
-  "panelPrepYours": { "message": "شغِّل <b>الميكروفون</b> واضبطه على <b>لغتهم</b>. هذا هو هذا النصف، الثانية من البطاقتين في الأعلى." },
-
-  "panelMicToCall": { "message": "أرسِل الترجمة إلى مكالمة Meet هذه" },
-  "panelMicToCallNote": { "message": "وما دام هذا مفعّلًا يذهب ذلك الصوت إلى المكالمة بدل الخروج من هذا الحاسوب، وتبقى ترجمته النصية متوقفة." },
-  "panelStepLinksLead": { "message": "للاستخدام، انظر: " },
-  "panelStepLinksPrep": { "message": "<a1>ما تفعله قبل المكالمة</a1>" },
-  "panelStepLinksAnd": { "message": " و" },
-  "panelStepLinksMeet": { "message": "<a1>ما العمل في Meet</a1>" },
-
-  "panelMeetJoin": { "message": "انضم إلى الاجتماع في علامة التبويب هذه." },
-  "panelMeetStart": { "message": "اضغط <b>Start</b>. لا يصل الميكروفون المترجم إلى Meet إلا مع بدء التشغيل، فلا جديد في قائمته قبل ذلك." },
-  "panelMeetPick": { "message": "في Meet افتح <b>الإعدادات ← الصوت</b> واختر <b>Interpretab (translated)</b> ميكروفونًا. وأثناء وجودك هناك أوقِف <b>Studio Sound</b>. ومع سمّاعة بلوتوث تأكّد أن Meet يشغّل الصوت عليها أيضًا." },
-  "panelMeetTalk": { "message": "تكلّم. يسمع الطرف الآخر الترجمة بعد نحو ثلاث ثوانٍ، وصوتك أنت ممزوج تحته بهدوء، فتسمعك المكالمة إلى جانب صوت الترجمة." },
-  "panelMeetNext": { "message": "التالي" },
-  "panelClose": { "message": "إغلاق" },
-
-  "panelStart": { "message": "Start" },
-  "panelStop": { "message": "Stop" },
-  "panelOptions": { "message": "الخيارات" },
-
+  "panelPrepPhones": {
+    "message": "وصِّل سماعة رأس قبل أي شيء. هذا النصف يبدأ الترجمة وأنت ما زلت تتكلم، فلا يستطيع إغلاق الميكروفون وهو يتكلم: ومع سمّاعة خارجية يسمع صوته هو، فيبدأ بترجمته أيضًا."
+  },
+  "panelPrepTheirs": {
+    "message": "شغِّل <b>صوت علامة التبويب</b> واضبطه على <b>لغتك</b>. هذا هو النصف الذي يترجم ما يقوله الطرف الآخر."
+  },
+  "panelPrepYours": {
+    "message": "شغِّل <b>الميكروفون</b> واضبطه على <b>لغتهم</b>. هذا هو هذا النصف، الثانية من البطاقتين في الأعلى."
+  },
+  "panelMicToCall": {
+    "message": "أرسِل الترجمة إلى مكالمة Meet هذه"
+  },
+  "panelMicToCallNote": {
+    "message": "وما دام هذا مفعّلًا يذهب ذلك الصوت إلى المكالمة بدل الخروج من هذا الحاسوب، وتبقى ترجمته النصية متوقفة."
+  },
+  "panelStepLinksLead": {
+    "message": "للاستخدام، انظر: "
+  },
+  "panelStepLinksPrep": {
+    "message": "<a1>ما تفعله قبل المكالمة</a1>"
+  },
+  "panelStepLinksAnd": {
+    "message": " و"
+  },
+  "panelStepLinksMeet": {
+    "message": "<a1>ما العمل في Meet</a1>"
+  },
+  "panelMeetJoin": {
+    "message": "انضم إلى الاجتماع في علامة التبويب هذه."
+  },
+  "panelMeetStart": {
+    "message": "اضغط <b>Start</b>. لا يصل الميكروفون المترجم إلى Meet إلا مع بدء التشغيل، فلا جديد في قائمته قبل ذلك."
+  },
+  "panelMeetPick": {
+    "message": "في Meet افتح <b>الإعدادات ← الصوت</b> واختر <b>Interpretab (translated)</b> ميكروفونًا. وأثناء وجودك هناك أوقِف <b>Studio Sound</b>. ومع سمّاعة بلوتوث تأكّد أن Meet يشغّل الصوت عليها أيضًا."
+  },
+  "panelMeetTalk": {
+    "message": "تكلّم. يسمع الطرف الآخر الترجمة بعد نحو ثلاث ثوانٍ، وصوتك أنت ممزوج تحته بهدوء، فتسمعك المكالمة إلى جانب صوت الترجمة."
+  },
+  "panelMeetNext": {
+    "message": "التالي"
+  },
+  "panelClose": {
+    "message": "إغلاق"
+  },
+  "panelStart": {
+    "message": "Start"
+  },
+  "panelStop": {
+    "message": "Stop"
+  },
+  "panelOptions": {
+    "message": "الخيارات"
+  },
   "panelCostNote": {
     "message": "تشغيلهما معًا يعني ترجمتين في وقت واحد، فتصير تكلفة Google نحو الضعف."
   },
@@ -86,41 +152,78 @@
   "panelUsageTipFree": {
     "message": "مفتاحك مضبوط على Free في صفحة الخيارات، وGoogle لا تحاسب على الخطة المجانية، فليس هناك مبلغ يُعرض. وإن كان في حساب Google الخاص بالمفتاح وسيلة دفع، فاضبط الخطة على Paid هناك، وسيقدّر هذا السطر تكلفة التشغيل."
   },
-  "durationSeconds": { "message": "{1} ث" },
-  "durationMinutes": { "message": "{1} د" },
-
-  "panelMuteMic": { "message": "كتم الميكروفون" },
-  "panelUnmuteMic": { "message": "إلغاء كتم الميكروفون" },
-  "panelMuteSound": { "message": "كتم الصوت المترجَم" },
-  "panelUnmuteSound": { "message": "إلغاء كتم الصوت المترجَم" },
-  "panelMuteOffElsewhere": { "message": "التشغيل جارٍ في علامة تبويب أخرى." },
-  "panelMuteOffMic": { "message": "الميكروفون مُطفأ." },
-  "panelMuteOffSound": { "message": "لم تُشغّل شيئًا بعد." },
-
-  "panelLangPopular": { "message": "الأكثر شيوعًا" },
-  "panelLangAll": { "message": "كل اللغات" },
-  "panelDirTab": { "message": "علامة التبويب" },
-  "panelDirMic": { "message": "الميكروفون" },
-  "panelHeard": { "message": "المسموع ({1})" },
-  "panelTranslated": { "message": "الترجمة ({1})" },
+  "durationSeconds": {
+    "message": "{1} ث"
+  },
+  "durationMinutes": {
+    "message": "{1} د"
+  },
+  "panelMuteMic": {
+    "message": "كتم الميكروفون"
+  },
+  "panelUnmuteMic": {
+    "message": "إلغاء كتم الميكروفون"
+  },
+  "panelMuteSound": {
+    "message": "كتم الصوت المترجَم"
+  },
+  "panelUnmuteSound": {
+    "message": "إلغاء كتم الصوت المترجَم"
+  },
+  "panelMuteOffElsewhere": {
+    "message": "التشغيل جارٍ في علامة تبويب أخرى."
+  },
+  "panelMuteOffMic": {
+    "message": "الميكروفون مُطفأ."
+  },
+  "panelMuteOffSound": {
+    "message": "لم تُشغّل شيئًا بعد."
+  },
+  "panelLangPopular": {
+    "message": "الأكثر شيوعًا"
+  },
+  "panelLangAll": {
+    "message": "كل اللغات"
+  },
+  "panelDirTab": {
+    "message": "علامة التبويب"
+  },
+  "panelDirMic": {
+    "message": "الميكروفون"
+  },
+  "panelHeard": {
+    "message": "المسموع ({1})"
+  },
+  "panelTranslated": {
+    "message": "الترجمة ({1})"
+  },
   "panelCaptionsUnavailable": {
     "message": "لا يمكن عرض ترجمة نصية على هذه الصفحة."
   },
-  "panelCaptionsStopped": { "message": "لم تعد الترجمة النصية تصل إلى هذه الصفحة." },
-
+  "panelCaptionsStopped": {
+    "message": "لم تعد الترجمة النصية تصل إلى هذه الصفحة."
+  },
   "updateRequiredTitle": {
     "message": "لم يعد هذا الإصدار من Interpretab قادرًا على الترجمة. حدّثه لتتابع."
   },
   "updateRequiredSteps": {
     "message": "يحدّث Chrome الإضافات من تلقاء نفسه خلال ساعات عادةً. ولفعل ذلك الآن: افتح <code>chrome://extensions</code>، وفعّل <b>وضع المطوّر</b>، ثم انقر <b>تحديث</b>."
   },
-  "updateRequiredMore": { "message": "ماذا حدث؟" },
-  "updateRequiredShort": { "message": "يحتاج Interpretab إلى تحديث قبل أن يترجم من جديد." },
-
-  "optTitle": { "message": "Interpretab — الخيارات" },
-  "optHeading": { "message": "خيارات Interpretab" },
-
-  "optStartHeading": { "message": "ابدأ في 5 دقائق" },
+  "updateRequiredMore": {
+    "message": "ماذا حدث؟"
+  },
+  "updateRequiredShort": {
+    "message": "يحتاج Interpretab إلى تحديث قبل أن يترجم من جديد."
+  },
+  "optTitle": {
+    "message": "Interpretab — الخيارات"
+  },
+  "optHeading": {
+    "message": "خيارات Interpretab"
+  },
+  "optStartHeading": {
+    "message": "ابدأ في 5 دقائق"
+  },
   "optStartStep1": {
     "message": "من يترجم هو Gemini من Google، وهو يحتاج مفتاح API خاصًا بك. الحصول عليه مجاني: افتح <a1>Google AI Studio</a1> وسجّل الدخول بحساب Google."
   },
@@ -148,13 +251,24 @@
   "optStartStep9": {
     "message": "اختر لغتك في صفحة التحكم واضغط <b>Start</b>. شغّل الفيديو: يعود الصوت بتلك اللغة. وإن لم تسمع أي ترجمة فاختر لغة غير التي يتحدث بها الفيديو أصلًا."
   },
-  "optStartCreateApiKey": { "message": "Create API key" },
-  "optStartCreateKey": { "message": "Create key" },
-  "optStartCreateProject": { "message": "Create project" },
-  "optStartCopyKey": { "message": "Copy key" },
-
-  "optSetupHeading": { "message": "قبل أن تبدأ" },
-  "optRestHeading": { "message": "كل ما عدا ذلك" },
+  "optStartCreateApiKey": {
+    "message": "Create API key"
+  },
+  "optStartCreateKey": {
+    "message": "Create key"
+  },
+  "optStartCreateProject": {
+    "message": "Create project"
+  },
+  "optStartCopyKey": {
+    "message": "Copy key"
+  },
+  "optSetupHeading": {
+    "message": "قبل أن تبدأ"
+  },
+  "optRestHeading": {
+    "message": "كل ما عدا ذلك"
+  },
   "optRestNote": {
     "message": "كل هذه مضبوطة على قيمة تعمل. عُد وغيّر واحدة منها إن تبيّن أنها لا تناسبك."
   },
@@ -164,95 +278,192 @@
   "optMicTranslationNote": {
     "message": "إعدادات اتجاه <b>الميكروفون</b>. أي تغيير يسري في المرة التالية التي تضغط فيها Start."
   },
-
-  "optKeyHeading": { "message": "مفتاح Gemini API" },
+  "optKeyHeading": {
+    "message": "مفتاح Gemini API"
+  },
   "optKeyNote": {
     "message": "ليس لـ Interpretab خادم خاص به: صوتك يذهب من هذا المتصفح إلى Google مباشرة، بمفتاحك أنت — واحصل على مفتاح مجاني من <a1>Google AI Studio</a1>. ويشرح <a2>دليل الاستخدام</a2> كيفية التعامل مع المفتاح والفرق بين الخطة المجانية والمدفوعة."
   },
-  "optKeyPlaceholder": { "message": "الصق مفتاحك هنا" },
-  "optShow": { "message": "إظهار" },
-  "optHide": { "message": "إخفاء" },
-  "optKeyNone": { "message": "لا مفتاح بعد. لا يستطيع Interpretab البدء بدونه." },
-  "optKeyStray": { "message": "حُفظ، لكنه لا يبدو مفتاحًا. هل لُصق شيء آخر؟" },
-  "optKeyShort": { "message": "حُفظ، لكنه يبدو قصيرًا أكثر من اللازم — هل نقص جزء من المفتاح؟" },
-  "optKeySaved": { "message": "حُفظ المفتاح في هذا المتصفح." },
-
-  "optPlanHeading": { "message": "خطة Gemini API" },
+  "optKeyPlaceholder": {
+    "message": "الصق مفتاحك هنا"
+  },
+  "optShow": {
+    "message": "إظهار"
+  },
+  "optHide": {
+    "message": "إخفاء"
+  },
+  "optKeyNone": {
+    "message": "لا مفتاح بعد. لا يستطيع Interpretab البدء بدونه."
+  },
+  "optKeyStray": {
+    "message": "حُفظ، لكنه لا يبدو مفتاحًا. هل لُصق شيء آخر؟"
+  },
+  "optKeyShort": {
+    "message": "حُفظ، لكنه يبدو قصيرًا أكثر من اللازم — هل نقص جزء من المفتاح؟"
+  },
+  "optKeySaved": {
+    "message": "حُفظ المفتاح في هذا المتصفح."
+  },
+  "optPlanHeading": {
+    "message": "خطة Gemini API"
+  },
   "optPlanNote": {
     "message": "لا تخبر Google برنامج Interpretab إن كان مفتاحك مجانيًا أم مدفوعًا، فأخبره أنت هنا. مع <b>Free</b> تعرض صفحة التحكم مدة الترجمة فقط، ومع <b>Paid</b> تقدّر كذلك ما كلّفته."
   },
-  "optPlanFree": { "message": "Free — لا تتقاضى Google شيئًا مقابل هذا المفتاح" },
-  "optPlanPaid": { "message": "Paid — الدفع حسب الاستخدام، على حسابك" },
-
-  "optVoiceHeading": { "message": "الصوت" },
+  "optPlanFree": {
+    "message": "Free — لا تتقاضى Google شيئًا مقابل هذا المفتاح"
+  },
+  "optPlanPaid": {
+    "message": "Paid — الدفع حسب الاستخدام، على حسابك"
+  },
+  "optVoiceHeading": {
+    "message": "الصوت"
+  },
   "optVoiceNote": {
     "message": "الصوت الذي تُنطق به الترجمة. لا يمكن تغييره أثناء ترجمة جارية، فيُستخدم الصوت الجديد في المرة التالية التي تضغط فيها Start."
   },
-  "optVoiceOption": { "message": "{1} — {2}" },
-  "voiceBright": { "message": "مشرق" },
-  "voiceUpbeat": { "message": "مرح" },
-  "voiceInformative": { "message": "إخباري" },
-  "voiceFirm": { "message": "حازم" },
-  "voiceExcitable": { "message": "متحمس" },
-  "voiceYouthful": { "message": "شبابي" },
-  "voiceBreezy": { "message": "خفيف" },
-  "voiceEasygoing": { "message": "مسترخٍ" },
-  "voiceBreathy": { "message": "هامس" },
-  "voiceClear": { "message": "واضح" },
-  "voiceSmooth": { "message": "سلس" },
-  "voiceGravelly": { "message": "أجش" },
-  "voiceSoft": { "message": "رقيق" },
-  "voiceEven": { "message": "متزن" },
-  "voiceMature": { "message": "ناضج" },
-  "voiceForward": { "message": "مباشر" },
-  "voiceFriendly": { "message": "ودود" },
-  "voiceCasual": { "message": "عفوي" },
-  "voiceGentle": { "message": "لطيف" },
-  "voiceLively": { "message": "نابض" },
-  "voiceKnowledgeable": { "message": "عليم" },
-  "voiceWarm": { "message": "دافئ" },
-
-  "optSizeHeading": { "message": "حجم الترجمة النصية" },
+  "optVoiceOption": {
+    "message": "{1} — {2}"
+  },
+  "voiceBright": {
+    "message": "مشرق"
+  },
+  "voiceUpbeat": {
+    "message": "مرح"
+  },
+  "voiceInformative": {
+    "message": "إخباري"
+  },
+  "voiceFirm": {
+    "message": "حازم"
+  },
+  "voiceExcitable": {
+    "message": "متحمس"
+  },
+  "voiceYouthful": {
+    "message": "شبابي"
+  },
+  "voiceBreezy": {
+    "message": "خفيف"
+  },
+  "voiceEasygoing": {
+    "message": "مسترخٍ"
+  },
+  "voiceBreathy": {
+    "message": "هامس"
+  },
+  "voiceClear": {
+    "message": "واضح"
+  },
+  "voiceSmooth": {
+    "message": "سلس"
+  },
+  "voiceGravelly": {
+    "message": "أجش"
+  },
+  "voiceSoft": {
+    "message": "رقيق"
+  },
+  "voiceEven": {
+    "message": "متزن"
+  },
+  "voiceMature": {
+    "message": "ناضج"
+  },
+  "voiceForward": {
+    "message": "مباشر"
+  },
+  "voiceFriendly": {
+    "message": "ودود"
+  },
+  "voiceCasual": {
+    "message": "عفوي"
+  },
+  "voiceGentle": {
+    "message": "لطيف"
+  },
+  "voiceLively": {
+    "message": "نابض"
+  },
+  "voiceKnowledgeable": {
+    "message": "عليم"
+  },
+  "voiceWarm": {
+    "message": "دافئ"
+  },
+  "optSizeHeading": {
+    "message": "حجم الترجمة النصية"
+  },
   "optSizeNote": {
     "message": "حجم الترجمة المعروضة على الصفحة."
   },
-  "optSizePx": { "message": "{1} px" },
-  "optSizePreview": { "message": "نص تجريبي للترجمة — The quick brown fox" },
-
-  "optMicHeading": { "message": "إذن الميكروفون" },
+  "optSizePx": {
+    "message": "{1} px"
+  },
+  "optSizePreview": {
+    "message": "نص تجريبي للترجمة — The quick brown fox"
+  },
+  "optMicHeading": {
+    "message": "إذن الميكروفون"
+  },
   "optMicNote": {
     "message": "مطلوب فقط لترجمة صوتك، وفي المرة الأولى فقط. يسري إذن الميكروفون الذي تمنحه هنا على Interpretab بالكامل."
   },
-  "optMicGrant": { "message": "السماح للميكروفون" },
-  "optMicGranted": { "message": "مسموح." },
-  "optMicNotGranted": { "message": "لم تسمح بعد." },
+  "optMicGrant": {
+    "message": "السماح للميكروفون"
+  },
+  "optMicGranted": {
+    "message": "مسموح."
+  },
+  "optMicNotGranted": {
+    "message": "لم تسمح بعد."
+  },
   "optMicBlocked": {
     "message": "يحجب Chrome الميكروفون. افتح إعدادات الميكروفون في Chrome، وأخرِج Interpretab من قائمة المحجوبين، ثم عُد إلى هنا."
   },
-  "optMicDenied": { "message": "لم يسمح Chrome بالميكروفون ({1})." },
-
-  "optInputHeading": { "message": "مدخل الصوت" },
+  "optMicDenied": {
+    "message": "لم يسمح Chrome بالميكروفون ({1})."
+  },
+  "optInputHeading": {
+    "message": "مدخل الصوت"
+  },
   "optInputNote": {
     "message": "أي ميكروفون يسمعه <b>الميكروفون</b>. إن تركته على إعداد النظام الافتراضي فحاسوبك هو من يختار — وقد يختار جهازًا لا تتكلم فيه أصلًا، كشاشة أو سمّاعة رأس نزعتها. ولا يبدو شيء خاطئًا حين يحدث ذلك: تخضرّ اللوحة، وتتكلم، ولا تُترجَم كلمة. فاختر الميكروفون الصحيح من هنا إن حدث. ويسري في المرة التالية التي تضغط فيها Start."
   },
   "optInputSystem": {
     "message": "افتراضي النظام — أيًّا كان الميكروفون الذي يستخدمه جهازك"
   },
-  "optInputAnonymous": { "message": "ميكروفون {1}…" },
-  "optInputNone": { "message": "لا تظهر أي ميكروفونات." },
+  "optInputAnonymous": {
+    "message": "ميكروفون {1}…"
+  },
+  "optInputNone": {
+    "message": "لا تظهر أي ميكروفونات."
+  },
   "optInputMissing": {
     "message": "هذا الميكروفون غير موصول، لذا سيُستخدم افتراضي النظام."
   },
-  "optInputSaved": { "message": "حُفظ. يسري عند ضغط Start في المرة التالية." },
-  "optInputCleared": { "message": "حُفظ. سيُستخدم ميكروفون النظام الافتراضي." },
-
-  "optOutputHeading": { "message": "مخرج الصوت" },
+  "optInputSaved": {
+    "message": "حُفظ. يسري عند ضغط Start في المرة التالية."
+  },
+  "optInputCleared": {
+    "message": "حُفظ. سيُستخدم ميكروفون النظام الافتراضي."
+  },
+  "optOutputHeading": {
+    "message": "مخرج الصوت"
+  },
   "optOutputNote": {
     "message": "من أين يخرج صوت <b>الميكروفون</b> المترجَم. أما صوت ترجمة التبويب فيخرج دائمًا من سمّاعاتك المعتادة، لأنه هو ما تسمعه أنت. ويسري في المرة التالية التي تضغط فيها Start."
   },
-  "optOutputSystem": { "message": "افتراضي النظام — مكبرات الصوت التي تستخدمها" },
-  "optOutputAnonymous": { "message": "مخرج {1}…" },
-  "optOutputNone": { "message": "لا تظهر أي أجهزة إخراج." },
+  "optOutputSystem": {
+    "message": "افتراضي النظام — مكبرات الصوت التي تستخدمها"
+  },
+  "optOutputAnonymous": {
+    "message": "مخرج {1}…"
+  },
+  "optOutputNone": {
+    "message": "لا تظهر أي أجهزة إخراج."
+  },
   "optOutputMissing": {
     "message": "هذا الجهاز غير موصول، لذا ستُستخدم مكبرات الصوت بدلًا منه."
   },
@@ -262,48 +473,93 @@
   "optOutputCleared": {
     "message": "حُفظ. سيصدر الصوت المترجَم من مكبرات الصوت."
   },
-
-  "optDeviceListFailed": { "message": "تعذّرت رؤية أجهزة الصوت لديك ({1})." },
+  "optDeviceListFailed": {
+    "message": "تعذّرت رؤية أجهزة الصوت لديك ({1})."
+  },
   "optDeviceNamesHidden": {
     "message": "اسمح للميكروفون بالأعلى لتظهر أسماء الأجهزة."
   },
-  "optDeviceSavedMissing": { "message": "جهاز محفوظ — غير موصول حاليًا" },
-
-  "optConfigHeading": { "message": "تحديثات النماذج" },
-  "optConfigLabel": { "message": "التحقّق من أسماء النماذج وأسعارها الجديدة" },
+  "optDeviceSavedMissing": {
+    "message": "جهاز محفوظ — غير موصول حاليًا"
+  },
+  "optConfigHeading": {
+    "message": "تحديثات النماذج"
+  },
+  "optConfigLabel": {
+    "message": "التحقّق من أسماء النماذج وأسعارها الجديدة"
+  },
   "optConfigNote": {
     "message": "تمهل Google بضعة أسابيع قبل إيقاف أي نموذج من نماذج Gemini Live، وهي مدة أقصر من مراجعة Chrome Web Store. لذلك يقرأ Interpretab بضع مرات في اليوم <a1>ملف إعدادات</a1> صغيرًا على موقعه هو: أسماء النماذج، وكم تكلّف، وهل ما زال هذا الإصدار يعمل. لا يُرسل مع الطلب شيء: لا المفتاح، ولا الاستخدام، ولا أي شيء عنك. أوقفه فلا يتصل Interpretab بغير Google، ويبقى على قائمة النماذج التي صدر بها، ولو كان الثمن ألّا يصلك إشعار التحديث."
   },
-
-  "optModelHeading": { "message": "أي نموذج يعمل" },
-  "optModelNote": { "message": "تبدأ كل جلسة بالنموذج الذي جُرِّب عليه Interpretab. تنشر Google النموذج التالي قبل أشهر من إيقاف السابق، ومن هنا يمكن أخذه مبكرًا: لم تمرّ عبره هنا أي ترجمة بعد، فقد يكون أسوأ، وقد يرفض الاتصال. لكل وضع على حدة، لأن الوضعين يعملان بنموذجين مختلفين. يسري في المرة التالية التي تضغط فيها Start." },
-  "optModelSimul": { "message": "صوت التبويب، ووضع الترجمة الفورية للميكروفون" },
-  "optModelConversation": { "message": "حوار بلغتين" },
-  "optModelAuto": { "message": "المُوصى به — {1}" },
-  "optModelNew": { "message": "{1} — جديد" },
-  "optModelRetiring": { "message": "{1} — حتى {2}" },
-  "optModelSaved": { "message": "حُفظ. يسري في المرة التالية التي تضغط فيها Start." },
-  "optModelReverted": { "message": "لم يعد {1} في القائمة، فهذا الوضع يعمل بالنموذج المُوصى به." },
-
-  "optGlossaryHeading": { "message": "قائمة المصطلحات" },
+  "optModelHeading": {
+    "message": "أي نموذج يعمل"
+  },
+  "optModelNote": {
+    "message": "تبدأ كل جلسة بالنموذج الذي جُرِّب عليه Interpretab. تنشر Google النموذج التالي قبل أشهر من إيقاف السابق، ومن هنا يمكن أخذه مبكرًا: لم تمرّ عبره هنا أي ترجمة بعد، فقد يكون أسوأ، وقد يرفض الاتصال. لكل وضع على حدة، لأن الوضعين يعملان بنموذجين مختلفين. يسري في المرة التالية التي تضغط فيها Start."
+  },
+  "optModelSimul": {
+    "message": "صوت التبويب، ووضع الترجمة الفورية للميكروفون"
+  },
+  "optModelConversation": {
+    "message": "حوار بلغتين"
+  },
+  "optModelAuto": {
+    "message": "المُوصى به — {1}"
+  },
+  "optModelNew": {
+    "message": "{1} — جديد"
+  },
+  "optModelRetiring": {
+    "message": "{1} — حتى {2}"
+  },
+  "optModelSaved": {
+    "message": "حُفظ. يسري في المرة التالية التي تضغط فيها Start."
+  },
+  "optModelReverted": {
+    "message": "لم يعد {1} في القائمة، فهذا الوضع يعمل بالنموذج المُوصى به."
+  },
+  "optGlossaryHeading": {
+    "message": "قائمة المصطلحات"
+  },
   "optGlossaryNote": {
     "message": "أسماء ومصطلحات تريدها أن تُنطق وتُكتب على نحو بعينه — منتجات وأشخاص ومفردات تخصصية. واحد في كل سطر، بالصيغة <code>source,pronunciation,transcript</code>: العمود الثاني كيف يُنطق، والثالث الاختياري كيف يُكتب في الترجمة المعروضة. وفي أي وضع تعمل وكيف تُكتب، ذلك في <a1>دليل الاستخدام</a1>."
   },
-  "optGlossaryReplace": { "message": "استبدال" },
-  "optGlossaryReset": { "message": "إعادة الضبط إلى الافتراضي" },
-  "optGlossaryPickFile": { "message": "اختر ملف ‎.csv‎ أولًا." },
-  "optGlossaryNotCsv": { "message": "يجب أن يكون امتداد الملف ‎.csv‎." },
-  "optGlossaryTooBig": { "message": "هذا الملف كبير جدًا — الحد {1} بايت." },
+  "optGlossaryReplace": {
+    "message": "استبدال"
+  },
+  "optGlossaryReset": {
+    "message": "إعادة الضبط إلى الافتراضي"
+  },
+  "optGlossaryPickFile": {
+    "message": "اختر ملف ‎.csv‎ أولًا."
+  },
+  "optGlossaryNotCsv": {
+    "message": "يجب أن يكون امتداد الملف ‎.csv‎."
+  },
+  "optGlossaryTooBig": {
+    "message": "هذا الملف كبير جدًا — الحد {1} بايت."
+  },
   "optGlossaryReplaced": {
     "message": "استُبدلت بـ {1} مدخلًا. تسري عند ضغط Start في المرة التالية."
   },
-  "optGlossaryWasReset": { "message": "أُعيد الضبط إلى {1} مدخلًا افتراضيًا." },
-  "optGlossaryLoadFailed": { "message": "تعذّرت قراءة هذا الملف: {1}" },
-  "optGlossaryEmpty": { "message": "لا توجد مدخلات في قائمة المصطلحات." },
-  "optGlossaryColSource": { "message": "المصدر" },
-  "optGlossaryColPronunciation": { "message": "النطق" },
-  "optGlossaryColTranscript": { "message": "نص الترجمة" },
-
+  "optGlossaryWasReset": {
+    "message": "أُعيد الضبط إلى {1} مدخلًا افتراضيًا."
+  },
+  "optGlossaryLoadFailed": {
+    "message": "تعذّرت قراءة هذا الملف: {1}"
+  },
+  "optGlossaryEmpty": {
+    "message": "لا توجد مدخلات في قائمة المصطلحات."
+  },
+  "optGlossaryColSource": {
+    "message": "المصدر"
+  },
+  "optGlossaryColPronunciation": {
+    "message": "النطق"
+  },
+  "optGlossaryColTranscript": {
+    "message": "نص الترجمة"
+  },
   "errNoKey": {
     "message": "لا يوجد مفتاح Gemini API بعد. افتح الخيارات والصق مفتاحًا من aistudio.google.com/apikey."
   },
@@ -328,25 +584,33 @@
   "errAlreadyRunningElsewhere": {
     "message": "‏Interpretab يعمل بالفعل على علامة تبويب أخرى، وهو يعمل على علامة تبويب واحدة في كل مرة. اضغط Stop أولًا — زر Stop يعمل من أي علامة تبويب."
   },
-  "errNoDirection": { "message": "شغّل أولًا صوت التبويب أو الميكروفون." },
-  "errNoTab": { "message": "لا توجد علامة تبويب للاستماع إليها." },
+  "errNoDirection": {
+    "message": "شغّل أولًا صوت التبويب أو الميكروفون."
+  },
+  "errNoTab": {
+    "message": "لا توجد علامة تبويب للاستماع إليها."
+  },
   "errClickIcon": {
     "message": "انقر أيقونة Interpretab في شريط الأدوات وأنت على علامة التبويب التي تريد ترجمتها، ثم اضغط Start مرة أخرى. ({1})"
   },
-  "errNoStreamId": { "message": "لم يسلّم Chrome صوت هذه العلامة. اضغط Start من جديد." },
-  "errUnknownMessage": { "message": "حدث خطأ داخل Interpretab ({1})." },
+  "errNoStreamId": {
+    "message": "لم يسلّم Chrome صوت هذه العلامة. اضغط Start من جديد."
+  },
+  "errUnknownMessage": {
+    "message": "حدث خطأ داخل Interpretab ({1})."
+  },
   "errMicRefused": {
     "message": "لم يحصل Interpretab على إذن استخدام الميكروفون. افتح صفحة الخيارات، واسمح للميكروفون مرة واحدة، ثم أعد المحاولة."
   },
-
   "captionsChromePage": {
     "message": "صفحات Chrome نفسها لا تقبلها. افتح موقعًا إلكترونيًا وانقر أيقونة شريط الأدوات هناك."
   },
-  "captionsClickIcon": { "message": "انقر أيقونة شريط الأدوات على تلك الصفحة." },
+  "captionsClickIcon": {
+    "message": "انقر أيقونة شريط الأدوات على تلك الصفحة."
+  },
   "captionsOpenSite": {
     "message": "افتح موقعًا إلكترونيًا وانقر أيقونة شريط الأدوات هناك."
   },
-
   "micNoSoundNamed": {
     "message": "لم يصل أي صوت إلى الميكروفون منذ أن ضغطت Start. إنه يُنصت إلى ”{1}“ — فإن لم يكن هذا ما تتكلم فيه، فاختر الصحيح من مدخل الصوت في الخيارات واضغط Start من جديد."
   },
@@ -359,32 +623,67 @@
   "outputDeviceMissing": {
     "message": "مخرج الصوت المختار في الخيارات غير متاح ({1})، لذا يخرج صوتك المترجَم من مكبرات الصوت. اختر مخرجًا آخر في الخيارات."
   },
-  "callShimFailed": { "message": "تعذّر تقديم ميكروفون الترجمة إلى هذه الصفحة ({1})، لذا لن تسمعه المكالمة. أعد تحميل علامة تبويب Meet ثم اضغط Start من جديد." },
-
-  "closeReasonGiven": { "message": "أغلق Gemini الاتصال: {1}" },
+  "callShimFailed": {
+    "message": "تعذّر تقديم ميكروفون الترجمة إلى هذه الصفحة ({1})، لذا لن تسمعه المكالمة. أعد تحميل علامة تبويب Meet ثم اضغط Start من جديد."
+  },
+  "closeReasonGiven": {
+    "message": "أغلق Gemini الاتصال: {1}"
+  },
   "closeReasonOpaqueHint": {
     "message": "تعذّر الوصول إلى Gemini، والمتصفح لا يُخبَر بالسبب أبدًا. {1}"
   },
   "closeReasonOpaque": {
     "message": "تعذّر الوصول إلى Gemini، والمتصفح لا يُخبَر بالسبب أبدًا. والسبب عادةً هو المفتاح: مفقود، أو مرفوض، أو تجاوز حدّه — والخطة المجانية أول من يبلغ ذلك الحد."
   },
-  "closeReasonCode": { "message": "أغلق Gemini الاتصال (الرمز {1})." },
-  "closeBeforeReady": { "message": "أُغلقت الجلسة قبل أن تصير جاهزة." },
+  "closeReasonCode": {
+    "message": "أغلق Gemini الاتصال (الرمز {1})."
+  },
+  "closeBeforeReady": {
+    "message": "أُغلقت الجلسة قبل أن تصير جاهزة."
+  },
   "hintKeyAccepted": {
     "message": "كان مفتاحك يعمل قبل قليل، فالمشكلة إذًا في Gemini أو في شبكتك لا في المفتاح."
   },
   "loopGaveUp": {
     "message": "{1} توقّف Interpretab عن المحاولة بعد {2} محاولات متتالية. تحقق من مفتاحك في صفحة الخيارات، ومن المتبقي لك في Google AI Studio — فالخطة المجانية لا تعطي كثيرًا. اضغط Start للمحاولة من جديد."
   },
-  "loopDropping": { "message": "الاتصال بـ Gemini ينقطع مرارًا وتكرارًا." },
-
+  "loopDropping": {
+    "message": "الاتصال بـ Gemini ينقطع مرارًا وتكرارًا."
+  },
   "glossaryBadLine": {
     "message": "ينبغي أن يكون السطر {1} هكذا: الكلمة، وكيف تُنطق، و— إن شئت — كيف تُكتب."
   },
-  "glossaryMissingField": { "message": "ينقص السطر {1} الكلمة أو طريقة نطقها." },
-  "glossaryTooMany": { "message": "عدد المدخلات كبير جدًا (الحد الأقصى {1})." },
-  "optObsHeading": {"message": "ترجمة OBS"},
-  "optObsLabel": {"message": "إرسال الترجمة إلى OBS"},
-  "optObsNote": {"message": "شغّل المرحّل المحلي باستخدام npm run obs، ثم أضف <code>127.0.0.1:8765</code> كمصدر متصفح في OBS. يُرسل النص المترجم فقط؛ ويُشغّل الصوت في هذا المتصفح."},
-  "optObsError": {"message": "تعذّر إعداد إخراج OBS. تحقّق من إذن الشبكة المحلية وحاول مجددًا."}
+  "glossaryMissingField": {
+    "message": "ينقص السطر {1} الكلمة أو طريقة نطقها."
+  },
+  "glossaryTooMany": {
+    "message": "عدد المدخلات كبير جدًا (الحد الأقصى {1})."
+  },
+  "optObsHeading": {
+    "message": "ترجمة OBS"
+  },
+  "optObsLabel": {
+    "message": "إرسال الترجمة إلى OBS"
+  },
+  "optObsNote": {
+    "message": "شغّل المرحّل المحلي باستخدام npm run obs، ثم أضف <code>127.0.0.1:8765</code> كمصدر متصفح في OBS. يُرسل النص المترجم فقط؛ ويُشغّل الصوت في هذا المتصفح."
+  },
+  "optObsError": {
+    "message": "تعذّر إعداد إخراج OBS. تحقّق من إذن الشبكة المحلية وحاول مجددًا."
+  },
+  "optExternalHeading": {
+    "message": "Local web app control"
+  },
+  "optExternalNote": {
+    "message": "Allow a local web app on <code>localhost</code> or <code>127.0.0.1</code> to control translation and receive live subtitles. Leave ports blank to allow any local port."
+  },
+  "optExternalLabel": {
+    "message": "Allow control from local web apps"
+  },
+  "optExternalPortsLabel": {
+    "message": "Allowed ports (comma-separated):"
+  },
+  "optExternalIdLabel": {
+    "message": "Extension ID:"
+  }
 }

@@ -1,17 +1,31 @@
 {
-  "extName": { "message": "Interpretab" },
+  "extName": {
+    "message": "Interpretab"
+  },
   "extDescription": {
     "message": "किसी भी टैब को अपनी भाषा में सुनें — रीयल टाइम में बोला हुआ और सबटाइटल के साथ।"
   },
-
-  "panelTitle": { "message": "Interpretab" },
-  "statusIdle": { "message": "निष्क्रिय" },
-  "statusConnecting": { "message": "जुड़ रहा है…" },
-  "statusConnected": { "message": "जुड़ गया" },
-  "statusReconnecting": { "message": "फिर से जुड़ रहा है…" },
-  "statusStopped": { "message": "रुका हुआ" },
-  "statusError": { "message": "त्रुटि" },
-
+  "panelTitle": {
+    "message": "Interpretab"
+  },
+  "statusIdle": {
+    "message": "निष्क्रिय"
+  },
+  "statusConnecting": {
+    "message": "जुड़ रहा है…"
+  },
+  "statusConnected": {
+    "message": "जुड़ गया"
+  },
+  "statusReconnecting": {
+    "message": "फिर से जुड़ रहा है…"
+  },
+  "statusStopped": {
+    "message": "रुका हुआ"
+  },
+  "statusError": {
+    "message": "त्रुटि"
+  },
   "panelStepKey": {
     "message": "अनुवाद के लिए Interpretab को <b>आपकी अपनी Gemini कुंजी</b> चाहिए। <a1>Google AI Studio</a1> से मुफ़्त में लीजिए और <a2>विकल्प</a2> में चिपका दीजिए।"
   },
@@ -27,47 +41,99 @@
   "panelRunningElsewhere": {
     "message": "Interpretab किसी दूसरे टैब पर चल रहा है, और यह एक बार में एक ही टैब पर चलता है। इसके नियंत्रण उसी टैब पर हैं — Stop यहाँ से भी काम करता है।"
   },
-
-  "panelTabDirection": { "message": "<b>टैब का ऑडियो</b> — यह टैब, आपकी भाषा में" },
-  "panelInto": { "message": "इस भाषा में" },
-  "panelTabTargetTitle": { "message": "वह भाषा जिसमें आप सुनना चाहते हैं" },
-  "panelSourceDetected": { "message": "— मूल भाषा अपने आप पहचान ली जाती है" },
-  "panelDuckLevel": { "message": "मूल आवाज़ कितनी बनी रहे" },
-  "panelPageSubtitles": { "message": "पेज पर सबटाइटल" },
-
-  "panelMicDirection": { "message": "<b>माइक्रोफ़ोन</b> — कमरे में जो कहा जाए, उसे बोलकर अनुवाद" },
-  "panelMicModeTitle": { "message": "आपके माइक्रोफ़ोन का अनुवाद किस तरह हो" },
-  "panelMicModeSimul": { "message": "Simultaneous — आप, बोलते-बोलते" },
-  "panelMicModeConversation": { "message": "Two-way conversation — दो भाषाओं की बातचीत" },
-  "panelMicSourceTitle": { "message": "जिस भाषा में आप बोलते हैं" },
+  "panelTabDirection": {
+    "message": "<b>टैब का ऑडियो</b> — यह टैब, आपकी भाषा में"
+  },
+  "panelInto": {
+    "message": "इस भाषा में"
+  },
+  "panelTabTargetTitle": {
+    "message": "वह भाषा जिसमें आप सुनना चाहते हैं"
+  },
+  "panelSourceDetected": {
+    "message": "— मूल भाषा अपने आप पहचान ली जाती है"
+  },
+  "panelDuckLevel": {
+    "message": "मूल आवाज़ कितनी बनी रहे"
+  },
+  "panelPageSubtitles": {
+    "message": "पेज पर सबटाइटल"
+  },
+  "panelMicDirection": {
+    "message": "<b>माइक्रोफ़ोन</b> — कमरे में जो कहा जाए, उसे बोलकर अनुवाद"
+  },
+  "panelMicModeTitle": {
+    "message": "आपके माइक्रोफ़ोन का अनुवाद किस तरह हो"
+  },
+  "panelMicModeSimul": {
+    "message": "Simultaneous — आप, बोलते-बोलते"
+  },
+  "panelMicModeConversation": {
+    "message": "Two-way conversation — दो भाषाओं की बातचीत"
+  },
+  "panelMicSourceTitle": {
+    "message": "जिस भाषा में आप बोलते हैं"
+  },
   "panelMicNoteMuted": {
     "message": "अनुवादित आवाज़ <b>म्यूट</b> है। स्पीकर पर सुनने के लिए अनम्यूट बटन दबाइए।"
   },
   "panelMicNoteConversation": {
     "message": "जब दो लोग एक ही माइक्रोफ़ोन साझा करें: आपकी दो भाषाओं में से जो सुनाई दे, यह दूसरी में <b>आपके स्पीकर</b> से बोलकर सुनाता है — इसी के लिए यह मोड है। माइक्रोफ़ोन को स्पीकर से दूर रखिए, वरना यह अपनी ही आवाज़ सुन लेगा।"
   },
-  "panelPrepPhones": { "message": "सबसे पहले हेडफ़ोन लगाएँ। यह आधा हिस्सा आपके बोलते-बोलते ही अनुवाद शुरू कर देता है, इसलिए बोलते समय आपका माइक्रोफ़ोन बंद नहीं कर सकता — स्पीकर पर यह अपनी ही आवाज़ सुनकर उसका भी अनुवाद करने लगता है।" },
-  "panelPrepTheirs": { "message": "<b>टैब का ऑडियो</b> चालू करें और उसे <b>अपनी</b> भाषा पर रखें। यही आधा हिस्सा सामने वाले की बात का अनुवाद करता है।" },
-  "panelPrepYours": { "message": "<b>माइक्रोफ़ोन</b> चालू करें और उसे <b>उनकी</b> भाषा पर रखें। यह वही आधा हिस्सा है — ऊपर के दो कार्ड में से दूसरा।" },
-
-  "panelMicToCall": { "message": "इस Meet कॉल में अनुवाद भेजें" },
-  "panelMicToCallNote": { "message": "जब तक यह चालू है, वह आवाज़ इस कंप्यूटर से नहीं निकलती, सीधे कॉल में जाती है, और उसके सबटाइटल भी बंद रहते हैं।" },
-  "panelStepLinksLead": { "message": "इस्तेमाल के लिए देखें: " },
-  "panelStepLinksPrep": { "message": "<a1>कॉल से पहले क्या करें</a1>" },
-  "panelStepLinksAnd": { "message": " और " },
-  "panelStepLinksMeet": { "message": "<a1>Meet में क्या करना है</a1>" },
-
-  "panelMeetJoin": { "message": "इसी टैब में मीटिंग जॉइन कीजिए।" },
-  "panelMeetStart": { "message": "<b>Start</b> दबाइए। अनुवाद वाला माइक्रोफ़ोन Meet को तभी मिलता है जब रन शुरू होता है, उससे पहले उसकी सूची में कुछ नया नहीं होगा।" },
-  "panelMeetPick": { "message": "Meet में <b>सेटिंग → ऑडियो</b> खोलकर माइक्रोफ़ोन में <b>Interpretab (translated)</b> चुनिए। वहीं <b>Studio Sound</b> बंद कर दीजिए। ब्लूटूथ हेडफ़ोन हों तो देख लीजिए कि Meet भी उन्हीं पर बज रहा है।" },
-  "panelMeetTalk": { "message": "बोलिए। लगभग तीन सेकंड बाद सामने वाले को अनुवाद सुनाई देता है, और आपकी अपनी आवाज़ भी नीचे धीमे से मिली रहती है, इसलिए कॉल में दुभाषिये के साथ आप भी सुनाई देते हैं।" },
-  "panelMeetNext": { "message": "आगे" },
-  "panelClose": { "message": "बंद करें" },
-
-  "panelStart": { "message": "Start" },
-  "panelStop": { "message": "Stop" },
-  "panelOptions": { "message": "विकल्प" },
-
+  "panelPrepPhones": {
+    "message": "सबसे पहले हेडफ़ोन लगाएँ। यह आधा हिस्सा आपके बोलते-बोलते ही अनुवाद शुरू कर देता है, इसलिए बोलते समय आपका माइक्रोफ़ोन बंद नहीं कर सकता — स्पीकर पर यह अपनी ही आवाज़ सुनकर उसका भी अनुवाद करने लगता है।"
+  },
+  "panelPrepTheirs": {
+    "message": "<b>टैब का ऑडियो</b> चालू करें और उसे <b>अपनी</b> भाषा पर रखें। यही आधा हिस्सा सामने वाले की बात का अनुवाद करता है।"
+  },
+  "panelPrepYours": {
+    "message": "<b>माइक्रोफ़ोन</b> चालू करें और उसे <b>उनकी</b> भाषा पर रखें। यह वही आधा हिस्सा है — ऊपर के दो कार्ड में से दूसरा।"
+  },
+  "panelMicToCall": {
+    "message": "इस Meet कॉल में अनुवाद भेजें"
+  },
+  "panelMicToCallNote": {
+    "message": "जब तक यह चालू है, वह आवाज़ इस कंप्यूटर से नहीं निकलती, सीधे कॉल में जाती है, और उसके सबटाइटल भी बंद रहते हैं।"
+  },
+  "panelStepLinksLead": {
+    "message": "इस्तेमाल के लिए देखें: "
+  },
+  "panelStepLinksPrep": {
+    "message": "<a1>कॉल से पहले क्या करें</a1>"
+  },
+  "panelStepLinksAnd": {
+    "message": " और "
+  },
+  "panelStepLinksMeet": {
+    "message": "<a1>Meet में क्या करना है</a1>"
+  },
+  "panelMeetJoin": {
+    "message": "इसी टैब में मीटिंग जॉइन कीजिए।"
+  },
+  "panelMeetStart": {
+    "message": "<b>Start</b> दबाइए। अनुवाद वाला माइक्रोफ़ोन Meet को तभी मिलता है जब रन शुरू होता है, उससे पहले उसकी सूची में कुछ नया नहीं होगा।"
+  },
+  "panelMeetPick": {
+    "message": "Meet में <b>सेटिंग → ऑडियो</b> खोलकर माइक्रोफ़ोन में <b>Interpretab (translated)</b> चुनिए। वहीं <b>Studio Sound</b> बंद कर दीजिए। ब्लूटूथ हेडफ़ोन हों तो देख लीजिए कि Meet भी उन्हीं पर बज रहा है।"
+  },
+  "panelMeetTalk": {
+    "message": "बोलिए। लगभग तीन सेकंड बाद सामने वाले को अनुवाद सुनाई देता है, और आपकी अपनी आवाज़ भी नीचे धीमे से मिली रहती है, इसलिए कॉल में दुभाषिये के साथ आप भी सुनाई देते हैं।"
+  },
+  "panelMeetNext": {
+    "message": "आगे"
+  },
+  "panelClose": {
+    "message": "बंद करें"
+  },
+  "panelStart": {
+    "message": "Start"
+  },
+  "panelStop": {
+    "message": "Stop"
+  },
+  "panelOptions": {
+    "message": "विकल्प"
+  },
   "panelCostNote": {
     "message": "दोनों एक साथ चलाने का मतलब है दो अनुवाद एक साथ, तो Google का शुल्क भी लगभग दुगना।"
   },
@@ -86,39 +152,78 @@
   "panelUsageTipFree": {
     "message": "विकल्प पृष्ठ पर आपकी कुंजी Free पर लगी है, और मुफ़्त योजना में Google कुछ नहीं लेता, इसलिए दिखाने को कोई राशि नहीं है। अगर कुंजी वाले Google खाते में भुगतान का तरीक़ा जुड़ा है, तो वहाँ योजना Paid कर दीजिए — यह पंक्ति ख़र्च का अनुमान दिखाने लगेगी।"
   },
-  "durationSeconds": { "message": "{1} से." },
-  "durationMinutes": { "message": "{1} मि." },
-
-  "panelMuteMic": { "message": "माइक्रोफ़ोन म्यूट करें" },
-  "panelUnmuteMic": { "message": "माइक्रोफ़ोन अनम्यूट करें" },
-  "panelMuteSound": { "message": "अनुवाद की आवाज़ म्यूट करें" },
-  "panelUnmuteSound": { "message": "अनुवाद की आवाज़ अनम्यूट करें" },
-  "panelMuteOffElsewhere": { "message": "रन किसी दूसरे टैब पर है।" },
-  "panelMuteOffMic": { "message": "माइक्रोफ़ोन बंद है।" },
-  "panelMuteOffSound": { "message": "अभी कुछ भी चालू नहीं है।" },
-
-  "panelLangPopular": { "message": "प्रचलित" },
-  "panelLangAll": { "message": "सभी भाषाएँ" },
-  "panelDirTab": { "message": "टैब" },
-  "panelDirMic": { "message": "माइक" },
-  "panelHeard": { "message": "सुना गया ({1})" },
-  "panelTranslated": { "message": "अनुवाद ({1})" },
-  "panelCaptionsUnavailable": { "message": "इस पेज पर सबटाइटल नहीं दिखाए जा सकते।" },
-  "panelCaptionsStopped": { "message": "सबटाइटल अब इस पेज तक नहीं पहुँच रहे।" },
-
+  "durationSeconds": {
+    "message": "{1} से."
+  },
+  "durationMinutes": {
+    "message": "{1} मि."
+  },
+  "panelMuteMic": {
+    "message": "माइक्रोफ़ोन म्यूट करें"
+  },
+  "panelUnmuteMic": {
+    "message": "माइक्रोफ़ोन अनम्यूट करें"
+  },
+  "panelMuteSound": {
+    "message": "अनुवाद की आवाज़ म्यूट करें"
+  },
+  "panelUnmuteSound": {
+    "message": "अनुवाद की आवाज़ अनम्यूट करें"
+  },
+  "panelMuteOffElsewhere": {
+    "message": "रन किसी दूसरे टैब पर है।"
+  },
+  "panelMuteOffMic": {
+    "message": "माइक्रोफ़ोन बंद है।"
+  },
+  "panelMuteOffSound": {
+    "message": "अभी कुछ भी चालू नहीं है।"
+  },
+  "panelLangPopular": {
+    "message": "प्रचलित"
+  },
+  "panelLangAll": {
+    "message": "सभी भाषाएँ"
+  },
+  "panelDirTab": {
+    "message": "टैब"
+  },
+  "panelDirMic": {
+    "message": "माइक"
+  },
+  "panelHeard": {
+    "message": "सुना गया ({1})"
+  },
+  "panelTranslated": {
+    "message": "अनुवाद ({1})"
+  },
+  "panelCaptionsUnavailable": {
+    "message": "इस पेज पर सबटाइटल नहीं दिखाए जा सकते।"
+  },
+  "panelCaptionsStopped": {
+    "message": "सबटाइटल अब इस पेज तक नहीं पहुँच रहे।"
+  },
   "updateRequiredTitle": {
     "message": "Interpretab का यह वर्शन अब अनुवाद नहीं कर सकता। आगे चलाने के लिए इसे अपडेट करें।"
   },
   "updateRequiredSteps": {
     "message": "Chrome आम तौर पर कुछ ही घंटों में एक्सटेंशन खुद अपडेट कर देता है। अभी करना हो तो: <code>chrome://extensions</code> खोलें, <b>डेवलपर मोड</b> चालू करें, फिर <b>अपडेट</b> पर क्लिक करें।"
   },
-  "updateRequiredMore": { "message": "हुआ क्या?" },
-  "updateRequiredShort": { "message": "फिर से अनुवाद करने के लिए Interpretab को अपडेट करना होगा।" },
-
-  "optTitle": { "message": "Interpretab — विकल्प" },
-  "optHeading": { "message": "Interpretab के विकल्प" },
-
-  "optStartHeading": { "message": "5 मिनट में शुरू करें" },
+  "updateRequiredMore": {
+    "message": "हुआ क्या?"
+  },
+  "updateRequiredShort": {
+    "message": "फिर से अनुवाद करने के लिए Interpretab को अपडेट करना होगा।"
+  },
+  "optTitle": {
+    "message": "Interpretab — विकल्प"
+  },
+  "optHeading": {
+    "message": "Interpretab के विकल्प"
+  },
+  "optStartHeading": {
+    "message": "5 मिनट में शुरू करें"
+  },
   "optStartStep1": {
     "message": "अनुवाद Google का Gemini करता है, और Gemini को आपकी अपनी API कुंजी चाहिए। कुंजी लेना मुफ़्त है: <a1>Google AI Studio</a1> खोलें और किसी Google खाते से साइन इन करें।"
   },
@@ -146,13 +251,24 @@
   "optStartStep9": {
     "message": "कंट्रोल पेज में अपनी भाषा चुनें और <b>Start</b> दबाएँ। वीडियो चलाएँ — आवाज़ उसी भाषा में लौटती है। अनुवाद सुनाई न दे तो वीडियो जिस भाषा में है, उससे अलग कोई भाषा चुनें।"
   },
-  "optStartCreateApiKey": { "message": "Create API key" },
-  "optStartCreateKey": { "message": "Create key" },
-  "optStartCreateProject": { "message": "Create project" },
-  "optStartCopyKey": { "message": "Copy key" },
-
-  "optSetupHeading": { "message": "शुरू करने से पहले" },
-  "optRestHeading": { "message": "बाकी सब" },
+  "optStartCreateApiKey": {
+    "message": "Create API key"
+  },
+  "optStartCreateKey": {
+    "message": "Create key"
+  },
+  "optStartCreateProject": {
+    "message": "Create project"
+  },
+  "optStartCopyKey": {
+    "message": "Copy key"
+  },
+  "optSetupHeading": {
+    "message": "शुरू करने से पहले"
+  },
+  "optRestHeading": {
+    "message": "बाकी सब"
+  },
   "optRestNote": {
     "message": "ये सब पहले से ऐसे मान पर हैं जो काम करता है। कोई ठीक न बैठे, तभी उसे बदलने आइए।"
   },
@@ -162,138 +278,294 @@
   "optMicTranslationNote": {
     "message": "<b>माइक्रोफ़ोन</b> दिशा की सेटिंग। बदलाव अगली बार Start दबाने पर लागू होता है।"
   },
-
-  "optKeyHeading": { "message": "Gemini API कुंजी" },
+  "optKeyHeading": {
+    "message": "Gemini API कुंजी"
+  },
   "optKeyNote": {
     "message": "Interpretab का अपना कोई सर्वर नहीं है: आपकी आवाज़ इसी ब्राउज़र से सीधे Google तक जाती है, आपकी अपनी कुंजी के साथ — मुफ़्त कुंजी <a1>Google AI Studio</a1> से मिल जाती है। कुंजी को कैसे संभालें और मुफ़्त तथा सशुल्क योजना में क्या फ़र्क़ है, यह <a2>उपयोग गाइड</a2> में है।"
   },
-  "optKeyPlaceholder": { "message": "अपनी कुंजी यहाँ चिपकाएँ" },
-  "optShow": { "message": "दिखाएँ" },
-  "optHide": { "message": "छिपाएँ" },
-  "optKeyNone": { "message": "अभी कोई कुंजी नहीं है। इसके बिना Interpretab शुरू नहीं हो सकता।" },
-  "optKeyStray": { "message": "सहेज लिया, पर यह कुंजी नहीं लगती। कहीं कुछ और तो नहीं चिपक गया?" },
-  "optKeyShort": { "message": "सहेज लिया, पर यह बहुत छोटा लगता है — कुंजी का कुछ हिस्सा छूट तो नहीं गया?" },
-  "optKeySaved": { "message": "कुंजी इस ब्राउज़र में सहेज ली गई।" },
-
-  "optPlanHeading": { "message": "Gemini API प्लान" },
+  "optKeyPlaceholder": {
+    "message": "अपनी कुंजी यहाँ चिपकाएँ"
+  },
+  "optShow": {
+    "message": "दिखाएँ"
+  },
+  "optHide": {
+    "message": "छिपाएँ"
+  },
+  "optKeyNone": {
+    "message": "अभी कोई कुंजी नहीं है। इसके बिना Interpretab शुरू नहीं हो सकता।"
+  },
+  "optKeyStray": {
+    "message": "सहेज लिया, पर यह कुंजी नहीं लगती। कहीं कुछ और तो नहीं चिपक गया?"
+  },
+  "optKeyShort": {
+    "message": "सहेज लिया, पर यह बहुत छोटा लगता है — कुंजी का कुछ हिस्सा छूट तो नहीं गया?"
+  },
+  "optKeySaved": {
+    "message": "कुंजी इस ब्राउज़र में सहेज ली गई।"
+  },
+  "optPlanHeading": {
+    "message": "Gemini API प्लान"
+  },
   "optPlanNote": {
     "message": "आपकी कुंजी मुफ़्त है या सशुल्क, यह Google, Interpretab को नहीं बताता — इसलिए आप बता दीजिए। <b>Free</b> पर कंट्रोल पेज सिर्फ़ यह दिखाता है कि आप कितनी देर से अनुवाद कर रहे हैं; <b>Paid</b> पर उसका अनुमानित ख़र्च भी दिखाता है।"
   },
-  "optPlanFree": { "message": "Free — इस कुंजी के लिए Google कुछ नहीं लेता" },
-  "optPlanPaid": { "message": "Paid — जितना उपयोग उतना भुगतान, आपके खाते पर" },
-
-  "optVoiceHeading": { "message": "आवाज़" },
+  "optPlanFree": {
+    "message": "Free — इस कुंजी के लिए Google कुछ नहीं लेता"
+  },
+  "optPlanPaid": {
+    "message": "Paid — जितना उपयोग उतना भुगतान, आपके खाते पर"
+  },
+  "optVoiceHeading": {
+    "message": "आवाज़"
+  },
   "optVoiceNote": {
     "message": "अनुवाद किस आवाज़ में बोला जाए। अनुवाद चलते समय इसे बदला नहीं जा सकता, इसलिए नई आवाज़ अगली बार Start दबाने पर लगेगी।"
   },
-  "optVoiceOption": { "message": "{1} — {2}" },
-  "voiceBright": { "message": "चमकीली" },
-  "voiceUpbeat": { "message": "उत्साही" },
-  "voiceInformative": { "message": "सूचनात्मक" },
-  "voiceFirm": { "message": "दृढ़" },
-  "voiceExcitable": { "message": "जोशीली" },
-  "voiceYouthful": { "message": "युवा" },
-  "voiceBreezy": { "message": "हल्की-फुल्की" },
-  "voiceEasygoing": { "message": "सहज" },
-  "voiceBreathy": { "message": "फुसफुसाती" },
-  "voiceClear": { "message": "स्पष्ट" },
-  "voiceSmooth": { "message": "मुलायम" },
-  "voiceGravelly": { "message": "खरखराती" },
-  "voiceSoft": { "message": "कोमल" },
-  "voiceEven": { "message": "एकसार" },
-  "voiceMature": { "message": "परिपक्व" },
-  "voiceForward": { "message": "बेबाक" },
-  "voiceFriendly": { "message": "मित्रवत" },
-  "voiceCasual": { "message": "बेतकल्लुफ़" },
-  "voiceGentle": { "message": "शालीन" },
-  "voiceLively": { "message": "जीवंत" },
-  "voiceKnowledgeable": { "message": "जानकार" },
-  "voiceWarm": { "message": "आत्मीय" },
-
-  "optSizeHeading": { "message": "सबटाइटल का आकार" },
+  "optVoiceOption": {
+    "message": "{1} — {2}"
+  },
+  "voiceBright": {
+    "message": "चमकीली"
+  },
+  "voiceUpbeat": {
+    "message": "उत्साही"
+  },
+  "voiceInformative": {
+    "message": "सूचनात्मक"
+  },
+  "voiceFirm": {
+    "message": "दृढ़"
+  },
+  "voiceExcitable": {
+    "message": "जोशीली"
+  },
+  "voiceYouthful": {
+    "message": "युवा"
+  },
+  "voiceBreezy": {
+    "message": "हल्की-फुल्की"
+  },
+  "voiceEasygoing": {
+    "message": "सहज"
+  },
+  "voiceBreathy": {
+    "message": "फुसफुसाती"
+  },
+  "voiceClear": {
+    "message": "स्पष्ट"
+  },
+  "voiceSmooth": {
+    "message": "मुलायम"
+  },
+  "voiceGravelly": {
+    "message": "खरखराती"
+  },
+  "voiceSoft": {
+    "message": "कोमल"
+  },
+  "voiceEven": {
+    "message": "एकसार"
+  },
+  "voiceMature": {
+    "message": "परिपक्व"
+  },
+  "voiceForward": {
+    "message": "बेबाक"
+  },
+  "voiceFriendly": {
+    "message": "मित्रवत"
+  },
+  "voiceCasual": {
+    "message": "बेतकल्लुफ़"
+  },
+  "voiceGentle": {
+    "message": "शालीन"
+  },
+  "voiceLively": {
+    "message": "जीवंत"
+  },
+  "voiceKnowledgeable": {
+    "message": "जानकार"
+  },
+  "voiceWarm": {
+    "message": "आत्मीय"
+  },
+  "optSizeHeading": {
+    "message": "सबटाइटल का आकार"
+  },
   "optSizeNote": {
     "message": "पृष्ठ पर उपशीर्षक कितने बड़े हों।"
   },
-  "optSizePx": { "message": "{1} px" },
-  "optSizePreview": { "message": "तेज़ भूरी लोमड़ी — The quick brown fox" },
-
-  "optMicHeading": { "message": "माइक्रोफ़ोन की अनुमति" },
+  "optSizePx": {
+    "message": "{1} px"
+  },
+  "optSizePreview": {
+    "message": "तेज़ भूरी लोमड़ी — The quick brown fox"
+  },
+  "optMicHeading": {
+    "message": "माइक्रोफ़ोन की अनुमति"
+  },
   "optMicNote": {
     "message": "अपनी आवाज़ का अनुवाद करने के लिए केवल पहली बार इसकी ज़रूरत है। यहाँ दी गई माइक्रोफ़ोन की अनुमति पूरे Interpretab पर लागू होती है।"
   },
-  "optMicGrant": { "message": "माइक्रोफ़ोन की अनुमति दें" },
-  "optMicGranted": { "message": "अनुमति मिल गई।" },
-  "optMicNotGranted": { "message": "अभी अनुमति नहीं दी गई।" },
+  "optMicGrant": {
+    "message": "माइक्रोफ़ोन की अनुमति दें"
+  },
+  "optMicGranted": {
+    "message": "अनुमति मिल गई।"
+  },
+  "optMicNotGranted": {
+    "message": "अभी अनुमति नहीं दी गई।"
+  },
   "optMicBlocked": {
     "message": "Chrome माइक्रोफ़ोन रोक रहा है। Chrome की माइक्रोफ़ोन सेटिंग खोलिए, Interpretab को रोकी गई सूची से हटाइए, और यहाँ लौट आइए।"
   },
-  "optMicDenied": { "message": "Chrome ने माइक्रोफ़ोन की अनुमति नहीं दी ({1})।" },
-
-  "optInputHeading": { "message": "ऑडियो इनपुट" },
+  "optMicDenied": {
+    "message": "Chrome ने माइक्रोफ़ोन की अनुमति नहीं दी ({1})।"
+  },
+  "optInputHeading": {
+    "message": "ऑडियो इनपुट"
+  },
   "optInputNote": {
     "message": "<b>माइक्रोफ़ोन</b> किस माइक्रोफ़ोन को सुने। सिस्टम डिफ़ॉल्ट पर छोड़ने पर आपका कंप्यूटर चुनता है — और कभी-कभी वही चुन लेता है जिसमें आप कभी बोलते ही नहीं, जैसे कोई मॉनिटर या निकाला हुआ हेडसेट। ऐसा होने पर पर्दे पर कुछ ग़लत नहीं लगता: पैनल हरा हो जाता है, आप बोलते हैं, और कुछ भी अनुवाद नहीं होता। ऐसा हो तो सही माइक्रोफ़ोन यहीं चुन लीजिए। अगली बार Start दबाने पर लागू होगा।"
   },
-  "optInputSystem": { "message": "सिस्टम डिफ़ॉल्ट — जो भी माइक्रोफ़ोन आपका कंप्यूटर इस्तेमाल कर रहा हो" },
-  "optInputAnonymous": { "message": "माइक्रोफ़ोन {1}…" },
-  "optInputNone": { "message": "कोई माइक्रोफ़ोन दिख नहीं रहा।" },
-  "optInputMissing": { "message": "वह माइक्रोफ़ोन जुड़ा हुआ नहीं है, इसलिए सिस्टम डिफ़ॉल्ट इस्तेमाल होगा।" },
-  "optInputSaved": { "message": "सहेज लिया। अगली बार Start दबाने पर लागू होगा।" },
-  "optInputCleared": { "message": "सहेज लिया। सिस्टम का डिफ़ॉल्ट माइक्रोफ़ोन इस्तेमाल होगा।" },
-
-  "optOutputHeading": { "message": "ऑडियो आउटपुट" },
+  "optInputSystem": {
+    "message": "सिस्टम डिफ़ॉल्ट — जो भी माइक्रोफ़ोन आपका कंप्यूटर इस्तेमाल कर रहा हो"
+  },
+  "optInputAnonymous": {
+    "message": "माइक्रोफ़ोन {1}…"
+  },
+  "optInputNone": {
+    "message": "कोई माइक्रोफ़ोन दिख नहीं रहा।"
+  },
+  "optInputMissing": {
+    "message": "वह माइक्रोफ़ोन जुड़ा हुआ नहीं है, इसलिए सिस्टम डिफ़ॉल्ट इस्तेमाल होगा।"
+  },
+  "optInputSaved": {
+    "message": "सहेज लिया। अगली बार Start दबाने पर लागू होगा।"
+  },
+  "optInputCleared": {
+    "message": "सहेज लिया। सिस्टम का डिफ़ॉल्ट माइक्रोफ़ोन इस्तेमाल होगा।"
+  },
+  "optOutputHeading": {
+    "message": "ऑडियो आउटपुट"
+  },
   "optOutputNote": {
     "message": "<b>माइक्रोफ़ोन</b> की अनुवादित आवाज़ कहाँ से बजे। टैब ऑडियो वाली आवाज़ हमेशा आपके रोज़ वाले स्पीकर से आती है, क्योंकि वही आप सुन रहे होते हैं। अगली बार Start दबाने पर लागू होगा।"
   },
-  "optOutputSystem": { "message": "सिस्टम डिफ़ॉल्ट — जो स्पीकर आप इस्तेमाल कर रहे हैं" },
-  "optOutputAnonymous": { "message": "आउटपुट {1}…" },
-  "optOutputNone": { "message": "कोई आउटपुट उपकरण दिख नहीं रहा।" },
-  "optOutputMissing": { "message": "वह उपकरण जुड़ा हुआ नहीं है, इसलिए स्पीकर इस्तेमाल होंगे।" },
+  "optOutputSystem": {
+    "message": "सिस्टम डिफ़ॉल्ट — जो स्पीकर आप इस्तेमाल कर रहे हैं"
+  },
+  "optOutputAnonymous": {
+    "message": "आउटपुट {1}…"
+  },
+  "optOutputNone": {
+    "message": "कोई आउटपुट उपकरण दिख नहीं रहा।"
+  },
+  "optOutputMissing": {
+    "message": "वह उपकरण जुड़ा हुआ नहीं है, इसलिए स्पीकर इस्तेमाल होंगे।"
+  },
   "optOutputSaved": {
     "message": "सहेज लिया। अगली बार Start दबाने पर लागू होगा — और जिस ऐप को यह आवाज़ सुननी है, उसे भी उसी उपकरण से सुनने के लिए सेट करना होगा।"
   },
-  "optOutputCleared": { "message": "सहेज लिया। अनुवादित आवाज़ स्पीकर पर बजेगी।" },
-
-  "optDeviceListFailed": { "message": "आपके ऑडियो उपकरण दिख नहीं सके ({1})।" },
-  "optDeviceNamesHidden": { "message": "उपकरणों के नाम देखने के लिए ऊपर माइक्रोफ़ोन की अनुमति दीजिए।" },
-  "optDeviceSavedMissing": { "message": "सहेजा गया उपकरण — अभी जुड़ा हुआ नहीं है" },
-
-  "optConfigHeading": { "message": "मॉडल अपडेट" },
-  "optConfigLabel": { "message": "नए मॉडल नाम और कीमतें देखें" },
+  "optOutputCleared": {
+    "message": "सहेज लिया। अनुवादित आवाज़ स्पीकर पर बजेगी।"
+  },
+  "optDeviceListFailed": {
+    "message": "आपके ऑडियो उपकरण दिख नहीं सके ({1})।"
+  },
+  "optDeviceNamesHidden": {
+    "message": "उपकरणों के नाम देखने के लिए ऊपर माइक्रोफ़ोन की अनुमति दीजिए।"
+  },
+  "optDeviceSavedMissing": {
+    "message": "सहेजा गया उपकरण — अभी जुड़ा हुआ नहीं है"
+  },
+  "optConfigHeading": {
+    "message": "मॉडल अपडेट"
+  },
+  "optConfigLabel": {
+    "message": "नए मॉडल नाम और कीमतें देखें"
+  },
   "optConfigNote": {
     "message": "Google, Gemini Live के मॉडल बंद करने से कुछ ही हफ़्ते पहले सूचना देता है, और उतने में Chrome Web Store की समीक्षा भी पूरी नहीं होती। इसीलिए Interpretab दिन में कुछ बार अपनी ही साइट पर रखी एक छोटी <a1>कॉन्फ़िगरेशन फ़ाइल</a1> पढ़ता है: मॉडल के नाम, उनकी कीमत, और यह कि यह वर्शन अब भी चलता है या नहीं। अनुरोध के साथ कुछ नहीं जाता: न key, न इस्तेमाल का ब्योरा, न आपके बारे में कुछ। इसे बंद कर दें तो Interpretab Google के अलावा किसी से बात नहीं करेगा और उसी मॉडल सूची पर चलता रहेगा जिसके साथ वह आया था, भले ही अपडेट की सूचना छूट जाए।"
   },
-
-  "optModelHeading": { "message": "कौन-सा मॉडल चलाना है" },
-  "optModelNote": { "message": "हर सत्र उसी मॉडल पर शुरू होता है जिस पर Interpretab जाँचा गया है। Google पुराने मॉडल को बंद करने से महीनों पहले अगला मॉडल जारी कर देता है, और उसे पहले से आज़माने की जगह यही है: यहाँ अभी उससे एक भी अनुवाद नहीं हुआ है, इसलिए वह कमज़ोर निकल सकता है या जुड़ने से मना कर सकता है। मोड के हिसाब से, क्योंकि दोनों मोड अलग-अलग मॉडल पर चलते हैं। अगली बार Start दबाने पर लागू होगा।" },
-  "optModelSimul": { "message": "टैब ऑडियो, और माइक का simultaneous मोड" },
-  "optModelConversation": { "message": "दो भाषाओं की बातचीत" },
-  "optModelAuto": { "message": "अनुशंसित — {1}" },
-  "optModelNew": { "message": "{1} — नया" },
-  "optModelRetiring": { "message": "{1} — {2} तक" },
-  "optModelSaved": { "message": "सहेज लिया। अगली बार Start दबाने पर लागू होगा।" },
-  "optModelReverted": { "message": "{1} अब सूची में नहीं है, इसलिए वह मोड अनुशंसित मॉडल पर चलता है।" },
-
-  "optGlossaryHeading": { "message": "शब्दावली" },
+  "optModelHeading": {
+    "message": "कौन-सा मॉडल चलाना है"
+  },
+  "optModelNote": {
+    "message": "हर सत्र उसी मॉडल पर शुरू होता है जिस पर Interpretab जाँचा गया है। Google पुराने मॉडल को बंद करने से महीनों पहले अगला मॉडल जारी कर देता है, और उसे पहले से आज़माने की जगह यही है: यहाँ अभी उससे एक भी अनुवाद नहीं हुआ है, इसलिए वह कमज़ोर निकल सकता है या जुड़ने से मना कर सकता है। मोड के हिसाब से, क्योंकि दोनों मोड अलग-अलग मॉडल पर चलते हैं। अगली बार Start दबाने पर लागू होगा।"
+  },
+  "optModelSimul": {
+    "message": "टैब ऑडियो, और माइक का simultaneous मोड"
+  },
+  "optModelConversation": {
+    "message": "दो भाषाओं की बातचीत"
+  },
+  "optModelAuto": {
+    "message": "अनुशंसित — {1}"
+  },
+  "optModelNew": {
+    "message": "{1} — नया"
+  },
+  "optModelRetiring": {
+    "message": "{1} — {2} तक"
+  },
+  "optModelSaved": {
+    "message": "सहेज लिया। अगली बार Start दबाने पर लागू होगा।"
+  },
+  "optModelReverted": {
+    "message": "{1} अब सूची में नहीं है, इसलिए वह मोड अनुशंसित मॉडल पर चलता है।"
+  },
+  "optGlossaryHeading": {
+    "message": "शब्दावली"
+  },
   "optGlossaryNote": {
     "message": "वे नाम और शब्द जिन्हें आप एक तय तरीक़े से बुलवाना और लिखवाना चाहते हैं — उत्पाद, लोग, पारिभाषिक शब्द। हर पंक्ति में एक, <code>source,pronunciation,transcript</code> के रूप में: दूसरा स्तंभ यह कि उसे कैसे बोला जाए, और वैकल्पिक तीसरा यह कि उपशीर्षक में कैसे लिखा जाए। यह किस मोड में लगती है और इसे कैसे लिखें, यह <a1>उपयोग गाइड</a1> में है।"
   },
-  "optGlossaryReplace": { "message": "बदलें" },
-  "optGlossaryReset": { "message": "डिफ़ॉल्ट पर लौटाएँ" },
-  "optGlossaryPickFile": { "message": "पहले कोई .csv फ़ाइल चुनें।" },
-  "optGlossaryNotCsv": { "message": "फ़ाइल का एक्सटेंशन .csv होना चाहिए।" },
-  "optGlossaryTooBig": { "message": "यह फ़ाइल बहुत बड़ी है — सीमा {1} बाइट है।" },
-  "optGlossaryReplaced": { "message": "{1} प्रविष्टियों से बदल दिया। अगले Start पर लागू होगा।" },
-  "optGlossaryWasReset": { "message": "{1} डिफ़ॉल्ट प्रविष्टियों पर लौटा दिया।" },
-  "optGlossaryLoadFailed": { "message": "यह फ़ाइल पढ़ी नहीं जा सकी: {1}" },
-  "optGlossaryEmpty": { "message": "शब्दावली में कोई प्रविष्टि नहीं है।" },
-  "optGlossaryColSource": { "message": "स्रोत" },
-  "optGlossaryColPronunciation": { "message": "उच्चारण" },
-  "optGlossaryColTranscript": { "message": "सबटाइटल में" },
-
+  "optGlossaryReplace": {
+    "message": "बदलें"
+  },
+  "optGlossaryReset": {
+    "message": "डिफ़ॉल्ट पर लौटाएँ"
+  },
+  "optGlossaryPickFile": {
+    "message": "पहले कोई .csv फ़ाइल चुनें।"
+  },
+  "optGlossaryNotCsv": {
+    "message": "फ़ाइल का एक्सटेंशन .csv होना चाहिए।"
+  },
+  "optGlossaryTooBig": {
+    "message": "यह फ़ाइल बहुत बड़ी है — सीमा {1} बाइट है।"
+  },
+  "optGlossaryReplaced": {
+    "message": "{1} प्रविष्टियों से बदल दिया। अगले Start पर लागू होगा।"
+  },
+  "optGlossaryWasReset": {
+    "message": "{1} डिफ़ॉल्ट प्रविष्टियों पर लौटा दिया।"
+  },
+  "optGlossaryLoadFailed": {
+    "message": "यह फ़ाइल पढ़ी नहीं जा सकी: {1}"
+  },
+  "optGlossaryEmpty": {
+    "message": "शब्दावली में कोई प्रविष्टि नहीं है।"
+  },
+  "optGlossaryColSource": {
+    "message": "स्रोत"
+  },
+  "optGlossaryColPronunciation": {
+    "message": "उच्चारण"
+  },
+  "optGlossaryColTranscript": {
+    "message": "सबटाइटल में"
+  },
   "errNoKey": {
     "message": "अभी कोई Gemini API कुंजी नहीं है। विकल्प खोलें और aistudio.google.com/apikey से एक कुंजी चिपकाएँ।"
   },
-  "errPreflightNoKey": { "message": "कोई Gemini API कुंजी नहीं। विकल्प में एक जोड़ें।" },
+  "errPreflightNoKey": {
+    "message": "कोई Gemini API कुंजी नहीं। विकल्प में एक जोड़ें।"
+  },
   "errKeyRejected": {
     "message": "Gemini ने वह API कुंजी अस्वीकार कर दी। विकल्प पृष्ठ पर उसे जाँचें, या aistudio.google.com/apikey पर नई बनाएँ।"
   },
@@ -312,23 +584,33 @@
   "errAlreadyRunningElsewhere": {
     "message": "Interpretab पहले से किसी दूसरे टैब पर चल रहा है, और यह एक बार में एक ही टैब पर चलता है। पहले Stop दबाएँ — Stop बटन किसी भी टैब से काम करता है।"
   },
-  "errNoDirection": { "message": "पहले टैब ऑडियो या माइक्रोफ़ोन चालू कीजिए।" },
-  "errNoTab": { "message": "सुनने के लिए कोई टैब नहीं है।" },
+  "errNoDirection": {
+    "message": "पहले टैब ऑडियो या माइक्रोफ़ोन चालू कीजिए।"
+  },
+  "errNoTab": {
+    "message": "सुनने के लिए कोई टैब नहीं है।"
+  },
   "errClickIcon": {
     "message": "जिस टैब का अनुवाद करना है उस पर टूलबार का Interpretab आइकन क्लिक करें, फिर दोबारा Start दबाएँ। ({1})"
   },
-  "errNoStreamId": { "message": "Chrome ने इस टैब की आवाज़ नहीं सौंपी। एक बार फिर Start दबाइए।" },
-  "errUnknownMessage": { "message": "Interpretab के भीतर कुछ गड़बड़ हो गई ({1})।" },
+  "errNoStreamId": {
+    "message": "Chrome ने इस टैब की आवाज़ नहीं सौंपी। एक बार फिर Start दबाइए।"
+  },
+  "errUnknownMessage": {
+    "message": "Interpretab के भीतर कुछ गड़बड़ हो गई ({1})।"
+  },
   "errMicRefused": {
     "message": "Interpretab को माइक्रोफ़ोन इस्तेमाल करने की अनुमति नहीं मिली। इसका विकल्प पृष्ठ खोलिए, एक बार माइक्रोफ़ोन की अनुमति दीजिए, और फिर कोशिश कीजिए।"
   },
-
   "captionsChromePage": {
     "message": "Chrome के अपने पृष्ठ इन्हें नहीं ले सकते। कोई वेबसाइट खोलें और वहाँ टूलबार का आइकन क्लिक करें।"
   },
-  "captionsClickIcon": { "message": "उस पृष्ठ पर टूलबार का आइकन क्लिक करें।" },
-  "captionsOpenSite": { "message": "कोई वेबसाइट खोलें और वहाँ टूलबार का आइकन क्लिक करें।" },
-
+  "captionsClickIcon": {
+    "message": "उस पृष्ठ पर टूलबार का आइकन क्लिक करें।"
+  },
+  "captionsOpenSite": {
+    "message": "कोई वेबसाइट खोलें और वहाँ टूलबार का आइकन क्लिक करें।"
+  },
   "micNoSoundNamed": {
     "message": "Start दबाने के बाद से माइक्रोफ़ोन तक कोई आवाज़ नहीं पहुँची। यह “{1}” को सुन रहा है — अगर आप उसमें नहीं बोल रहे, तो विकल्प के ऑडियो इनपुट में सही वाला चुनिए और फिर Start दबाइए।"
   },
@@ -341,32 +623,67 @@
   "outputDeviceMissing": {
     "message": "विकल्प में चुना गया ऑडियो आउटपुट उपलब्ध नहीं है ({1}), इसलिए आपकी अनुवादित आवाज़ स्पीकर से आ रही है। विकल्प में कोई दूसरा चुनें।"
   },
-  "callShimFailed": { "message": "इस पेज को अनुवाद वाला माइक्रोफ़ोन नहीं दिया जा सका ({1}), इसलिए कॉल में यह सुनाई नहीं देगा। Meet टैब को दोबारा लोड करके फिर से Start दबाइए।" },
-
-  "closeReasonGiven": { "message": "Gemini ने कनेक्शन बंद कर दिया: {1}" },
+  "callShimFailed": {
+    "message": "इस पेज को अनुवाद वाला माइक्रोफ़ोन नहीं दिया जा सका ({1}), इसलिए कॉल में यह सुनाई नहीं देगा। Meet टैब को दोबारा लोड करके फिर से Start दबाइए।"
+  },
+  "closeReasonGiven": {
+    "message": "Gemini ने कनेक्शन बंद कर दिया: {1}"
+  },
   "closeReasonOpaqueHint": {
     "message": "Gemini तक पहुँचा नहीं जा सका, और ब्राउज़र को कारण कभी नहीं बताया जाता। {1}"
   },
   "closeReasonOpaque": {
     "message": "Gemini तक पहुँचा नहीं जा सका, और ब्राउज़र को कारण कभी नहीं बताया जाता। आम तौर पर बात कुंजी की होती है: है ही नहीं, ठुकरा दी गई, या सीमा पार — और सीमा सबसे पहले मुफ़्त योजना में आती है।"
   },
-  "closeReasonCode": { "message": "Gemini ने कनेक्शन बंद कर दिया (कोड {1})।" },
-  "closeBeforeReady": { "message": "सेशन तैयार होने से पहले ही बंद हो गया।" },
+  "closeReasonCode": {
+    "message": "Gemini ने कनेक्शन बंद कर दिया (कोड {1})।"
+  },
+  "closeBeforeReady": {
+    "message": "सेशन तैयार होने से पहले ही बंद हो गया।"
+  },
   "hintKeyAccepted": {
     "message": "आपकी कुंजी अभी थोड़ी देर पहले चल रही थी, तो मामला Gemini या आपके नेटवर्क का है, कुंजी का नहीं।"
   },
   "loopGaveUp": {
     "message": "{1} लगातार {2} कोशिशों के बाद Interpretab ने कोशिश करना छोड़ दिया। विकल्प पृष्ठ पर अपनी कुंजी देखिए, और Google AI Studio में देखिए कि कितना बचा है — मुफ़्त योजना में ज़्यादा नहीं मिलता। दोबारा कोशिश के लिए Start दबाइए।"
   },
-  "loopDropping": { "message": "Gemini से कनेक्शन बार-बार टूट रहा है।" },
-
+  "loopDropping": {
+    "message": "Gemini से कनेक्शन बार-बार टूट रहा है।"
+  },
   "glossaryBadLine": {
     "message": "पंक्ति {1} इस रूप में होनी चाहिए: शब्द, उसे कैसे बोलें, और — अगर चाहें — कैसे लिखें।"
   },
-  "glossaryMissingField": { "message": "पंक्ति {1} में शब्द या उसका उच्चारण नहीं है।" },
-  "glossaryTooMany": { "message": "बहुत ज़्यादा प्रविष्टियाँ (अधिकतम {1})।" },
-  "optObsHeading": {"message": "OBS उपशीर्षक"},
-  "optObsLabel": {"message": "अनुवादित उपशीर्षक OBS को भेजें"},
-  "optObsNote": {"message": "npm run obs से स्थानीय रिले शुरू करें, फिर OBS में <code>127.0.0.1:8765</code> को ब्राउज़र स्रोत के रूप में जोड़ें। केवल अनुवादित पाठ भेजा जाता है; ऑडियो इसी ब्राउज़र में चलता है।"},
-  "optObsError": {"message": "OBS आउटपुट सेट नहीं हो सका। स्थानीय नेटवर्क की अनुमति जाँचें और फिर प्रयास करें।"}
+  "glossaryMissingField": {
+    "message": "पंक्ति {1} में शब्द या उसका उच्चारण नहीं है।"
+  },
+  "glossaryTooMany": {
+    "message": "बहुत ज़्यादा प्रविष्टियाँ (अधिकतम {1})।"
+  },
+  "optObsHeading": {
+    "message": "OBS उपशीर्षक"
+  },
+  "optObsLabel": {
+    "message": "अनुवादित उपशीर्षक OBS को भेजें"
+  },
+  "optObsNote": {
+    "message": "npm run obs से स्थानीय रिले शुरू करें, फिर OBS में <code>127.0.0.1:8765</code> को ब्राउज़र स्रोत के रूप में जोड़ें। केवल अनुवादित पाठ भेजा जाता है; ऑडियो इसी ब्राउज़र में चलता है।"
+  },
+  "optObsError": {
+    "message": "OBS आउटपुट सेट नहीं हो सका। स्थानीय नेटवर्क की अनुमति जाँचें और फिर प्रयास करें।"
+  },
+  "optExternalHeading": {
+    "message": "Local web app control"
+  },
+  "optExternalNote": {
+    "message": "Allow a local web app on <code>localhost</code> or <code>127.0.0.1</code> to control translation and receive live subtitles. Leave ports blank to allow any local port."
+  },
+  "optExternalLabel": {
+    "message": "Allow control from local web apps"
+  },
+  "optExternalPortsLabel": {
+    "message": "Allowed ports (comma-separated):"
+  },
+  "optExternalIdLabel": {
+    "message": "Extension ID:"
+  }
 }

@@ -169,9 +169,24 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
       fail(err);
     }
   } else if (msg.type === "history") done({ lines: history(), usage: usageSnapshot() });
+  else if (msg.type === "micDevices") listMicDevices().then(done).catch(fail);
   else return false;
   return true;
 });
+
+/**
+ * List available audio input devices from the extension's own origin so an
+ * external page receives `deviceId` values that match `micConstraints`.
+ */
+async function listMicDevices() {
+  if (!navigator.mediaDevices?.enumerateDevices) return { devices: [] };
+  const all = await navigator.mediaDevices.enumerateDevices();
+  return {
+    devices: all
+      .filter((d) => d.kind === "audioinput" && d.deviceId && d.deviceId !== "default" && d.deviceId !== "communications")
+      .map((d) => ({ deviceId: d.deviceId, label: d.label || "" })),
+  };
+}
 
 /**
  * The settings that take effect without reopening the sessions.
