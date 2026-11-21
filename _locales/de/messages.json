@@ -227,7 +227,7 @@
 
   "optMicHeading": { "message": "Mikrofonzugriff" },
   "optMicNote": {
-    "message": "Nur nötig, wenn Ihre eigene Stimme übersetzt werden soll, und nur beim ersten Mal. Chrome zeigt sein Berechtigungsfenster nicht über dem Seitenpanel, deshalb steht die Schaltfläche hier — und was Sie hier erlauben, gilt für ganz Interpretab."
+    "message": "Nur nötig, wenn deine Stimme übersetzt werden soll, und nur beim ersten Mal. Der hier erlaubte Mikrofonzugriff gilt für ganz Interpretab."
   },
   "optMicGrant": { "message": "Mikrofon erlauben" },
   "optMicGranted": { "message": "Erlaubt." },
@@ -392,5 +392,9 @@
     "message": "Zeile {1} sollte lauten: das Wort, wie es gesprochen wird und — wenn Sie mögen — wie es geschrieben wird."
   },
   "glossaryMissingField": { "message": "In Zeile {1} fehlt das Wort oder seine Aussprache." },
-  "glossaryTooMany": { "message": "Zu viele Einträge (max. {1})." }
+  "glossaryTooMany": { "message": "Zu viele Einträge (max. {1})." },
+  "optObsHeading": {"message": "OBS-Untertitel"},
+  "optObsLabel": {"message": "Übersetzte Untertitel an OBS senden"},
+  "optObsNote": {"message": "Starten Sie die lokale Weiterleitung mit npm run obs und fügen Sie <code>127.0.0.1:8765</code> als Browserquelle in OBS hinzu. Nur übersetzter Text wird gesendet; Audio wird in diesem Browser wiedergegeben."},
+  "optObsError": {"message": "OBS-Ausgabe konnte nicht eingerichtet werden. Prüfen Sie die Berechtigung für das lokale Netzwerk und versuchen Sie es erneut."}
 }

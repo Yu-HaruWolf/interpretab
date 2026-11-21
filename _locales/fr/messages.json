@@ -139,7 +139,7 @@
     "message": "La boîte de dialogue revient avec le nouveau projet. Cliquez sur <b>Créer une clé</b> : la clé apparaît, cliquez sur <b>Copier la clé</b>. Elle reste sur la page API keys, vous pouvez donc y revenir plus tard."
   },
   "optStartStep6": {
-    "message": "La page <b>Options</b> de l'extension s'ouvre d'elle-même la première fois, et le bouton <b>Options</b> du panneau latéral la rouvre. Collez la clé dans <b>Clé d'API Gemini</b>. Elle reste dans ce navigateur et n'est envoyée à personne d'autre que Google."
+    "message": "La page <b>Options</b> de l'extension s'ouvre d'elle-même la première fois, et le bouton <b>Options</b> du panneau de commande la rouvre. Collez la clé dans <b>Clé d'API Gemini</b>. Elle reste dans ce navigateur et n'est envoyée à personne d'autre que Google."
   },
   "optStartStep7": {
     "message": "Ouvrez la page à traduire — une vidéo où quelqu'un parle sur <a1>youtube.com</a1> est le test le plus simple pour commencer. Une extension qui vient d'être installée n'a pas encore d'icône dans la barre d'outils : cliquez sur le <b>bouton en forme de pièce de puzzle</b> de Chrome, trouvez <b>Interpretab</b> dans la liste et cliquez sur l'épingle à côté."
@@ -148,7 +148,7 @@
     "message": "L'icône est maintenant dans la barre d'outils. <b>Cliquez dessus depuis l'onglet à traduire.</b> Ce clic est la façon dont vous donnez la permission d'écouter l'onglet : sans lui, vous obtenez une erreur."
   },
   "optStartStep9": {
-    "message": "Choisissez votre langue dans le panneau latéral et appuyez sur <b>Start</b>. Lancez la vidéo : la voix revient dans cette langue. Si vous n'entendez aucune traduction, choisissez une langue autre que celle que parle déjà la vidéo."
+    "message": "Choisissez votre langue dans le panneau de commande et appuyez sur <b>Start</b>. Lancez la vidéo : la voix revient dans cette langue. Si vous n'entendez aucune traduction, choisissez une langue autre que celle que parle déjà la vidéo."
   },
   "optStartCreateApiKey": { "message": "Créer une clé API" },
   "optStartCreateKey": { "message": "Créer une clé" },
@@ -185,7 +185,7 @@
 
   "optPlanHeading": { "message": "Forfait de l'API Gemini" },
   "optPlanNote": {
-    "message": "Google ne dit pas à Interpretab si votre clé est gratuite ou payante : indiquez-le ici. Sur <b>Free</b>, le panneau latéral affiche depuis combien de temps vous traduisez ; sur <b>Paid</b>, il estime aussi ce que cela a coûté."
+    "message": "Google ne dit pas à Interpretab si votre clé est gratuite ou payante : indiquez-le ici. Sur <b>Free</b>, le panneau de commande affiche depuis combien de temps vous traduisez ; sur <b>Paid</b>, il estime aussi ce que cela a coûté."
   },
   "optPlanFree": { "message": "Free — Google ne facture rien pour cette clé" },
   "optPlanPaid": { "message": "Paid — paiement à l'usage, facturé à votre compte" },
@@ -227,7 +227,7 @@
 
   "optMicHeading": { "message": "Accès au microphone" },
   "optMicNote": {
-    "message": "Utile seulement si vous voulez faire traduire votre propre voix, et seulement la première fois. Chrome n'affiche pas sa fenêtre d'autorisation par-dessus le panneau latéral : le bouton est donc ici — et ce que vous autorisez ici vaut pour tout Interpretab."
+    "message": "Nécessaire uniquement pour traduire votre voix, et seulement la première fois. L’autorisation du microphone accordée ici s’applique à tout Interpretab."
   },
   "optMicGrant": { "message": "Autoriser le microphone" },
   "optMicGranted": { "message": "Autorisé." },
@@ -392,5 +392,9 @@
     "message": "La ligne {1} devrait être : le mot, comment le dire et — si vous voulez — comment l'écrire."
   },
   "glossaryMissingField": { "message": "Il manque le mot ou sa prononciation à la ligne {1}." },
-  "glossaryTooMany": { "message": "Trop d'entrées (maximum {1})." }
+  "glossaryTooMany": { "message": "Trop d'entrées (maximum {1})." },
+  "optObsHeading": {"message": "Sous-titres OBS"},
+  "optObsLabel": {"message": "Envoyer les sous-titres traduits à OBS"},
+  "optObsNote": {"message": "Lancez le relais local avec npm run obs, puis ajoutez <code>127.0.0.1:8765</code> comme source navigateur dans OBS. Seul le texte traduit est envoyé ; le son est lu dans ce navigateur."},
+  "optObsError": {"message": "Impossible de configurer la sortie OBS. Vérifiez l’autorisation du réseau local et réessayez."}
 }

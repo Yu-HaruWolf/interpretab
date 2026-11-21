@@ -22,7 +22,7 @@
   },
   "panelStepMic": {
     "message": "Chrome has to let Interpretab use your microphone. You allow that once, in <a1>Options</a1>.",
-    "description": "Next-step banner shown when the microphone direction is on and Chrome has not granted the microphone, and the second step on the card panelStepLinksPrep opens. <a1> opens this extension's Options page at its Microphone section — a side panel cannot show the permission prompt itself."
+    "description": "Next-step banner shown when the microphone direction is on and Chrome has not granted the microphone, and the second step on the card panelStepLinksPrep opens. <a1> opens this extension's Options page at its Microphone section — a control page cannot show the permission prompt itself."
   },
   "panelRunningOn": {
     "message": "Interpretab is running on “{1}”, and it runs on one tab at a time. Its controls are on that tab — Stop works from here.",
@@ -173,7 +173,7 @@
   "panelLangAll": { "message": "All languages" },
   "panelDirTab": {
     "message": "tab",
-    "description": "Names the tab-audio direction inside panelHeard and panelTranslated."
+    "description": "Names the tab-audio direction incontrol pageHeard and panelTranslated."
   },
   "panelDirMic": { "message": "mic" },
   "panelHeard": {
@@ -224,7 +224,7 @@
     "message": "The key dialog comes back with the new project in it. Press <b>Create key</b> and the key appears — press <b>Copy key</b>. It stays on the API keys page, so you can come back for it later."
   },
   "optStartStep6": {
-    "message": "Interpretab's <b>Options</b> page opens by itself the first time, and the <b>Options</b> button at the bottom of the side panel opens it again. Paste the key into <b>Gemini API key</b>. It is kept in this browser and goes to nobody but Google."
+    "message": "Interpretab's <b>Options</b> page opens by itself the first time, and the <b>Options</b> button at the bottom of the control page opens it again. Paste the key into <b>Gemini API key</b>. It is kept in this browser and goes to nobody but Google."
   },
   "optStartStep7": {
     "message": "Open the page you want translated — a video with talking in it on <a1>youtube.com</a1> is the easiest first test. A new extension has no icon on the toolbar yet: click Chrome's <b>puzzle-piece button</b>, find <b>Interpretab</b> in the list, and press the pin beside it."
@@ -233,7 +233,7 @@
     "message": "The icon is on the toolbar now. <b>Click it, on the tab you want translated.</b> That click is how you give permission to listen to the tab; skip it and you get an error."
   },
   "optStartStep9": {
-    "message": "Pick your language in the side panel and press <b>Start</b>. Play the video: the voice comes back in that language. If you hear no translation, pick a language other than the one the video is already in."
+    "message": "Pick your language in the control page and press <b>Start</b>. Play the video: the voice comes back in that language. If you hear no translation, pick a language other than the one the video is already in."
   },
   "optStartCreateApiKey": {
     "message": "Create API key",
@@ -289,7 +289,7 @@
 
   "optPlanHeading": { "message": "Gemini API plan" },
   "optPlanNote": {
-    "message": "Google does not tell Interpretab whether your key is free or paid, so please say which it is. On <b>Free</b> the side panel shows how long you have been translating; on <b>Paid</b> it also estimates what that has cost."
+    "message": "Google does not tell Interpretab whether your key is free or paid, so please say which it is. On <b>Free</b> the control page shows how long you have been translating; on <b>Paid</b> it also estimates what that has cost."
   },
   "optPlanFree": { "message": "Free — Google charges nothing for this key" },
   "optPlanPaid": { "message": "Paid — pay as you go, billed to your account" },
@@ -337,7 +337,7 @@
 
   "optMicHeading": { "message": "Microphone access" },
   "optMicNote": {
-    "message": "Only needed if you want your own voice translated, and only the first time. Chrome will not show its permission window over the side panel, so the button is here instead — and what you allow here covers the whole of Interpretab.",
+    "message": "Only needed if you want your own voice translated, and only the first time. Allow microphone access here; the permission covers all of Interpretab.",
     "description": "Under the Microphone access heading. The condition comes first because this section sits in the group a first run is told to work through, and it is the one entry there that not everybody needs."
   },
   "optMicGrant": { "message": "Allow the microphone" },
@@ -525,5 +525,9 @@
 
   "glossaryBadLine": { "message": "Line {1} should be: the word, how to say it, and — if you want — how to write it." },
   "glossaryMissingField": { "message": "Line {1} is missing the word or how to say it." },
-  "glossaryTooMany": { "message": "Too many entries (max {1})." }
+  "glossaryTooMany": { "message": "Too many entries (max {1})." },
+  "optObsHeading": {"message": "OBS subtitles"},
+  "optObsLabel": {"message": "Send translated subtitles to OBS"},
+  "optObsNote": {"message": "Start the local relay with npm run obs, then add <code>127.0.0.1:8765</code> as an OBS browser source. Only translated text is sent; audio stays in this browser."},
+  "optObsError": {"message": "Could not enable OBS output. Check local network permission and try again."}
 }

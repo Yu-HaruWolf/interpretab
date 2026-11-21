@@ -79,7 +79,7 @@ en:
     - tab: Paste it in
       body: >-
         Interpretab's <b>Options</b> page opens by itself the first time, and the <b>Options</b>
-        button at the bottom of the side panel opens it again. Paste the key into
+        button at the bottom of the control page opens it again. Paste the key into
         <b>Gemini API key</b>. It is kept in this browser and goes to nobody but Google.
     - tab: Pin the icon
       body: >-
@@ -93,7 +93,7 @@ en:
         is how you give permission to listen to the tab; skip it and you get an error.
     - tab: Press Start
       body: >-
-        Pick your language in the side panel and press <b>Start</b>. Play the video: the voice
+        Pick your language in the control page and press <b>Start</b>. Play the video: the voice
         comes back in that language. If you hear no translation, pick a language other than the one
         the video is already in.
 
@@ -121,13 +121,13 @@ ja:
     - tab: キーをコピー
       body: キーのダイアログに戻ると、作ったプロジェクトが入っています。<b>キーを作成</b> を押すとキーが表示されるので、<b>鍵をコピー</b> を押します。キーは API keys のページに残るので、あとから取り直せます。
     - tab: キーを貼り付け
-      body: 拡張機能の<b>オプション</b>ページは初回に自動で開きます。サイドパネル下部の <b>オプション</b> ボタンからも開けます。<b>Gemini API キー</b> にキーを貼り付けてください。キーはこのブラウザに保存され、Google 以外には送られません。
+      body: 拡張機能の<b>オプション</b>ページは初回に自動で開きます。操作ページ下部の <b>オプション</b> ボタンからも開けます。<b>Gemini API キー</b> にキーを貼り付けてください。キーはこのブラウザに保存され、Google 以外には送られません。
     - tab: アイコンを固定
       body: 翻訳したいページを開きます。最初の確認には <a href="https://www.youtube.com/">youtube.com</a> の話し声が入った動画が手軽です。入れたばかりの拡張機能はツールバーにアイコンが出ていません。Chrome の<b>パズルピースのボタン</b>を押し、一覧の <b>Interpretab</b> の横にあるピンを押してください。
     - tab: アイコンをクリック
       body: これでツールバーにアイコンが出ました。<b>翻訳したいタブで、そのアイコンをクリックします。</b>このクリックが、このタブの音声を聞いてよいという許可になります。押さずに始めるとエラーになります。
     - tab: Start を押す
-      body: サイドパネルで言語を選び、<b>Start</b> を押します。動画を再生すると、その言語で声が返ってきます。訳された声が聞こえないときは、動画そのものの言語とは別の言語を選んでみてください。
+      body: 操作ページで言語を選び、<b>Start</b> を押します。動画を再生すると、その言語で声が返ってきます。訳された声が聞こえないときは、動画そのものの言語とは別の言語を選んでみてください。
 
 zh:
   next: 下一步
@@ -150,13 +150,13 @@ zh:
     - tab: 复制密钥
       body: 回到密钥的对话框，新建的项目已经在里面了。点 <b>创建密钥</b>，密钥就会出现，再点 <b>复制密钥</b>。密钥会留在 API keys 页面上，之后还能回去再拿。
     - tab: 粘贴密钥
-      body: 扩展的<b>选项</b>页面第一次会自己打开，侧边栏底部的 <b>选项</b> 按钮也能再把它打开。把密钥粘贴到 <b>Gemini API 密钥</b> 里。它保存在这个浏览器中，除了 Google 不会发给任何人。
+      body: 扩展的<b>选项</b>页面第一次会自己打开，控制页面底部的 <b>选项</b> 按钮也能再把它打开。把密钥粘贴到 <b>Gemini API 密钥</b> 里。它保存在这个浏览器中，除了 Google 不会发给任何人。
     - tab: 固定图标
       body: 打开要翻译的页面。第一次试的话，<a href="https://www.youtube.com/">youtube.com</a> 上一段有人说话的视频最方便。刚装好的扩展在工具栏上还没有图标：点 Chrome 的<b>拼图按钮</b>，在列表里找到 <b>Interpretab</b>，按一下旁边的图钉。
     - tab: 点击图标
       body: 现在图标在工具栏上了。<b>在要翻译的那个标签页上点它。</b>这次点击就是你授权它收听该标签页的方式——跳过它就会报错。
     - tab: 按 Start
-      body: 在侧边栏选择语言，按 <b>Start</b>。播放视频，声音就会用那个语言回来。要是听不到翻译，就换一个和视频本身不同的语言试试。
+      body: 在控制页面选择语言，按 <b>Start</b>。播放视频，声音就会用那个语言回来。要是听不到翻译，就换一个和视频本身不同的语言试试。
 
 es:
   next: Siguiente
@@ -197,7 +197,7 @@ es:
     - tab: Pégala
       body: >-
         La página de <b>Opciones</b> de la extensión se abre sola la primera vez, y el botón
-        <b>Opciones</b> del panel lateral la vuelve a abrir. Pega la clave en <b>Clave de la API de
+        <b>Opciones</b> del panel de control la vuelve a abrir. Pega la clave en <b>Clave de la API de
         Gemini</b>. Se guarda en este navegador y no se envía a nadie más que a Google.
     - tab: Fija el icono
       body: >-
@@ -212,7 +212,7 @@ es:
         Ese clic es como das permiso para escuchar la pestaña; si te lo saltas, obtendrás un error.
     - tab: Pulsa Start
       body: >-
-        Elige tu idioma en el panel lateral y pulsa <b>Start</b>. Dale al vídeo: la voz vuelve en
+        Elige tu idioma en el panel de control y pulsa <b>Start</b>. Dale al vídeo: la voz vuelve en
         ese idioma. Si no oyes ninguna traducción, elige un idioma distinto del que ya habla el
         vídeo.
 
@@ -255,7 +255,7 @@ fr:
     - tab: Collez-la
       body: >-
         La page <b>Options</b> de l'extension s'ouvre d'elle-même la première fois, et le bouton
-        <b>Options</b> du panneau latéral la rouvre. Collez la clé dans <b>Clé d'API Gemini</b>. Elle
+        <b>Options</b> du panneau de commande la rouvre. Collez la clé dans <b>Clé d'API Gemini</b>. Elle
         reste dans ce navigateur et n'est envoyée à personne d'autre que Google.
     - tab: Épinglez l'icône
       body: >-
@@ -271,7 +271,7 @@ fr:
         lui, vous obtenez une erreur.
     - tab: Appuyez sur Start
       body: >-
-        Choisissez votre langue dans le panneau latéral et appuyez sur <b>Start</b>. Lancez la
+        Choisissez votre langue dans le panneau de commande et appuyez sur <b>Start</b>. Lancez la
         vidéo : la voix revient dans cette langue. Si vous n'entendez aucune traduction, choisissez
         une langue autre que celle que parle déjà la vidéo.
 
@@ -374,7 +374,7 @@ pt:
     - tab: Cole a chave
       body: >-
         A página de <b>Opções</b> da extensão abre sozinha na primeira vez, e o botão <b>Opções</b>
-        do painel lateral abre de novo. Cole a chave em <b>Chave de API do Gemini</b>. Ela fica
+        do painel de controle abre de novo. Cole a chave em <b>Chave de API do Gemini</b>. Ela fica
         guardada neste navegador e não vai para ninguém além do Google.
     - tab: Fixe o ícone
       body: >-
@@ -390,7 +390,7 @@ pt:
         erro.
     - tab: Aperte Start
       body: >-
-        Escolha o seu idioma no painel lateral e aperte <b>Start</b>. Dê play no vídeo: a voz volta
+        Escolha o seu idioma no painel de controle e aperte <b>Start</b>. Dê play no vídeo: a voz volta
         nesse idioma. Se você não ouvir tradução nenhuma, escolha um idioma diferente do que o vídeo
         já fala.
 
@@ -415,13 +415,13 @@ ko:
     - tab: 키 복사
       body: 새 프로젝트가 들어간 채로 키 대화상자가 다시 나옵니다. <b>키 만들기</b>를 누르면 키가 나타나니 <b>키 복사</b>를 누릅니다. 키는 API keys 페이지에 남아 있어서 나중에 다시 가져올 수 있습니다.
     - tab: 키 붙여넣기
-      body: 확장 프로그램의 <b>옵션</b> 페이지는 처음에 저절로 열리고, 사이드 패널의 <b>옵션</b> 버튼으로 다시 열 수 있습니다. <b>Gemini API 키</b>에 키를 붙여넣습니다. 키는 이 브라우저에 저장되며 Google 외에는 어디로도 보내지 않습니다.
+      body: 확장 프로그램의 <b>옵션</b> 페이지는 처음에 저절로 열리고, 제어 페이지의 <b>옵션</b> 버튼으로 다시 열 수 있습니다. <b>Gemini API 키</b>에 키를 붙여넣습니다. 키는 이 브라우저에 저장되며 Google 외에는 어디로도 보내지 않습니다.
     - tab: 아이콘 고정
       body: 번역할 페이지를 엽니다. 처음 시험해 볼 때는 <a href="https://www.youtube.com/">youtube.com</a>에서 사람이 말하는 영상이 가장 간편합니다. 새로 설치한 확장 프로그램은 아직 툴바에 아이콘이 없습니다. Chrome의 <b>퍼즐 조각 버튼</b>을 누르고 목록에서 <b>Interpretab</b>을 찾아 옆에 있는 핀을 누릅니다.
     - tab: 아이콘 클릭
       body: 이제 툴바에 아이콘이 있습니다. <b>번역할 탭에서 그 아이콘을 클릭합니다.</b> 이 클릭이 탭 소리를 들어도 된다는 허가입니다. 건너뛰면 오류가 납니다.
     - tab: Start 누르기
-      body: 사이드 패널에서 언어를 고르고 <b>Start</b>를 누릅니다. 영상을 재생하면 그 언어로 목소리가 돌아옵니다. 번역된 목소리가 들리지 않으면, 영상에서 원래 쓰는 언어가 아닌 다른 언어를 골라 보세요.
+      body: 제어 페이지에서 언어를 고르고 <b>Start</b>를 누릅니다. 영상을 재생하면 그 언어로 목소리가 돌아옵니다. 번역된 목소리가 들리지 않으면, 영상에서 원래 쓰는 언어가 아닌 다른 언어를 골라 보세요.
 
 hi:
   next: आगे
@@ -457,7 +457,7 @@ hi:
         दबाएँ। वह API keys पेज पर बनी रहती है, इसलिए बाद में दोबारा ली जा सकती है।
     - tab: कुंजी पेस्ट करें
       body: >-
-        एक्सटेंशन का <b>विकल्प</b> पेज पहली बार अपने आप खुलता है, और साइड पैनल का <b>विकल्प</b> बटन उसे दोबारा खोल देता है।
+        एक्सटेंशन का <b>विकल्प</b> पेज पहली बार अपने आप खुलता है, और कंट्रोल पेज का <b>विकल्प</b> बटन उसे दोबारा खोल देता है।
         कुंजी को <b>Gemini API कुंजी</b> में पेस्ट करें। वह इसी ब्राउज़र में रहती है और Google के अलावा किसी को नहीं
         भेजी जाती।
     - tab: आइकॉन पिन करें
@@ -471,7 +471,7 @@ hi:
         सुनने की अनुमति है — इसे छोड़ देने पर त्रुटि मिलेगी।
     - tab: Start दबाएँ
       body: >-
-        साइड पैनल में अपनी भाषा चुनें और <b>Start</b> दबाएँ। वीडियो चलाएँ — आवाज़ उसी भाषा में लौटती है। अनुवाद सुनाई
+        कंट्रोल पेज में अपनी भाषा चुनें और <b>Start</b> दबाएँ। वीडियो चलाएँ — आवाज़ उसी भाषा में लौटती है। अनुवाद सुनाई
         न दे तो वीडियो जिस भाषा में है, उससे अलग कोई भाषा चुनें।
 
 ar:
@@ -509,7 +509,7 @@ ar:
     - tab: الصق المفتاح
       body: >-
         تُفتح صفحة <b>الخيارات</b> في الإضافة من تلقاء نفسها في المرة الأولى، ويعيد فتحها زر <b>الخيارات</b>
-        في اللوحة الجانبية. الصق المفتاح في <b>مفتاح Gemini API</b>. يبقى في هذا المتصفح ولا يُرسَل إلى
+        في صفحة التحكم. الصق المفتاح في <b>مفتاح Gemini API</b>. يبقى في هذا المتصفح ولا يُرسَل إلى
         أحد غير Google.
     - tab: ثبِّت الأيقونة
       body: >-
@@ -523,5 +523,5 @@ ar:
         هي إذنك بالاستماع إلى علامة التبويب — وتجاوُزها يعني رسالة خطأ.
     - tab: اضغط Start
       body: >-
-        اختر لغتك في اللوحة الجانبية واضغط <b>Start</b>. شغّل الفيديو: يعود الصوت بتلك اللغة. وإن لم
+        اختر لغتك في صفحة التحكم واضغط <b>Start</b>. شغّل الفيديو: يعود الصوت بتلك اللغة. وإن لم
         تسمع أي ترجمة فاختر لغة غير التي يتحدث بها الفيديو أصلًا.

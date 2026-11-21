@@ -1,5 +1,11 @@
 # Interpretab
 
+操作画面は独立したタブで開きます。翻訳したいページで拡張アイコンを押し、
+開いた操作ページで言語を選んで Start を押してください。同じページで再度アイコンを
+押すと既存の操作ページに戻ります。操作ページを閉じても翻訳は継続します。
+（以下の旧説明・画像の「サイドパネル」は、この操作ページに読み替えてください。）
+
+
 User guide — what it does, what it costs, and how to turn it on:
 **[English](https://kazunori279.github.io/interpretab/)** ·
 **[日本語](https://kazunori279.github.io/interpretab/ja/)** ·
@@ -23,7 +29,7 @@ A Chrome extension that interprets **whatever a tab is playing** — a video, a 
 remote side of a Meet call — into your language, spoken out loud and subtitled on the page. It
 also works the other way: your microphone, into theirs.
 
-There is no server. The extension opens a WebSocket straight to the [Gemini Live
+Translation needs no server. Optional OBS subtitle output uses a local relay (see [OBS setup](obs/README.md)). The extension opens a WebSocket straight to the [Gemini Live
 API](https://ai.google.dev/gemini-api/docs/live) with your own API key. Your audio and your key
 go to Google and nowhere else.
 
@@ -2265,7 +2271,7 @@ so anything that dumps a handshake URL leaks it.
 ## Privacy
 
 See [PRIVACY.md](PRIVACY.md). The short version: audio, transcripts and your API key go from
-your browser to Google's Gemini API and nowhere else. Nothing is collected, stored off-device,
+your browser to Google's Gemini API. Optional OBS output additionally sends translated text to a loopback-only relay on your computer. Nothing is collected, stored off-device,
 or sent to the author.
 
 ## Relation to live-translator

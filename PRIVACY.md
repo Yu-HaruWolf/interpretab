@@ -1,10 +1,10 @@
 # Interpretab — Privacy Policy
 
-Last updated: 24 August 2026
+Last updated: 17 October 2026
 
 Interpretab is a Chrome extension that translates audio in real time. It has **no backend
 service**: the developer operates no server, collects no data, and receives nothing from your
-use of the extension. It makes two kinds of network request and no others — your audio to
+use of the extension. By default it makes two kinds of network request — your audio to
 Google's Gemini API, and a download of one small static file, both described below.
 
 ## What the extension handles
@@ -47,6 +47,16 @@ the names and prices it shipped with and deletes the copy it had cached. The cos
 day Google retires a model, translation stops working until you update the extension — and you
 will not get the notice that says so.
 
+## Optional OBS subtitle output
+
+When you enable **OBS subtitles** in Options and grant access to `127.0.0.1`,
+the extension sends translated text (tab and microphone directions) to the local
+relay at `http://127.0.0.1:8765/captions`. It sends no audio, input transcripts,
+API keys, or glossary. The relay runs on your computer, listens only on loopback,
+and retains the latest subtitle for each direction in memory, never on disk.
+OBS reads that text from the relay. Output is disabled by default; switching it
+off ends subtitle transmission and clears the display when the relay is reachable.
+
 ## Who else is involved
 
 **Google**, as the provider of the Gemini API you connect to with your own key. Their handling
@@ -62,8 +72,7 @@ never leave your device for anywhere but Google.
 There is no analytics, no telemetry, no crash reporting, and no advertising. The extension
 declares one host permission, `https://generativelanguage.googleapis.com/*` — though a host
 permission is not what bounds the file download, which GitHub Pages serves with the CORS header
-that makes it readable without one. The two addresses named in this document are the whole of
-what the extension contacts.
+that makes it readable without one. With OBS output enabled it additionally contacts the local relay described above.
 
 ## What the extension does not do
 
@@ -77,6 +86,7 @@ what the extension contacts.
 ## Your control
 
 - **Stop** ends capture immediately and closes both connections.
+- **OBS subtitles** on the Options page controls local subtitle transmission.
 - **Model updates** on the Options page turns off the download described above.
 - Removing your API key on the Options page makes the extension unable to connect at all.
 - Uninstalling the extension deletes everything it stored, including the key.

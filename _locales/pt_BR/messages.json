@@ -139,7 +139,7 @@
     "message": "A caixa da chave volta com o projeto novo. Clique em <b>Criar chave</b> e a chave aparece — clique em <b>Copiar chave</b>. Ela fica na página API keys, então dá para voltar e pegá-la depois."
   },
   "optStartStep6": {
-    "message": "A página de <b>Opções</b> da extensão abre sozinha na primeira vez, e o botão <b>Opções</b> do painel lateral abre de novo. Cole a chave em <b>Chave de API do Gemini</b>. Ela fica guardada neste navegador e não vai para ninguém além do Google."
+    "message": "A página de <b>Opções</b> da extensão abre sozinha na primeira vez, e o botão <b>Opções</b> do painel de controle abre de novo. Cole a chave em <b>Chave de API do Gemini</b>. Ela fica guardada neste navegador e não vai para ninguém além do Google."
   },
   "optStartStep7": {
     "message": "Abra a página que quer traduzir — um vídeo com fala no <a1>youtube.com</a1> é o teste mais fácil para começar. Uma extensão recém-instalada ainda não tem ícone na barra de ferramentas: clique no <b>botão de peça de quebra-cabeça</b> do Chrome, ache <b>Interpretab</b> na lista e clique no alfinete ao lado."
@@ -148,7 +148,7 @@
     "message": "Agora o ícone está na barra de ferramentas. <b>Clique nele estando na aba que quer traduzir.</b> Esse clique é como você dá permissão para ouvir a aba — sem ele, aparece um erro."
   },
   "optStartStep9": {
-    "message": "Escolha o seu idioma no painel lateral e aperte <b>Start</b>. Dê play no vídeo: a voz volta nesse idioma. Se você não ouvir tradução nenhuma, escolha um idioma diferente do que o vídeo já fala."
+    "message": "Escolha o seu idioma no painel de controle e aperte <b>Start</b>. Dê play no vídeo: a voz volta nesse idioma. Se você não ouvir tradução nenhuma, escolha um idioma diferente do que o vídeo já fala."
   },
   "optStartCreateApiKey": { "message": "Criar chave de API" },
   "optStartCreateKey": { "message": "Criar chave" },
@@ -183,7 +183,7 @@
 
   "optPlanHeading": { "message": "Plano da API do Gemini" },
   "optPlanNote": {
-    "message": "O Google não conta ao Interpretab se a sua chave é gratuita ou paga, então diga aqui. Em <b>Free</b>, o painel lateral mostra há quanto tempo você está traduzindo; em <b>Paid</b>, ele também estima quanto isso custou."
+    "message": "O Google não conta ao Interpretab se a sua chave é gratuita ou paga, então diga aqui. Em <b>Free</b>, o painel de controle mostra há quanto tempo você está traduzindo; em <b>Paid</b>, ele também estima quanto isso custou."
   },
   "optPlanFree": { "message": "Free — o Google não cobra nada por esta chave" },
   "optPlanPaid": { "message": "Paid — pagamento por uso, cobrado da sua conta" },
@@ -225,7 +225,7 @@
 
   "optMicHeading": { "message": "Acesso ao microfone" },
   "optMicNote": {
-    "message": "Só é preciso se você quiser a própria voz traduzida, e só na primeira vez. O Chrome não mostra a janela de permissão por cima do painel lateral, então o botão fica aqui — e o que você permitir aqui vale para o Interpretab inteiro."
+    "message": "Só é necessário para traduzir sua voz, e apenas na primeira vez. A permissão de microfone concedida aqui vale para todo o Interpretab."
   },
   "optMicGrant": { "message": "Permitir o microfone" },
   "optMicGranted": { "message": "Permitido." },
@@ -390,5 +390,9 @@
     "message": "A linha {1} deveria ser: a palavra, como falar e — se quiser — como escrever."
   },
   "glossaryMissingField": { "message": "Falta a palavra ou como falá-la na linha {1}." },
-  "glossaryTooMany": { "message": "Entradas demais (máximo {1})." }
+  "glossaryTooMany": { "message": "Entradas demais (máximo {1})." },
+  "optObsHeading": {"message": "Legendas para OBS"},
+  "optObsLabel": {"message": "Enviar legendas traduzidas ao OBS"},
+  "optObsNote": {"message": "Inicie o servidor local com npm run obs e adicione <code>127.0.0.1:8765</code> como fonte de navegador no OBS. Apenas o texto traduzido é enviado; o áudio é reproduzido neste navegador."},
+  "optObsError": {"message": "Não foi possível configurar a saída para OBS. Verifique a permissão da rede local e tente novamente."}
 }

@@ -137,7 +137,7 @@
     "message": "Vuelves al cuadro de la clave, ya con el proyecto nuevo. Pulsa <b>Crear clave</b> y aparece la clave: pulsa <b>Copiar clave</b>. Se queda en la página de API keys, así que puedes volver a por ella."
   },
   "optStartStep6": {
-    "message": "La página de <b>Opciones</b> de la extensión se abre sola la primera vez, y el botón <b>Opciones</b> del panel lateral la vuelve a abrir. Pega la clave en <b>Clave de la API de Gemini</b>. Se guarda en este navegador y no se envía a nadie más que a Google."
+    "message": "La página de <b>Opciones</b> de la extensión se abre sola la primera vez, y el botón <b>Opciones</b> del panel de control la vuelve a abrir. Pega la clave en <b>Clave de la API de Gemini</b>. Se guarda en este navegador y no se envía a nadie más que a Google."
   },
   "optStartStep7": {
     "message": "Abre la página que quieras traducir — un vídeo con voz en <a1>youtube.com</a1> es la prueba más fácil para empezar. Una extensión recién instalada aún no tiene icono en la barra: pulsa el <b>botón de la pieza de puzle</b> de Chrome, busca <b>Interpretab</b> en la lista y pulsa la chincheta que hay al lado."
@@ -146,7 +146,7 @@
     "message": "Ya tienes el icono en la barra. <b>Púlsalo estando en la pestaña que quieras traducir.</b> Ese clic es como das permiso para escuchar la pestaña; si te lo saltas, obtendrás un error."
   },
   "optStartStep9": {
-    "message": "Elige tu idioma en el panel lateral y pulsa <b>Start</b>. Dale al vídeo: la voz vuelve en ese idioma. Si no oyes ninguna traducción, elige un idioma distinto del que ya habla el vídeo."
+    "message": "Elige tu idioma en el panel de control y pulsa <b>Start</b>. Dale al vídeo: la voz vuelve en ese idioma. Si no oyes ninguna traducción, elige un idioma distinto del que ya habla el vídeo."
   },
   "optStartCreateApiKey": { "message": "Crear clave de API" },
   "optStartCreateKey": { "message": "Crear clave" },
@@ -181,7 +181,7 @@
 
   "optPlanHeading": { "message": "Plan de la API de Gemini" },
   "optPlanNote": {
-    "message": "Google no le dice a Interpretab si tu clave es gratuita o de pago, así que indícalo tú. Con <b>Free</b>, el panel lateral muestra cuánto tiempo llevas traduciendo; con <b>Paid</b>, estima además lo que ha costado."
+    "message": "Google no le dice a Interpretab si tu clave es gratuita o de pago, así que indícalo tú. Con <b>Free</b>, el panel de control muestra cuánto tiempo llevas traduciendo; con <b>Paid</b>, estima además lo que ha costado."
   },
   "optPlanFree": { "message": "Free — Google no cobra nada por esta clave" },
   "optPlanPaid": { "message": "Paid — pago por uso, facturado a tu cuenta" },
@@ -223,7 +223,7 @@
 
   "optMicHeading": { "message": "Acceso al micrófono" },
   "optMicNote": {
-    "message": "Solo hace falta si quieres que se traduzca tu propia voz, y solo la primera vez. Chrome no muestra su ventana de permiso encima del panel lateral, así que el botón está aquí — y lo que permitas aquí vale para todo Interpretab."
+    "message": "Solo hace falta si quieres traducir tu voz, y solo la primera vez. El permiso de micrófono que concedas aquí se aplica a todo Interpretab."
   },
   "optMicGrant": { "message": "Permitir el micrófono" },
   "optMicGranted": { "message": "Permitido." },
@@ -386,5 +386,9 @@
     "message": "La línea {1} debería ser: la palabra, cómo se dice y —si quieres— cómo se escribe."
   },
   "glossaryMissingField": { "message": "A la línea {1} le falta la palabra o cómo se dice." },
-  "glossaryTooMany": { "message": "Demasiadas entradas (máximo {1})." }
+  "glossaryTooMany": { "message": "Demasiadas entradas (máximo {1})." },
+  "optObsHeading": {"message": "Subtítulos para OBS"},
+  "optObsLabel": {"message": "Enviar subtítulos traducidos a OBS"},
+  "optObsNote": {"message": "Inicia el servidor local con npm run obs y añade <code>127.0.0.1:8765</code> como fuente de navegador en OBS. Solo se envía el texto traducido; el audio se reproduce en este navegador."},
+  "optObsError": {"message": "No se pudo configurar la salida para OBS. Comprueba el permiso de red local e inténtalo de nuevo."}
 }

@@ -25,14 +25,9 @@ This is the feature. The extension captures the audio of the tab the user starts
 ## `offscreen`
 
 ```
-A Manifest V3 service worker is terminated after about 30 seconds of inactivity and a side panel is destroyed when it is closed, so neither can hold a live audio capture, an AudioContext, or a WebSocket for the length of a translation session. The extension creates one offscreen document with the USER_MEDIA and AUDIO_PLAYBACK reasons to own those objects. This is the supported alternative to keeping a service worker artificially alive.
+A Manifest V3 service worker is terminated after about 30 seconds of inactivity and a control page is destroyed when it is closed, so neither can hold a live audio capture, an AudioContext, or a WebSocket for the length of a translation session. The extension creates one offscreen document with the USER_MEDIA and AUDIO_PLAYBACK reasons to own those objects. This is the supported alternative to keeping a service worker artificially alive.
 ```
 
-## `sidePanel`
-
-```
-The extension's entire user interface is a side panel: the language pickers, the Start and Stop buttons, the running transcript, and the connection status. A side panel is used rather than a popup because a popup closes on any click elsewhere, and the user needs to interact with the video they are translating while the controls stay visible.
-```
 
 ## `storage`
 
@@ -49,16 +44,25 @@ Grants temporary access to the tab the user clicked the toolbar icon on, which i
 ## `scripting`
 
 ```
-Used with activeTab to inject the extension's own scripts into the tab the user started translation on, never into any other tab and never on page load. content/captions.js draws the subtitle overlay inside a closed shadow root at the bottom of the page. On a https://meet.google.com/ tab, and only when the user has left the side panel's "Send the translation into this Meet call" switch on, content/mic-bridge.js and content/mic-shim.js are injected as well: they add one entry named "Interpretab (translated)" to the microphone list the page sees, so the user can select it in Meet's own audio settings and have the call hear the translation without installing a virtual audio device. mic-shim.js runs in the page's main world because navigator.mediaDevices in an isolated world is a different object from the page's. None of the three scripts read page content or the DOM; they write the overlay and provide an audio stream the extension itself produced. All are removed when the user presses Stop.
+Used with activeTab to inject the extension's own scripts into the tab the user started translation on, never into any other tab and never on page load. content/captions.js draws the subtitle overlay inside a closed shadow root at the bottom of the page. On a https://meet.google.com/ tab, and only when the user has left the control page's "Send the translation into this Meet call" switch on, content/mic-bridge.js and content/mic-shim.js are injected as well: they add one entry named "Interpretab (translated)" to the microphone list the page sees, so the user can select it in Meet's own audio settings and have the call hear the translation without installing a virtual audio device. mic-shim.js runs in the page's main world because navigator.mediaDevices in an isolated world is a different object from the page's. None of the three scripts read page content or the DOM; they write the overlay and provide an audio stream the extension itself produced. All are removed when the user presses Stop.
 ```
 
 ## Host permission — `https://generativelanguage.googleapis.com/*`
 
 ```
-The extension opens a WebSocket to the Gemini Live API at this host to perform the translation. This is the only host any user data is sent to — there is no backend service of the developer's, and no analytics or telemetry endpoint. It is declared as a required host permission rather than an optional one so that the destination is visible in the manifest and cannot be widened silently. The extension also downloads one static JSON file, https://kazunori279.github.io/interpretab/config.json, which lists the names and prices of the Gemini models it uses; Google withdraws preview models on two weeks' notice, which is shorter than a store review, so the model name cannot be corrected by shipping a new version in time. That request needs no host permission because GitHub Pages serves the file with access-control-allow-origin: *. It is a plain GET with no query string and no identifier, it uploads nothing, and the reply is validated field by field as data and never executed — it is the remote configuration pattern the Manifest V3 migration guide permits, not remotely hosted code. Users can turn it off on the Options page, and it is disclosed in the privacy policy.
+The extension opens a WebSocket to the Gemini Live API at this host to perform the translation. This is the only remote host any user data is sent to — there is no backend service of the developer's, and no analytics or telemetry endpoint. It is declared as a required host permission rather than an optional one so that the destination is visible in the manifest and cannot be widened silently. The extension also downloads one static JSON file, https://kazunori279.github.io/interpretab/config.json, which lists the names and prices of the Gemini models it uses; Google withdraws preview models on two weeks' notice, which is shorter than a store review, so the model name cannot be corrected by shipping a new version in time. That request needs no host permission because GitHub Pages serves the file with access-control-allow-origin: *. It is a plain GET with no query string and no identifier, it uploads nothing, and the reply is validated field by field as data and never executed — it is the remote configuration pattern the Manifest V3 migration guide permits, not remotely hosted code. Users can turn it off on the Options page, and it is disclosed in the privacy policy.
 ```
 
 ---
+
+## Optional host permission — `http://127.0.0.1/*`
+
+Requested only when the user enables OBS subtitle output. It allows the extension
+ to POST translated text to a relay running on the same computer at port 8765,
+ so OBS can show subtitles over a transparent background. No audio, API keys,
+ input transcripts or glossary are sent. The relay listens only on loopback,
+ stores the latest caption in memory, and never writes subtitles to disk.
+ The output is disabled by default and can be switched off in Options.
 
 ## Data disclosures
 
@@ -113,7 +117,7 @@ is handed over: the reviewer makes their own free key, which is exactly what a u
 ```
 No account or login. A free Gemini API key is needed: create one at https://aistudio.google.com/apikey, open Options and paste it into the API key field.
 
-Then open a page playing speech (any YouTube conference talk), click the Interpretab toolbar icon ON THAT TAB — that click grants access to it — pick a target language in the side panel and press Start. The translation is spoken and subtitled on the page. For the second direction, turn on Microphone in the same panel.
+Then open a page playing speech (any YouTube conference talk), click the Interpretab toolbar icon ON THAT TAB — that click grants access to it — pick a target language in the control page and press Start. The translation is spoken and subtitled on the page. For the second direction, turn on Microphone in the same panel.
 ```
 
 ---

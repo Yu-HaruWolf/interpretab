@@ -131,13 +131,13 @@
     "message": "回到密钥的对话框，新建的项目已经在里面了。点 <b>创建密钥</b>，密钥就会出现，再点 <b>复制密钥</b>。密钥会留在 API keys 页面上，之后还能回去再拿。"
   },
   "optStartStep6": {
-    "message": "扩展的<b>选项</b>页面第一次会自己打开，侧边栏底部的 <b>选项</b> 按钮也能再把它打开。把密钥粘贴到 <b>Gemini API 密钥</b> 里。它保存在这个浏览器中，除了 Google 不会发给任何人。"
+    "message": "扩展的<b>选项</b>页面第一次会自己打开，控制页面底部的 <b>选项</b> 按钮也能再把它打开。把密钥粘贴到 <b>Gemini API 密钥</b> 里。它保存在这个浏览器中，除了 Google 不会发给任何人。"
   },
   "optStartStep7": {
     "message": "打开要翻译的页面。第一次试的话，<a1>youtube.com</a1> 上一段有人说话的视频最方便。刚装好的扩展在工具栏上还没有图标：点 Chrome 的<b>拼图按钮</b>，在列表里找到 <b>Interpretab</b>，按一下旁边的图钉。"
   },
   "optStartStep8": { "message": "现在图标在工具栏上了。<b>在要翻译的那个标签页上点它。</b>这次点击就是你授权它收听该标签页的方式——跳过它就会报错。" },
-  "optStartStep9": { "message": "在侧边栏选择语言，按 <b>Start</b>。播放视频，声音就会用那个语言回来。要是听不到翻译，就换一个和视频本身不同的语言试试。" },
+  "optStartStep9": { "message": "在控制页面选择语言，按 <b>Start</b>。播放视频，声音就会用那个语言回来。要是听不到翻译，就换一个和视频本身不同的语言试试。" },
   "optStartCreateApiKey": { "message": "创建 API 密钥" },
   "optStartCreateKey": { "message": "创建密钥" },
   "optStartCreateProject": { "message": "创建项目" },
@@ -169,7 +169,7 @@
 
   "optPlanHeading": { "message": "Gemini API 方案" },
   "optPlanNote": {
-    "message": "你的密钥是免费还是付费，Google 不会告诉 Interpretab，所以请在这里说明。选 <b>Free</b> 时，侧边栏只显示你翻译了多久；选 <b>Paid</b> 时还会估算这段时间的花费。"
+    "message": "你的密钥是免费还是付费，Google 不会告诉 Interpretab，所以请在这里说明。选 <b>Free</b> 时，控制页面只显示你翻译了多久；选 <b>Paid</b> 时还会估算这段时间的花费。"
   },
   "optPlanFree": { "message": "Free — Google 不会为这个密钥收费" },
   "optPlanPaid": { "message": "Paid — 按量付费，计入你的账户" },
@@ -211,7 +211,7 @@
 
   "optMicHeading": { "message": "麦克风权限" },
   "optMicNote": {
-    "message": "只有想翻译自己说的话时才需要，而且只需第一次。Chrome 的权限窗口没法开在侧边栏上面，所以按钮放在这里。在这里允许之后，整个 Interpretab 都能用。"
+    "message": "仅在需要翻译自己的声音时首次设置。在这里授予的麦克风权限适用于整个 Interpretab。"
   },
   "optMicGrant": { "message": "允许使用麦克风" },
   "optMicGranted": { "message": "已允许。" },
@@ -350,5 +350,9 @@
 
   "glossaryBadLine": { "message": "第 {1} 行应该是：词、该怎么念，以及（如果需要）该怎么写。" },
   "glossaryMissingField": { "message": "第 {1} 行缺少词或它的读法。" },
-  "glossaryTooMany": { "message": "词条过多（最多 {1} 条）。" }
+  "glossaryTooMany": { "message": "词条过多（最多 {1} 条）。" },
+  "optObsHeading": {"message": "OBS 字幕输出"},
+  "optObsLabel": {"message": "将翻译字幕发送到 OBS"},
+  "optObsNote": {"message": "运行 npm run obs 启动本地中继，然后将 <code>127.0.0.1:8765</code> 添加为 OBS 浏览器源。仅发送译文，音频仍在此浏览器中播放。"},
+  "optObsError": {"message": "无法设置 OBS 输出。请检查本地网络权限后重试。"}
 }
