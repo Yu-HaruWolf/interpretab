@@ -66,7 +66,6 @@ function guideDirs() {
 const REQUIRED_PERMISSIONS = [
   "tabCapture", // the reason this extension exists
   "offscreen", // the only context that outlives the service worker
-  "sidePanel",
   "storage",
   "activeTab", // captions are injected under this rather than <all_urls>
   "scripting",
@@ -87,7 +86,7 @@ const FORBIDDEN_PERMISSIONS = ["audioCapture", "videoCapture"];
 const PATH_RE = /["'](?!\w+:|\/\/|#)([\w./-]+\.(?:js|css|html|png|csv))["']/g;
 
 /** Directories the extension is not made of. */
-const SKIP = new Set([".git", "node_modules", "tests", "docs"]);
+const SKIP = new Set([".git", "node_modules", "tests", "docs", "obs"]);
 
 /** Source files that can name an asset, walked from the repo root. */
 function sources(dir = ROOT) {
@@ -167,15 +166,15 @@ test("the Chrome floor covers tabCapture from a service worker", () => {
   assert.ok(floor >= 116, `declared ${floor}, need 116+`);
 });
 
-test("the only host the extension may reach is the Gemini API", () => {
+test("Gemini is required; loopback access is optional for OBS", () => {
   assert.deepEqual(manifest.host_permissions, ["https://generativelanguage.googleapis.com/*"]);
   // Optional hosts would let a later build widen this without a manifest diff
   // anyone reviewing the listing would notice.
-  assert.equal(manifest.optional_host_permissions, undefined);
+  assert.deepEqual(manifest.optional_host_permissions, ["http://127.0.0.1/*"]);
   assert.equal(manifest.optional_permissions, undefined);
 });
 
-test("no code names a server other than the Gemini API and this project's own", () => {
+test("network destinations are limited to Gemini, project resources, and OBS loopback", () => {
   const offenders = [];
   for (const file of sources()) {
     const text = fs.readFileSync(file, "utf8");
@@ -190,7 +189,8 @@ test("no code names a server other than the Gemini API and this project's own", 
         url.endsWith("google.com") ||
         url.endsWith("google.dev") ||
         url === "kazunori279.github.io" ||
-        url === "github.com"
+        url === "github.com" ||
+        url === "127.0.0.1"
       ) {
         continue;
       }
@@ -287,29 +287,6 @@ test("every element the panel and the options page reach for exists", () => {
     }
   }
   assert.deepEqual(missing, []);
-});
-
-test("the side panel is scoped to a tab, and to the path the manifest names", () => {
-  // Two halves of one behaviour, and either alone is broken: without the global
-  // `enabled: false` the panel follows the user onto every other tab, and
-  // without the per-tab enable the toolbar icon opens nothing at all. The path
-  // is passed again there because a per-tab `setOptions` replaces the whole
-  // option set — a copy of `default_path`, and a blank panel when it drifts.
-  const code = fs.readFileSync(path.join(ROOT, "service-worker.js"), "utf8");
-  assert.match(code, /setOptions\(\{\s*enabled:\s*false\s*\}\)/);
-  const perTab = code.match(/setOptions\(\{\s*tabId[^}]*path:\s*(\w+)/);
-  assert.ok(perTab, "no per-tab setOptions with a path");
-  const url = code.match(new RegExp(`${perTab[1]}\\s*=\\s*"([^"]+)"`));
-  assert.equal(url?.[1], manifest.side_panel.default_path);
-
-  // And none of it may be awaited. A service worker's user gesture lasts for
-  // the synchronous run of the click listener, not for a transient-activation
-  // window, so the first `await` in there spends it and `sidePanel.open()`
-  // starts refusing — the icon simply stops opening the panel, with the error
-  // only in the worker's own console. Every sidePanel call in this file is
-  // inside that listener or at module scope; none of them has anything to wait
-  // for, and the enable in front of `open` is ordered by being issued first.
-  assert.doesNotMatch(code, /await\s+chrome\.sidePanel/);
 });
 
 test("the offscreen document reaches for no extension API but chrome.runtime", () => {

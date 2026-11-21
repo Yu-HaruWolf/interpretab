@@ -24,6 +24,8 @@ import {
 } from "./lib/glossary.js";
 import { localize, t } from "./lib/i18n.js";
 
+import { OBS_ORIGIN } from "./lib/obs-captions.js";
+
 const el = (id) => document.getElementById(id);
 let settings = { ...DEFAULTS };
 
@@ -47,6 +49,7 @@ async function init() {
   el("apiKey").value = settings.apiKey;
   el("apiTier").value = settings.apiTier;
   el("configUpdates").checked = settings.configUpdates !== false;
+  el("obsEnabled").checked = !!settings.obsEnabled;
   loadVoices();
   loadCaptionSize();
   bind();
@@ -96,6 +99,26 @@ async function focusRequestedSection() {
 }
 
 function bind() {
+  el("obsEnabled").addEventListener("change", async () => {
+    const enabled = el("obsEnabled").checked;
+    el("obsEnabled").disabled = true;
+    try {
+      // Request before any await: Chrome requires the checkbox's user gesture.
+      if (enabled && !await chrome.permissions.request({ origins: [OBS_ORIGIN] })) {
+        el("obsEnabled").checked = false;
+        return;
+      }
+      await saveSettings({ obsEnabled: enabled });
+      settings.obsEnabled = enabled;
+      await chrome.runtime.sendMessage({ target: "sw", type: "live", patch: { obsEnabled: enabled } });
+      el("obsStatus").textContent = "";
+    } catch {
+      el("obsEnabled").checked = !!settings.obsEnabled;
+      el("obsStatus").textContent = t("optObsError");
+    } finally {
+      el("obsEnabled").disabled = false;
+    }
+  });
   // `change` rather than `input`: saving on every keystroke would write a
   // trail of truncated keys through storage on the way to the real one.
   el("apiKey").addEventListener("change", saveKey);

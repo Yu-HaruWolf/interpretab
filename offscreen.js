@@ -46,6 +46,10 @@ import { applyDisplayMap, buildDisplayMap, cleanCJKSpaces } from "./lib/glossary
 import { costOf, emptyUsage, mergeUsage, noteAudioIn, noteAudioOut } from "./lib/usage.js";
 import { t } from "./lib/i18n.js";
 
+import { ObsCaptions } from "./lib/obs-captions.js";
+
+const obsCaptions = new ObsCaptions();
+
 const DOWNLINK_RATE = 24000; // what Gemini returns
 
 // Ducking. The ramp is short enough to be under the first syllable and long
@@ -192,6 +196,7 @@ function applyLive(patch = {}) {
   for (const key of LIVE_KEYS) {
     if (key in patch) state.settings[key] = patch[key];
   }
+  if ("obsEnabled" in patch) obsCaptions.configure(!!patch.obsEnabled);
   if ("duckLevel" in patch) applyDuck(state.ducked, true);
   if (patch.soundMuted) dropQueuedVoice();
 }
@@ -219,6 +224,7 @@ async function start({ apiKey, streamId, settings, intoCall, glossary, closeHint
   await ensureContexts();
   await stop();
   state.settings = settings;
+  obsCaptions.configure(!!settings.obsEnabled);
   state.intoCall = !!intoCall;
   state.apiKey = apiKey;
   state.config = config || null;
@@ -859,6 +865,7 @@ function sendToCall(buffer) {
 }
 
 function post(payload) {
+  obsCaptions.post(payload);
   noteLine(payload);
   chrome.runtime.sendMessage({ target: "ui", ...payload }).catch(() => {});
   const perDirection =
