@@ -751,5 +751,26 @@
   },
   "optExternalIdLabel": {
     "message": "Extension ID:"
+  },
+  "optSimulInstructionHeading": {
+    "message": "Simultaneous system instruction"
+  },
+  "optSimulInstructionNote": {
+    "message": "Optional custom instruction sent as <code>systemInstruction</code> when starting Simultaneous translation. Use <code>{target}</code> to insert the target language name. Glossary entries below are appended automatically. Applies on the next Start or Restart."
+  },
+  "optSimulInstructionPlaceholder": {
+    "message": "e.g. You are translating a live technical conference talk at GDG DevFest Tokyo 2026 into {target}. Use concise, natural language suitable for live subtitles."
+  },
+  "optSimulInstructionSave": {
+    "message": "Save"
+  },
+  "optSimulInstructionClear": {
+    "message": "Clear"
+  },
+  "optSimulInstructionSaved": {
+    "message": "Saved. Applies on the next Start or Restart."
+  },
+  "optSimulInstructionCleared": {
+    "message": "Cleared. Using the default instruction."
   }
 }

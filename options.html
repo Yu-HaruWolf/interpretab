@@ -16,7 +16,8 @@
         margin: 2rem 0 0.4rem; padding-top: 1rem; border-top: 1px solid var(--border);
       }
       h3 { font-size: 1rem; font-weight: 500; margin: 1.2rem 0 0.2rem; }
-      input[type="text"], input[type="password"] { font: inherit; padding: 0.35rem 0.5rem; border: 1px solid var(--border); border-radius: 0.3rem; width: 100%; }
+      input[type="text"], input[type="password"], textarea { font: inherit; padding: 0.35rem 0.5rem; border: 1px solid var(--border); border-radius: 0.3rem; width: 100%; box-sizing: border-box; }
+      textarea { resize: vertical; line-height: 1.45; }
       table { border-collapse: collapse; width: 100%; font-size: 12px; }
       th, td { text-align: start; border-bottom: 1px solid var(--border); padding: 0.25rem 0.4rem; }
       th { color: var(--muted); font-weight: 500; }
@@ -531,6 +532,20 @@
     <h3 data-i18n="optVoiceHeading"></h3>
     <p class="note" data-i18n="optVoiceNote"></p>
     <div class="row"><select id="voice" class="lang"></select></div>
+
+    <h3 data-i18n="optSimulInstructionHeading"></h3>
+    <p class="note" data-i18n="optSimulInstructionNote"></p>
+    <textarea
+      id="simulInstruction"
+      rows="5"
+      spellcheck="false"
+      data-i18n-placeholder="optSimulInstructionPlaceholder"
+    ></textarea>
+    <div class="row" style="margin-top: 0.4rem">
+      <button id="saveSimulInstruction" class="ghost" data-i18n="optSimulInstructionSave"></button>
+      <button id="clearSimulInstruction" class="ghost" data-i18n="optSimulInstructionClear"></button>
+      <span id="simulInstructionStatus" class="note"></span>
+    </div>
 
     <h3 data-i18n="optGlossaryHeading"></h3>
     <p

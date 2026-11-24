@@ -120,7 +120,6 @@ const usage = { totals: [], climbing: true };
 const GLOSSARY = [{ source: "リアルタイム翻訳", target: "Interpretab live relay" }];
 
 const settings = { ...DEFAULTS, micMode, tabTarget: "en", micSource: "ja", micTarget: "en" };
-const useGlossary = !isSimul(direction, settings);
 // One name, and no fallback list behind it. A run that is here to find out
 // whether a candidate works should fail on that candidate, not quietly succeed
 // on the one it fell back to.
@@ -147,10 +146,7 @@ const ready = new Promise((resolve) => {
 
 const loop = new SessionLoop({
   apiKey,
-  // Simultaneous translation — the tab direction and the microphone's default
-  // mode — detects the source and can carry no glossary. Conversation mode
-  // declares both languages and applies the system instruction and glossary.
-  setup: buildSetup(direction, settings, useGlossary ? GLOSSARY : []),
+  setup: buildSetup(direction, settings, GLOSSARY),
   models: [model],
   SessionClass,
   // The loop defaults to performance.now(); Date.now() keeps its clock and this

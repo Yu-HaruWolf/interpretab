@@ -26,7 +26,7 @@ import {
   usesDuplexGate,
   arrayToBase64,
 } from "../lib/live-session.js";
-import { buildConversationInstruction } from "../lib/instructions.js";
+import { buildConversationInstruction, buildSimulGlossaryInstruction } from "../lib/instructions.js";
 import { DEFAULTS } from "../lib/settings.js";
 
 const SETTINGS = {
@@ -195,15 +195,43 @@ test("an unknown voice falls back rather than failing the connection", () => {
   );
 });
 
-test("the glossary only reaches the session that can use it", () => {
+test("the glossary reaches both simultaneous and conversation sessions when non-empty", () => {
   const glossary = [{ source: "Gemini", target: "ジェミニ", transcription: "Gemini" }];
-  const tab = JSON.stringify(buildSetup("tab", SETTINGS, glossary));
-  assert.ok(!tab.includes("ジェミニ"), "simul mode takes no glossary");
-  // Same model, same reason, even though this one is the microphone.
-  const micSimul = JSON.stringify(buildSetup("mic", { ...SETTINGS, micMode: "simul" }, glossary));
-  assert.ok(!micSimul.includes("ジェミニ"));
+  const tab = buildSetup("tab", SETTINGS, glossary);
+  assert.equal(
+    tab.setup.systemInstruction.parts[0].text,
+    buildSimulGlossaryInstruction("ja", glossary)
+  );
+  assert.ok(JSON.stringify(tab).includes("ジェミニ"));
+
+  const micSimul = buildSetup("mic", { ...SETTINGS, micMode: "simul" }, glossary);
+  assert.equal(
+    micSimul.setup.systemInstruction.parts[0].text,
+    buildSimulGlossaryInstruction("ja", glossary)
+  );
+  assert.ok(JSON.stringify(micSimul).includes("ジェミニ"));
+
   const mic = JSON.stringify(buildSetup("mic", SETTINGS, glossary));
   assert.ok(mic.includes("ジェミニ"));
+});
+
+test("custom simulInstruction is sent with optional {target} expansion and glossary", () => {
+  const custom = "Translate DevFest Tokyo into {target}.";
+  const withoutGlossary = buildSetup("tab", { ...SETTINGS, tabTarget: "ja", simulInstruction: custom }, []);
+  assert.equal(
+    withoutGlossary.setup.systemInstruction.parts[0].text,
+    "Translate DevFest Tokyo into Japanese (日本語)."
+  );
+
+  const glossary = [{ source: "MCP", target: "MCP", transcription: "MCP" }];
+  const withGlossary = buildSetup(
+    "mic",
+    { ...SETTINGS, micMode: "simul", micTarget: "en", simulInstruction: custom },
+    glossary
+  );
+  const text = withGlossary.setup.systemInstruction.parts[0].text;
+  assert.ok(text.startsWith("Translate DevFest Tokyo into English."));
+  assert.ok(text.includes("- MCP → MCP"));
 });
 
 test("the endpoint is the Live API and the key is escaped into the query", () => {

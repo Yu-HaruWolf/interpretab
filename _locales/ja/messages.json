@@ -687,5 +687,26 @@
   },
   "optExternalIdLabel": {
     "message": "拡張機能 ID:"
+  },
+  "optSimulInstructionHeading": {
+    "message": "Simultaneous モードのシステム指示（systemInstruction）"
+  },
+  "optSimulInstructionNote": {
+    "message": "Simultaneous 翻訳の開始時に <code>systemInstruction</code> として送るカスタム指示です。<code>{target}</code> と書くと翻訳先の言語名に置き換わります。下の用語集（Glossary）は自動で末尾に追加されます。次回の開始／リスタートから反映されます。"
+  },
+  "optSimulInstructionPlaceholder": {
+    "message": "例: You are translating a live technical conference talk at GDG DevFest Tokyo 2026 into {target}. Use concise, natural language suitable for live subtitles."
+  },
+  "optSimulInstructionSave": {
+    "message": "保存"
+  },
+  "optSimulInstructionClear": {
+    "message": "クリア"
+  },
+  "optSimulInstructionSaved": {
+    "message": "保存しました。次回の開始／リスタートから反映されます。"
+  },
+  "optSimulInstructionCleared": {
+    "message": "クリアしました。既定の指示を使用します。"
   }
 }

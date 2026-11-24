@@ -53,6 +53,7 @@ async function init() {
   el("externalControlEnabled").checked = !!settings.externalControlEnabled;
   el("externalControlPorts").value = settings.externalControlPorts || "";
   el("externalExtensionId").textContent = chrome.runtime.id;
+  el("simulInstruction").value = settings.simulInstruction || "";
   loadVoices();
   loadCaptionSize();
   bind();
@@ -175,6 +176,9 @@ function bind() {
   navigator.mediaDevices?.addEventListener?.("devicechange", loadDevices);
   el("uploadGlossary").addEventListener("click", uploadGlossary);
   el("resetGlossary").addEventListener("click", resetGlossary);
+  el("simulInstruction").addEventListener("change", saveSimulInstruction);
+  el("saveSimulInstruction").addEventListener("click", saveSimulInstruction);
+  el("clearSimulInstruction").addEventListener("click", clearSimulInstruction);
 }
 
 async function saveKey() {
@@ -482,6 +486,25 @@ function loadCaptionSize() {
 function renderCaptionSize(px) {
   el("captionSizeOut").textContent = t("optSizePx", [px]);
   el("captionPreview").querySelector("span").style.fontSize = `${px}px`;
+}
+
+async function saveSimulInstruction() {
+  const value = el("simulInstruction").value.trim();
+  el("simulInstruction").value = value;
+  settings.simulInstruction = value;
+  await saveSettings({ simulInstruction: value });
+  setStatus(
+    el("simulInstructionStatus"),
+    t(value ? "optSimulInstructionSaved" : "optSimulInstructionCleared"),
+    true
+  );
+}
+
+async function clearSimulInstruction() {
+  el("simulInstruction").value = "";
+  settings.simulInstruction = "";
+  await saveSettings({ simulInstruction: "" });
+  setStatus(el("simulInstructionStatus"), t("optSimulInstructionCleared"), true);
 }
 
 async function uploadGlossary() {

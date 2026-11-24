@@ -59,11 +59,13 @@ test("filterExternalPatch drops sensitive keys and flags restart-requiring setti
     micSource: "ja",
     micTarget: "en",
     micInput: "device-123",
+    simulInstruction: "DevFest Tokyo context",
   });
   assert.deepEqual(needsRestart.cleanPatch, {
     micSource: "ja",
     micTarget: "en",
     micInput: "device-123",
+    simulInstruction: "DevFest Tokyo context",
   });
   assert.equal(needsRestart.needsRestart, true);
 });
@@ -75,8 +77,14 @@ test("publicExternalSettings omits apiKey and internal control settings", () => 
     micTarget: "ja",
     micInput: "mic-1",
     micMuted: false,
+    simulInstruction: "DevFest Tokyo context",
   });
   assert.equal("apiKey" in pub, false);
   assert.equal("externalControlEnabled" in pub, false);
-  assert.deepEqual(pub, { micTarget: "ja", micInput: "mic-1", micMuted: false });
+  assert.deepEqual(pub, {
+    micTarget: "ja",
+    micInput: "mic-1",
+    micMuted: false,
+    simulInstruction: "DevFest Tokyo context",
+  });
 });
