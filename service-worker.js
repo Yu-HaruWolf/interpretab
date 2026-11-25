@@ -500,7 +500,9 @@ async function start(panelTabId = null) {
  * translation.
  */
 function announceRun(runTabId, runTabTitle) {
-  chrome.runtime.sendMessage({ target: "ui", type: "run", runTabId, runTabTitle }).catch(() => {});
+  const msg = { target: "ui", type: "run", runTabId, runTabTitle };
+  chrome.runtime.sendMessage(msg).catch(() => {});
+  broadcastExternal(msg);
 }
 
 /**
@@ -691,6 +693,9 @@ async function toOffscreen(message, attempts = 20) {
 }
 
 async function stop() {
+  // Mark stopped before notifying offscreen so any concurrent `getState()`
+  // triggered by offscreen's teardown messages already observes `running: false`.
+  await chrome.storage.session.set({ running: false });
   if (await hasOffscreen()) {
     await toOffscreen({ type: "stop" }).catch(() => {});
     await chrome.offscreen.closeDocument();
@@ -724,6 +729,7 @@ async function stop() {
     tabMarkPrefix: null,
   });
   announceRun(null, "");
+  broadcastExternal({ target: "ui", type: "state", running: false });
   return {};
 }
 
